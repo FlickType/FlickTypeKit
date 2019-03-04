@@ -1,0 +1,11 @@
+language: swift
+osx_image: xcode10.1
+
+script:
+  - |
+    set -o pipefail && \
+    xcodebuild \
+    -project "FlickTypeKit Sample (Swift)/FlickTypeKit Sample.xcodeproj" \
+    -scheme "FlickTypeKit Sample App" \
+    -destination platform="iOS Simulator",name="iPhone X" \
+    build | xcpretty

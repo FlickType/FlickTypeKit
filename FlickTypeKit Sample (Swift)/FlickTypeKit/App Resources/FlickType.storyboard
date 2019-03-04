@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Gatekeeper-->
+        <scene sceneID="GIh-Yk-IvM">
+            <objects>
+                <controller identifier="Gatekeeper" hidesWhenLoading="NO" alwaysBounce="YES" id="guT-eH-WKt" customClass="GatekeeperController" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="2BM-xd-Z25" userLabel="Content">
+                            <items>
+                                <group width="1" alignment="left" verticalAlignment="center" layout="overlap" radius="8" id="fJg-5X-f7r">
+                                    <items>
+                                        <group width="0.5" height="44" alignment="left" verticalAlignment="center" id="e9F-9T-eKN" userLabel="progress">
+                                            <color key="backgroundColor" red="0.10980392160000001" green="0.4941176471" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        </group>
+                                        <button width="1" alignment="left" verticalAlignment="center" id="9md-ax-fdq" userLabel="Label">
+                                            <string key="title">Doing
+some work</string>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="downloadButtonTapped" destination="guT-eH-WKt" id="8HX-ZW-3ys"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <button width="1" alignment="left" verticalAlignment="center" title="FlickType" id="ZVC-4A-u5f">
+                                    <color key="backgroundColor" red="0.10980392160000001" green="0.4941176471" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="flicktypeTapped" destination="guT-eH-WKt" id="EZA-yD-VBg"/>
+                                    </connections>
+                                </button>
+                                <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Transfer can continue in the background. Ensure your device is at least 30% charged." textAlignment="center" numberOfLines="0" id="QBd-pB-wNL">
+                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                                <label width="1" alignment="left" verticalAlignment="center" text="When using FlickType, press firmly for help &amp; menu." textAlignment="left" numberOfLines="0" id="XB1-5x-8Gw">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="content" destination="2BM-xd-Z25" id="7IY-rG-DKZ"/>
+                        <outlet property="downloadInfoLabel" destination="QBd-pB-wNL" id="efr-Zj-JWM"/>
+                        <outlet property="downloadingGroup" destination="fJg-5X-f7r" id="jZc-5w-YRB"/>
+                        <outlet property="downloadingLabel" destination="9md-ax-fdq" id="K60-pd-xdm"/>
+                        <outlet property="flicktypeButton" destination="ZVC-4A-u5f" id="hv6-WO-ugk"/>
+                        <outlet property="progressBar" destination="e9F-9T-eKN" id="fs1-OS-Nwd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="42" y="1020"/>
+        </scene>
+        <!--FlickType-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="FlickType" fullBounds="YES" id="AgC-eL-Hgc" customClass="FlickTypeController" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" height="1" alignment="left" isAccessibilityElement="YES" layout="vertical" spacing="0.0" id="8eU-U7-C71">
+                            <items>
+                                <group width="1" alignment="center" layout="vertical" spacing="0.0" id="i8J-jb-rsB" userLabel="Announcement">
+                                    <items>
+                                        <label width="1" height="1" alignment="center" isAccessibilityElement="NO" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="9Da-tT-I6o">
+                                            <fontDescription key="font" type="system" pointSize="30"/>
+                                        </label>
+                                        <group width="1" height="3" alignment="left" verticalAlignment="bottom" layout="vertical" id="5Vz-6e-A4s" userLabel="Padding"/>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="3" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="center" layout="vertical" radius="0.0" spacing="0.0" id="DFM-qu-kPM" userLabel="Keyboard">
+                                    <items>
+                                        <separator alignment="center" alpha="0.69999999999999996" id="w97-3n-3Id"/>
+                                        <imageView width="1" alignment="center" image="keyboard" contentMode="scaleAspectFit" id="zsJ-Ho-v9X"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer enabled="NO" id="wPw-OH-NU5">
+                                    <connections>
+                                        <action selector="handleTap:" destination="AgC-eL-Hgc" id="gn9-og-rkb"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" id="AxI-QK-UFg">
+                                    <connections>
+                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="Rga-Uf-GmE"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="2" id="wnW-oc-uyn">
+                                    <connections>
+                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="9GC-io-nck"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="8" id="sBc-2I-SNj">
+                                    <connections>
+                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="7Ac-LU-eu5"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer enabled="NO" direction="4" id="kWH-6N-UMH">
+                                    <connections>
+                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="tAI-tB-F7Z"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                                <longPressGestureRecognizer enabled="NO" allowableMovement="0.0" minimumPressDuration="0.25" id="Aa5-YX-ShD">
+                                    <connections>
+                                        <action selector="handleLongPress:" destination="AgC-eL-Hgc" id="yk1-B7-afF"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="announcementLabel" destination="9Da-tT-I6o" id="Rdr-LW-Dxq"/>
+                        <outlet property="downSwipeRecognizer" destination="sBc-2I-SNj" id="JDU-hg-xBX"/>
+                        <outlet property="keyboardImage" destination="zsJ-Ho-v9X" id="mOc-11-bc8"/>
+                        <outlet property="keyboardTopBorder" destination="w97-3n-3Id" id="HLR-bh-K5i"/>
+                        <outlet property="keyboardView" destination="DFM-qu-kPM" id="8Dv-ME-RVD"/>
+                        <outlet property="leftSwipeRecognizer" destination="wnW-oc-uyn" id="v45-xM-bHo"/>
+                        <outlet property="longPressRecognizer" destination="Aa5-YX-ShD" id="4te-zu-1e9"/>
+                        <outlet property="mainView" destination="8eU-U7-C71" id="MZv-Yh-tpw"/>
+                        <outlet property="rightSwipeRecognizer" destination="AxI-QK-UFg" id="rja-bI-koy"/>
+                        <outlet property="tapRecognizer" destination="wPw-OH-NU5" id="0HG-aZ-Nw2"/>
+                        <outlet property="upSwipeRecognizer" destination="kWH-6N-UMH" id="t4C-8u-oPi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="215" y="846"/>
+        </scene>
+        <!--Close-->
+        <scene sceneID="OeX-pD-UeD">
+            <objects>
+                <controller identifier="TipController" title="Close" hidesWhenLoading="NO" id="6ib-II-dJV" customClass="TipController" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" alignment="center" id="0e4-Yh-XW7">
+                            <items>
+                                <group width="1" alignment="left" verticalAlignment="center" radius="6" id="Slk-AT-Zdw">
+                                    <items>
+                                        <label width="1" alignment="left" verticalAlignment="center" textAlignment="left" numberOfLines="0" id="U9V-aY-tUe">
+                                            <string key="text">• Some text goes here
+
+• Some text goes here
+
+• Some text goes here</string>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="group" destination="Slk-AT-Zdw" id="BJz-5t-WyS"/>
+                        <outlet property="label" destination="U9V-aY-tUe" id="1Xg-Ml-Jys"/>
+                        <outlet property="outerGroup" destination="0e4-Yh-XW7" id="LIe-Lg-u4K"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-112" y="502"/>
+        </scene>
+    </scenes>
+</document>

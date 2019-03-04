@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5DA21321DADAB500C33791 /* FlickTypeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */; };
+		0A5DA21421DADAB500C33791 /* FlickTypeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A5DA21821DADAE600C33791 /* FlickType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21621DADAE600C33791 /* FlickType.storyboard */; };
+		0A5DA21921DADAE600C33791 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21721DADAE600C33791 /* keyboard.png */; };
+		0ADD2FF021DAC5AA00EDD5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */; };
+		0ADD2FF221DAC5AA00EDD5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF121DAC5AA00EDD5C3 /* ViewController.swift */; };
+		0ADD2FF521DAC5AA00EDD5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF321DAC5AA00EDD5C3 /* Main.storyboard */; };
+		0ADD2FF721DAC5AC00EDD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF621DAC5AC00EDD5C3 /* Assets.xcassets */; };
+		0ADD2FFA21DAC5AC00EDD5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF821DAC5AC00EDD5C3 /* LaunchScreen.storyboard */; };
+		0ADD2FFF21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0ADD2FFE21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app */; };
+		0ADD300521DAC5AC00EDD5C3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD300321DAC5AC00EDD5C3 /* Interface.storyboard */; };
+		0ADD300721DAC5AD00EDD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD300621DAC5AD00EDD5C3 /* Assets.xcassets */; };
+		0ADD300E21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ADD300D21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ADD301321DAC5AD00EDD5C3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD301221DAC5AD00EDD5C3 /* InterfaceController.swift */; };
+		0ADD301521DAC5AD00EDD5C3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD301421DAC5AD00EDD5C3 /* ExtensionDelegate.swift */; };
+		0ADD301721DAC5AE00EDD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD301621DAC5AE00EDD5C3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ADD300021DAC5AC00EDD5C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ADD2FE421DAC5AA00EDD5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ADD2FFD21DAC5AC00EDD5C3;
+			remoteInfo = "FlickTypeKit Sample App WatchKit App";
+		};
+		0ADD300F21DAC5AD00EDD5C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ADD2FE421DAC5AA00EDD5C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ADD300C21DAC5AD00EDD5C3;
+			remoteInfo = "FlickTypeKit Sample App WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A5DA21521DADAB500C33791 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A5DA21421DADAB500C33791 /* FlickTypeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD301E21DAC5AE00EDD5C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0ADD300E21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD302221DAC5AE00EDD5C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0ADD2FFF21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlickTypeKit.framework; path = FlickTypeKit/FlickTypeKit.framework; sourceTree = "<group>"; };
+		0A5DA21621DADAE600C33791 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
+		0A5DA21721DADAE600C33791 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = "FlickTypeKit/App Resources/keyboard.png"; sourceTree = "<group>"; };
+		0ADD2FEC21DAC5AA00EDD5C3 /* FlickTypeKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ADD2FF121DAC5AA00EDD5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0ADD2FF421DAC5AA00EDD5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ADD2FF621DAC5AC00EDD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ADD2FF921DAC5AC00EDD5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ADD2FFB21DAC5AC00EDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADD2FFE21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADD300421DAC5AC00EDD5C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0ADD300621DAC5AD00EDD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ADD300821DAC5AD00EDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADD300D21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlickTypeKit Sample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADD301221DAC5AD00EDD5C3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0ADD301421DAC5AD00EDD5C3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0ADD301621DAC5AE00EDD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ADD301821DAC5AE00EDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ADD2FE921DAC5AA00EDD5C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD300A21DAC5AD00EDD5C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5DA21321DADAB500C33791 /* FlickTypeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ADD2FE321DAC5AA00EDD5C3 = {
+			isa = PBXGroup;
+			children = (
+				0A5DA21621DADAE600C33791 /* FlickType.storyboard */,
+				0A5DA21721DADAE600C33791 /* keyboard.png */,
+				0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */,
+				0ADD2FEE21DAC5AA00EDD5C3 /* FlickTypeKit Sample */,
+				0ADD300221DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */,
+				0ADD301121DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */,
+				0ADD2FED21DAC5AA00EDD5C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ADD2FED21DAC5AA00EDD5C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD2FEC21DAC5AA00EDD5C3 /* FlickTypeKit Sample.app */,
+				0ADD2FFE21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app */,
+				0ADD300D21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ADD2FEE21DAC5AA00EDD5C3 /* FlickTypeKit Sample */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */,
+				0ADD2FF121DAC5AA00EDD5C3 /* ViewController.swift */,
+				0ADD2FF321DAC5AA00EDD5C3 /* Main.storyboard */,
+				0ADD2FF621DAC5AC00EDD5C3 /* Assets.xcassets */,
+				0ADD2FF821DAC5AC00EDD5C3 /* LaunchScreen.storyboard */,
+				0ADD2FFB21DAC5AC00EDD5C3 /* Info.plist */,
+			);
+			path = "FlickTypeKit Sample";
+			sourceTree = "<group>";
+		};
+		0ADD300221DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD300321DAC5AC00EDD5C3 /* Interface.storyboard */,
+				0ADD300621DAC5AD00EDD5C3 /* Assets.xcassets */,
+				0ADD300821DAC5AD00EDD5C3 /* Info.plist */,
+			);
+			path = "FlickTypeKit Sample WatchKit App";
+			sourceTree = "<group>";
+		};
+		0ADD301121DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD301221DAC5AD00EDD5C3 /* InterfaceController.swift */,
+				0ADD301421DAC5AD00EDD5C3 /* ExtensionDelegate.swift */,
+				0ADD301621DAC5AE00EDD5C3 /* Assets.xcassets */,
+				0ADD301821DAC5AE00EDD5C3 /* Info.plist */,
+			);
+			path = "FlickTypeKit Sample WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ADD2FEB21DAC5AA00EDD5C3 /* FlickTypeKit Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADD302321DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample" */;
+			buildPhases = (
+				0ADD2FE821DAC5AA00EDD5C3 /* Sources */,
+				0ADD2FE921DAC5AA00EDD5C3 /* Frameworks */,
+				0ADD2FEA21DAC5AA00EDD5C3 /* Resources */,
+				0ADD302221DAC5AE00EDD5C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ADD300121DAC5AC00EDD5C3 /* PBXTargetDependency */,
+			);
+			name = "FlickTypeKit Sample";
+			productName = "FlickTypeKit Sample App";
+			productReference = 0ADD2FEC21DAC5AA00EDD5C3 /* FlickTypeKit Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ADD2FFD21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADD301F21DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit App" */;
+			buildPhases = (
+				0ADD2FFC21DAC5AC00EDD5C3 /* Resources */,
+				0ADD301E21DAC5AE00EDD5C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ADD301021DAC5AD00EDD5C3 /* PBXTargetDependency */,
+			);
+			name = "FlickTypeKit Sample WatchKit App";
+			productName = "FlickTypeKit Sample App WatchKit App";
+			productReference = 0ADD2FFE21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0ADD300C21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADD301B21DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit Extension" */;
+			buildPhases = (
+				0A5DA21A21DADDCF00C33791 /* Run Script (FlickType) */,
+				0ADD300921DAC5AD00EDD5C3 /* Sources */,
+				0ADD300A21DAC5AD00EDD5C3 /* Frameworks */,
+				0ADD300B21DAC5AD00EDD5C3 /* Resources */,
+				0A5DA21521DADAB500C33791 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlickTypeKit Sample WatchKit Extension";
+			productName = "FlickTypeKit Sample App WatchKit Extension";
+			productReference = 0ADD300D21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ADD2FE421DAC5AA00EDD5C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Kpaw;
+				TargetAttributes = {
+					0ADD2FEB21DAC5AA00EDD5C3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0ADD2FFD21DAC5AC00EDD5C3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0ADD300C21DAC5AD00EDD5C3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0ADD2FE721DAC5AA00EDD5C3 /* Build configuration list for PBXProject "FlickTypeKit Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ADD2FE321DAC5AA00EDD5C3;
+			productRefGroup = 0ADD2FED21DAC5AA00EDD5C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ADD2FEB21DAC5AA00EDD5C3 /* FlickTypeKit Sample */,
+				0ADD2FFD21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */,
+				0ADD300C21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ADD2FEA21DAC5AA00EDD5C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD2FFA21DAC5AC00EDD5C3 /* LaunchScreen.storyboard in Resources */,
+				0ADD2FF721DAC5AC00EDD5C3 /* Assets.xcassets in Resources */,
+				0ADD2FF521DAC5AA00EDD5C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD2FFC21DAC5AC00EDD5C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD300721DAC5AD00EDD5C3 /* Assets.xcassets in Resources */,
+				0ADD300521DAC5AC00EDD5C3 /* Interface.storyboard in Resources */,
+				0A5DA21821DADAE600C33791 /* FlickType.storyboard in Resources */,
+				0A5DA21921DADAE600C33791 /* keyboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD300B21DAC5AD00EDD5C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD301721DAC5AE00EDD5C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5DA21A21DADDCF00C33791 /* Run Script (FlickType) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (FlickType)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\"${PROJECT_DIR}/FlickTypeKit/_internal/select-framework.sh\" \"${PLATFORM_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ADD2FE821DAC5AA00EDD5C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD2FF221DAC5AA00EDD5C3 /* ViewController.swift in Sources */,
+				0ADD2FF021DAC5AA00EDD5C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADD300921DAC5AD00EDD5C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD301521DAC5AD00EDD5C3 /* ExtensionDelegate.swift in Sources */,
+				0ADD301321DAC5AD00EDD5C3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ADD300121DAC5AC00EDD5C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ADD2FFD21DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */;
+			targetProxy = 0ADD300021DAC5AC00EDD5C3 /* PBXContainerItemProxy */;
+		};
+		0ADD301021DAC5AD00EDD5C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ADD300C21DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */;
+			targetProxy = 0ADD300F21DAC5AD00EDD5C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0ADD2FF321DAC5AA00EDD5C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADD2FF421DAC5AA00EDD5C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0ADD2FF821DAC5AC00EDD5C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADD2FF921DAC5AC00EDD5C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0ADD300321DAC5AC00EDD5C3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADD300421DAC5AC00EDD5C3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ADD301921DAC5AE00EDD5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		0ADD301A21DAC5AE00EDD5C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		0ADD301C21DAC5AE00EDD5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlickTypeKit",
+				);
+				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		0ADD301D21DAC5AE00EDD5C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlickTypeKit",
+				);
+				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		0ADD302021DAC5AE00EDD5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
+				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		0ADD302121DAC5AE00EDD5C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
+				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		0ADD302421DAC5AE00EDD5C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				INFOPLIST_FILE = "FlickTypeKit Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ADD302521DAC5AE00EDD5C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
+				INFOPLIST_FILE = "FlickTypeKit Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ADD2FE721DAC5AA00EDD5C3 /* Build configuration list for PBXProject "FlickTypeKit Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADD301921DAC5AE00EDD5C3 /* Debug */,
+				0ADD301A21DAC5AE00EDD5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADD301B21DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADD301C21DAC5AE00EDD5C3 /* Debug */,
+				0ADD301D21DAC5AE00EDD5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADD301F21DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADD302021DAC5AE00EDD5C3 /* Debug */,
+				0ADD302121DAC5AE00EDD5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADD302321DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADD302421DAC5AE00EDD5C3 /* Debug */,
+				0ADD302521DAC5AE00EDD5C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ADD2FE421DAC5AA00EDD5C3 /* Project object */;
+}
