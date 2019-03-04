@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.com/keleftheriou/FlickTypeKit.svg?token=M5jL2wCRr8xA3Hqvsyxq&branch=master)](https://travis-ci.com/keleftheriou/FlickTypeKit) 
+[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?token=M5jL2wCRr8xA3Hqvsyxq&branch=master)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 # FlickTypeKit 🚀
 
