@@ -8,7 +8,7 @@
 
 ![FlickTypeKit screenshots](screenshot-header.png)
 
-Join the developer discussion on our [Discord server](https://discord.gg/r6s5kW8). Terms & conditions of our free SDK in the [license](LICENSE.md).
+Join the developer discussion on [Discord](https://discord.gg/MFyvmhe). Terms & conditions of our free SDK in the [license](LICENSE.md).
 
 ## Integration ⚙️
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project root folder.
