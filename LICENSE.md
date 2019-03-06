@@ -4,7 +4,7 @@ The SDK is owned by KPAW, LLC and licensed, not sold, to you. The SDK, content, 
 
 You may not decompile, reverse engineer, or otherwise access or attempt to access the source code for the SDK not made available to you in source code form, or make or attempt to make any modification to the SDK; or remove, obscure, interfere with or circumvent any feature of the SDK, including without limitation any copyright or other intellectual property notices, security, or access control mechanism. You may not use the SDK for any purpose other than interoperating with the Service in a manner for which the SDK and Service are expressly designed. 
 
-If your App includes the SDK, your App Store marketing material must include the provided Watch screenshot:
+If your App includes the SDK, your App Store marketing material **must** include the provided Watch screenshot:
 
 ![FlickType screenshot](screenshot-marketing.png)
 
