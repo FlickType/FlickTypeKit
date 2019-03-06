@@ -42,15 +42,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sF07zhhbPsi1DwFd2h17X2uZ5EY=
+		RmyMKcb2KN0AfEL2spuemxcs2PI=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		cYlzjimx7T84tJUKmXHO7HE6oag=
+		54I7HFLSeZ772DrL5daraM8qc4w=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		nK+pgdEa1ct7MQLSCH2wT2UA12w=
+		O6GnbwXch2fXnboksRHtWgW2Blc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -183,22 +183,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cYlzjimx7T84tJUKmXHO7HE6oag=
+			54I7HFLSeZ772DrL5daraM8qc4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			mSlvjot89auWD/Q3N4PIXqk96zGKLxsuPo0dxL1E+0A=
+			m+InivGkV5cuEHFM3pcd2ZlByxalM09uvDL5jNk2nos=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nK+pgdEa1ct7MQLSCH2wT2UA12w=
+			O6GnbwXch2fXnboksRHtWgW2Blc=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGbSIXr+SHiIYTBeGGKFIaS4Hxo1cPuUAIFTgAmAQ8U=
+			lD1l54x+KL109pYf2PFGRmldWUksLw9cyzZpKxggJfE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
