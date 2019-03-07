@@ -8,7 +8,7 @@ You may not decompile, reverse engineer, or otherwise access or attempt to acces
 
 # Attribution
 
-If your App includes the SDK, your Apple Watch marketing material on the App Store **must** include the following screenshot:
+If your App includes the SDK, your Apple Watch marketing material on the App Store **must** include the following unaltered screenshot:
 
 ![FlickType screenshot](screenshot-marketing.png)
 
