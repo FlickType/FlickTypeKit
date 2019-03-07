@@ -8,9 +8,7 @@
 
 ![FlickTypeKit screenshots](screenshot-header.png)
 
-Join the developer discussion on [Discord](https://discord.gg/MFyvmhe). Terms & conditions of our free SDK in the [license](LICENSE.md).
-
-## Integration ⚙️
+## Integration
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project root folder.
 
 _**Note**: Do not drag it into Xcode._
@@ -55,7 +53,11 @@ The optional `startingText` argument can be used to support editing of existing 
 ### Running on device
 Once you get things working in the Simulator, email us at [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target, so we can whitelist it for use on real devices.
 
-See the included sample app, and let us know if you have any questions or issues!
+### Help & support
+See the included sample app, and [email](mailto:sdk@flicktype.com) us or join us on [Discord](https://discord.gg/MFyvmhe).
+
+### Terms & conditions
+See our [license page](LICENSE.md).
 
 ## Coming soon
 - Improved number & symbol entry
