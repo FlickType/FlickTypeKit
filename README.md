@@ -53,7 +53,7 @@ _**Note**: `FlickTypeKit.framework` is initially an empty placeholder, and Xcode
 The optional `startingText` argument can be used to support editing of existing text. Editing is currently only supported with FlickType; the value of `startingText` is ignored when using one of the standard input methods.
 
 ### Running on device
-Once you get things working in the Simulator, email us at [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to whitelist it for use on real devices.
+Once you get things working in the Simulator, email us at [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target, so we can whitelist it for use on real devices.
 
 See the included sample app, and let us know if you have any questions or issues!
 
