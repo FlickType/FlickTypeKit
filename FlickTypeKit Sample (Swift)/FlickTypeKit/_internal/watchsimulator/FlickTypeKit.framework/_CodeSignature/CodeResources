@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/FlickTypeKit-Swift.h</key>
 		<data>
-		4bTCHxrIMqIJzxxTw+zu5TS8gG4=
+		wBTgWAeUi6srmoiR6720b441GAc=
 		</data>
 		<key>Headers/FlickTypeKit.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RmyMKcb2KN0AfEL2spuemxcs2PI=
+		0jPzyhhSocpbjXj4YD3UEHK4z78=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		O6GnbwXch2fXnboksRHtWgW2Blc=
+		RZa5cT5rgc7pJZvJdxTFUgcEvSc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4bTCHxrIMqIJzxxTw+zu5TS8gG4=
+			wBTgWAeUi6srmoiR6720b441GAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			vWMjLMNYZC90ZeYYbpPipZ0YjcP8x8fOzJ4huV33xNI=
+			rvMcq4FLp2n6ijcWVEDA8JJ02ltBrIU1FjJdR0EFy+c=
 			</data>
 		</dict>
 		<key>Headers/FlickTypeKit.h</key>
@@ -194,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6GnbwXch2fXnboksRHtWgW2Blc=
+			RZa5cT5rgc7pJZvJdxTFUgcEvSc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lD1l54x+KL109pYf2PFGRmldWUksLw9cyzZpKxggJfE=
+			xtaBfOLWLJuZU9m9U/5cEdwqH8ptzY+3IzKGHEes/ns=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

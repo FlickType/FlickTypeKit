@@ -435,10 +435,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSUserDefaul
 
 
 
+
+
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
 - (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, id> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 - (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, id> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
+
+
 
 
 
