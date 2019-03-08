@@ -54,7 +54,7 @@ The optional `startingText` argument can be used to support editing of existing 
 Once you get things working in the Simulator, email us at [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target, so we can whitelist it for use on real devices.
 
 ### Help & support
-See the included sample app, and [email](mailto:sdk@flicktype.com) us or join us on [Discord](https://discord.gg/MFyvmhe).
+See the included sample app, [email](mailto:sdk@flicktype.com) us, or join us on [Discord](https://discord.gg/MFyvmhe).
 
 ### Terms & conditions
 See our [license page](LICENSE.md).
