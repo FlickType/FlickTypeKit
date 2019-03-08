@@ -10,6 +10,10 @@ You may not decompile, reverse engineer, or otherwise access or attempt to acces
 
 If your App includes the SDK, your Apple Watch marketing material on the App Store **must** include the following unaltered screenshot:
 
-![FlickType screenshot](screenshot-marketing.png)
+### Series 4 size
+![FlickType screenshot on Series 4](screenshot-marketing-S4.png)
+
+### Series 3 size
+![FlickType screenshot on Series 3](screenshot-marketing-S3.png)
 
 Terms subject to change.
