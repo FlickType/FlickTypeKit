@@ -14,7 +14,7 @@
 _**Note**: Do not drag it into Xcode._
 ### In your watch extension target: 
   - Under **General** > **Embedded Binaries**: click the **+** button, then `Add Other...` and add `FlickTypeKit.framework`.
-  - Under **Build Phases**, add a "New Run Script Phase" and place it before the "Compile Sources" phase. Set the contents of the script to the following, to automatically switch between the `watchos` and `watchsimulator` variants of the framework as needed:
+  - Under **Build Phases**, add a "New Run Script Phase" and place it _before_ the "Compile Sources" phase. Set the contents of the script to the following, to automatically switch between the `watchos` and `watchsimulator` variants of the framework as needed:
 ```
 set -eu
 "${PROJECT_DIR}/FlickTypeKit/_internal/select-framework.sh" "${PLATFORM_NAME}"
