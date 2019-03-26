@@ -12,6 +12,10 @@
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project root folder.
 
 _**Note**: Do not drag it into Xcode._
+
+_**Note**: For Xcode 10.1 / Swift 4.x use the `swift-4.2.1` branch._
+
+
 ### In your watch extension target: 
   - Under **General** > **Embedded Binaries**: click the **+** button, then `Add Other...` and add `FlickTypeKit.framework`.
   - Under **Build Phases**, add a "New Run Script Phase" and place it _before_ the "Compile Sources" phase. Set the contents of the script to the following, to automatically switch between the `watchos` and `watchsimulator` variants of the framework as needed:
