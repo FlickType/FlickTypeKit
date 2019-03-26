@@ -246,12 +246,14 @@
 				TargetAttributes = {
 					0ADD2FEB21DAC5AA00EDD5C3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					0ADD2FFD21DAC5AC00EDD5C3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					0ADD300C21DAC5AD00EDD5C3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
