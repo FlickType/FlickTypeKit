@@ -31,12 +31,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
 
 #if TARGET_OS_WATCH
 
 @interface WatchOSAccessibilityNotificationHelper : NSObject
-+ (void) post:(UIAccessibilityNotifications) notification argument:(id) argument;
++ (void) post:(UIAccessibilityNotifications) notification argument:(_Nullable id) argument;
 @end
 
 @interface WatchOSObjCHelper : NSObject
@@ -47,5 +46,7 @@ NS_ASSUME_NONNULL_END
 @end
 
 #endif
+
+NS_ASSUME_NONNULL_END
 
 #endif /* ObjcUtilities_h */
