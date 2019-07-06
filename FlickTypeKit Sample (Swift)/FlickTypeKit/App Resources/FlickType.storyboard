@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
     <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
         <!--Gatekeeper-->
@@ -73,15 +73,36 @@ some work</string>
                                         <label width="1" height="1" alignment="center" isAccessibilityElement="NO" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="9Da-tT-I6o">
                                             <fontDescription key="font" type="system" pointSize="30"/>
                                         </label>
-                                        <group width="1" height="3" alignment="left" verticalAlignment="bottom" layout="vertical" id="5Vz-6e-A4s" userLabel="Padding"/>
                                     </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="3" bottom="0.0"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
                                 <group width="1" alignment="center" layout="vertical" radius="0.0" spacing="0.0" id="DFM-qu-kPM" userLabel="Keyboard">
                                     <items>
-                                        <separator alignment="center" alpha="0.69999999999999996" id="w97-3n-3Id"/>
                                         <imageView width="1" alignment="center" image="keyboard" contentMode="scaleAspectFit" id="zsJ-Ho-v9X"/>
+                                        <group width="1" alignment="center" id="9kh-Ot-GUm">
+                                            <items>
+                                                <button width="0.29999999999999999" alignment="left" verticalAlignment="center" title="123" id="OOG-Pz-ita">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="systemInput" destination="AgC-eL-Hgc" id="V0q-aI-FEr"/>
+                                                    </connections>
+                                                </button>
+                                                <group width="1" alignment="center" verticalAlignment="center" radius="6" id="b0s-WF-Hct">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </group>
+                                                <button width="0.29999999999999999" alignment="right" verticalAlignment="center" title="⌫" id="4Tp-hy-MA4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <connections>
+                                                        <action selector="handleDeleteTap" destination="AgC-eL-Hgc" id="Ey5-3d-w25"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        </group>
                                     </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
                             </items>
                             <gestureRecognizers>
@@ -110,11 +131,6 @@ some work</string>
                                         <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="tAI-tB-F7Z"/>
                                     </connections>
                                 </swipeGestureRecognizer>
-                                <longPressGestureRecognizer enabled="NO" allowableMovement="0.0" minimumPressDuration="0.25" id="Aa5-YX-ShD">
-                                    <connections>
-                                        <action selector="handleLongPress:" destination="AgC-eL-Hgc" id="yk1-B7-afF"/>
-                                    </connections>
-                                </longPressGestureRecognizer>
                             </gestureRecognizers>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
@@ -122,14 +138,15 @@ some work</string>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="announcementLabel" destination="9Da-tT-I6o" id="Rdr-LW-Dxq"/>
+                        <outlet property="announcementView" destination="i8J-jb-rsB" id="Ya6-oE-krp"/>
+                        <outlet property="bottomRow" destination="9kh-Ot-GUm" id="c5i-8Q-2xr"/>
                         <outlet property="downSwipeRecognizer" destination="sBc-2I-SNj" id="JDU-hg-xBX"/>
                         <outlet property="keyboardImage" destination="zsJ-Ho-v9X" id="mOc-11-bc8"/>
-                        <outlet property="keyboardTopBorder" destination="w97-3n-3Id" id="HLR-bh-K5i"/>
                         <outlet property="keyboardView" destination="DFM-qu-kPM" id="8Dv-ME-RVD"/>
                         <outlet property="leftSwipeRecognizer" destination="wnW-oc-uyn" id="v45-xM-bHo"/>
-                        <outlet property="longPressRecognizer" destination="Aa5-YX-ShD" id="4te-zu-1e9"/>
                         <outlet property="mainView" destination="8eU-U7-C71" id="MZv-Yh-tpw"/>
                         <outlet property="rightSwipeRecognizer" destination="AxI-QK-UFg" id="rja-bI-koy"/>
+                        <outlet property="spacebar" destination="b0s-WF-Hct" id="qpI-aU-vZA"/>
                         <outlet property="tapRecognizer" destination="wPw-OH-NU5" id="0HG-aZ-Nw2"/>
                         <outlet property="upSwipeRecognizer" destination="kWH-6N-UMH" id="t4C-8u-oPi"/>
                     </connections>

@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/FlickTypeKit-Swift.h</key>
 		<data>
-		WmgPK0iQB8cSm78hCSQ/EhPbkV8=
+		JpCF/p+eJVFtUw8N1navrmqpXzI=
 		</data>
 		<key>Headers/FlickTypeKit.h</key>
 		<data>
@@ -42,15 +42,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		viwKv1zRx8fEAivkEPln2ubb8tA=
+		33aihTGScOGlBSHxjSkTzpFSXNg=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
-		EZIBHzhIOpbyBmhXXVQ8p7axkd0=
+		WmRjQHKWhjmu00Fc9fiZhcBWEec=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		4iGU/9vqKsq2i79EvdbmCOiNBX4=
+		rkhU+lOipYlcSvHbEnnr+7n9sLI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		</dict>
 		<key>blacklist-words.txt</key>
 		<data>
-		JUDRyJQs/UK4YfVKA2EiA77HxSg=
+		SFUn4CdvYKHQuYvtxcX/RbY2tBs=
 		</data>
 		<key>preloaded-words.txt</key>
 		<data>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WmgPK0iQB8cSm78hCSQ/EhPbkV8=
+			JpCF/p+eJVFtUw8N1navrmqpXzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			uAHbW4nB9ilA0m53Bnn56G0b5bzT90XCIN6MJvMwxx4=
+			NRJfc5DWg3ccEgDDbKHGj4oB0pDkbjduAGQ0fDcU7qA=
 			</data>
 		</dict>
 		<key>Headers/FlickTypeKit.h</key>
@@ -183,22 +183,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EZIBHzhIOpbyBmhXXVQ8p7axkd0=
+			WmRjQHKWhjmu00Fc9fiZhcBWEec=
 			</data>
 			<key>hash2</key>
 			<data>
-			3DxwdFHCB+IU7e79ArJL2NKW0YE+VubP9eOewt1Sl90=
+			eozr6b4w53cUiC+mW6l5V3nJLLjgdOrNBi0NOlF2pWs=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4iGU/9vqKsq2i79EvdbmCOiNBX4=
+			rkhU+lOipYlcSvHbEnnr+7n9sLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YK4iLEPtXGJQZgNenZE/rmj/N/F8xMyEQGDoKZV5zGo=
+			ixKyyYQQpS3ZqtxZpII3foV1V4frpBU2sLHwGB3MI88=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -240,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JUDRyJQs/UK4YfVKA2EiA77HxSg=
+			SFUn4CdvYKHQuYvtxcX/RbY2tBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			pJQMRmbgGdYBqxSAJ8deH0z5nzwZ9PQIpyzTM+vds40=
+			cqZrQzMPSErCNbBIPk1YTpBPORXLUZR3nAgiwsYG11k=
 			</data>
 		</dict>
 		<key>preloaded-words.txt</key>
