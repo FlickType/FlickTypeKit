@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		33aihTGScOGlBSHxjSkTzpFSXNg=
+		8Ry3TDfThRSkwIuaSyRDGmcEPgs=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		rkhU+lOipYlcSvHbEnnr+7n9sLI=
+		PDUbqiyr5g3hAYPhmUUuilFFjHA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		</dict>
 		<key>blacklist-words.txt</key>
 		<data>
-		SFUn4CdvYKHQuYvtxcX/RbY2tBs=
+		5y0L7PmIVMfFr8Dn6xL8NYiIuqM=
 		</data>
 		<key>preloaded-words.txt</key>
 		<data>
@@ -194,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rkhU+lOipYlcSvHbEnnr+7n9sLI=
+			PDUbqiyr5g3hAYPhmUUuilFFjHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ixKyyYQQpS3ZqtxZpII3foV1V4frpBU2sLHwGB3MI88=
+			zskXAq4PNaN6ok8P/JP6cYyf5lHHykA9Zf+vX/1CmFk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -240,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SFUn4CdvYKHQuYvtxcX/RbY2tBs=
+			5y0L7PmIVMfFr8Dn6xL8NYiIuqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			cqZrQzMPSErCNbBIPk1YTpBPORXLUZR3nAgiwsYG11k=
+			wWFrZobzzY068dxf9SLgH5sGU9iFzrWz0u6qX0o9POU=
 			</data>
 		</dict>
 		<key>preloaded-words.txt</key>
