@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8Ry3TDfThRSkwIuaSyRDGmcEPgs=
+		qqGW9gPaxhi/TbstJV9lT6bTgOQ=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		PDUbqiyr5g3hAYPhmUUuilFFjHA=
+		0AH+1dT876G9yQp85HhrASosL5g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -194,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PDUbqiyr5g3hAYPhmUUuilFFjHA=
+			0AH+1dT876G9yQp85HhrASosL5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			zskXAq4PNaN6ok8P/JP6cYyf5lHHykA9Zf+vX/1CmFk=
+			RmIOGzfG6kZLTpSPeKHq8DZUMrhDFKnNxlotSjpscSU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
