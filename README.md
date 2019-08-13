@@ -6,12 +6,16 @@
 
 ["Makes Typing a Breeze"](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 
+Try out the latest version of the keyboard in the [FlickType Notes](https://testflight.apple.com/join/4DvMpMl2) app.
+
 ![FlickTypeKit screenshots](screenshot-header.png)
 
 ## Integration
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project root folder.
 
 _**Note**: Do not drag it into Xcode._
+
+_**Note**: For Xcode 11, use the `swift-5.1` branch._
 
 ### In your watch extension target: 
   - Under **General** > **Embedded Binaries**: click the **+** button, then `Add Other...` and add `FlickTypeKit.framework`.
