@@ -11,19 +11,11 @@ Try out the latest version of the keyboard in the [FlickType Notes](https://test
 ![FlickTypeKit screenshots](screenshot-header.png)
 
 ## Integration
-- Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project root folder.
-
-_**Note**: Do not drag it into Xcode._
-
-_**Note**: For Xcode 11, use the `swift-5.1` branch._
+- Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project folder.
 
 ### In your watch extension target: 
-  - Under **General** > **Embedded Binaries**: click the **+** button, then `Add Other...` and add `FlickTypeKit.framework`.
-  - Under **Build Phases**, add a "New Run Script Phase" and place it _before_ the "Compile Sources" phase. Set the contents of the script to the following, to automatically switch between the `watchos` and `watchsimulator` variants of the framework as needed:
-```
-set -eu
-"${PROJECT_DIR}/FlickTypeKit/_internal/select-framework.sh" "${PLATFORM_NAME}"
-```
+- Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
+
 ### In you watch app target:
   - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` and `App Resources/keyboard.png` files.
   - Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
@@ -44,8 +36,6 @@ presentTextInputController(withSuggestions: nil, allowedInputMode: .allowEmoji, 
   }
 }
 ```
-
-_**Note**: `FlickTypeKit.framework` is initially an empty placeholder, and Xcode might highlight the `import FlickTypeKit` line with an error; simply building your project will populate the framework and fix this._
 
 ### Configuration
  - `FlickType.Mode.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
