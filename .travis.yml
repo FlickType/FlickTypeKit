@@ -7,5 +7,5 @@ script:
     xcodebuild \
     -project "FlickTypeKit Sample (Swift)/FlickTypeKit Sample.xcodeproj" \
     -scheme "FlickTypeKit Sample App" \
-    -destination platform="iOS Simulator",name="iPhone X" \
+    -destination platform="iOS Simulator",name="iPhone 11" \
     build | xcpretty
