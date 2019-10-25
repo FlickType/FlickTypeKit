@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A5DA21321DADAB500C33791 /* FlickTypeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */; };
-		0A5DA21421DADAB500C33791 /* FlickTypeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A5DA21821DADAE600C33791 /* FlickType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21621DADAE600C33791 /* FlickType.storyboard */; };
 		0A5DA21921DADAE600C33791 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21721DADAE600C33791 /* keyboard.png */; };
+		0ABA403223639DB9008F200F /* FlickTypeKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */; };
+		0ABA403323639DB9008F200F /* FlickTypeKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0ADD2FF021DAC5AA00EDD5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */; };
 		0ADD2FF221DAC5AA00EDD5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF121DAC5AA00EDD5C3 /* ViewController.swift */; };
 		0ADD2FF521DAC5AA00EDD5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD2FF321DAC5AA00EDD5C3 /* Main.storyboard */; };
@@ -49,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A5DA21421DADAB500C33791 /* FlickTypeKit.framework in Embed Frameworks */,
+				0ABA403323639DB9008F200F /* FlickTypeKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,9 +79,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlickTypeKit.framework; path = FlickTypeKit/FlickTypeKit.framework; sourceTree = "<group>"; };
 		0A5DA21621DADAE600C33791 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
 		0A5DA21721DADAE600C33791 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = "FlickTypeKit/App Resources/keyboard.png"; sourceTree = "<group>"; };
+		0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
 		0ADD2FEC21DAC5AA00EDD5C3 /* FlickTypeKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADD2FF121DAC5AA00EDD5C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,23 +112,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5DA21321DADAB500C33791 /* FlickTypeKit.framework in Frameworks */,
+				0ABA403223639DB9008F200F /* FlickTypeKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ABA403023639DB9008F200F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0ADD2FE321DAC5AA00EDD5C3 = {
 			isa = PBXGroup;
 			children = (
 				0A5DA21621DADAE600C33791 /* FlickType.storyboard */,
 				0A5DA21721DADAE600C33791 /* keyboard.png */,
-				0A5DA21221DADAB500C33791 /* FlickTypeKit.framework */,
 				0ADD2FEE21DAC5AA00EDD5C3 /* FlickTypeKit Sample */,
 				0ADD300221DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */,
 				0ADD301121DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */,
 				0ADD2FED21DAC5AA00EDD5C3 /* Products */,
+				0ABA403023639DB9008F200F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,7 +227,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ADD301B21DAC5AE00EDD5C3 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit Extension" */;
 			buildPhases = (
-				0A5DA21A21DADDCF00C33791 /* Run Script (FlickType) */,
 				0ADD300921DAC5AD00EDD5C3 /* Sources */,
 				0ADD300A21DAC5AD00EDD5C3 /* Frameworks */,
 				0ADD300B21DAC5AD00EDD5C3 /* Resources */,
@@ -308,27 +315,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0A5DA21A21DADDCF00C33791 /* Run Script (FlickType) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script (FlickType)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -eu\n\"${PROJECT_DIR}/FlickTypeKit/_internal/select-framework.sh\" \"${PLATFORM_NAME}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0ADD2FE821DAC5AA00EDD5C3 /* Sources */ = {

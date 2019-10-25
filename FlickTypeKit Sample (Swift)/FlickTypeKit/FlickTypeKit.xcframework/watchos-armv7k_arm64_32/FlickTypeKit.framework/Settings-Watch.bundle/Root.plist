@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationGroupContainerIdentifier</key>
+	<string>group.kpaw.FlickType.sharedContainer</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Emoji shortcuts</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>FooterText</key>
+			<string>After you flick right and insert a period, flick up to change it to an emoji. You can customize the above emoji with the iOS emoji keyboard.</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Key</key>
+			<string>FlickType_EMOJI_SHORTCUTS</string>
+			<key>DefaultValue</key>
+			<string>☺️😀😂👍🤔☹️</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Feedback</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>FlickType_VOICE_FEEDBACK</string>
+			<key>Title</key>
+			<string>Voice Feedback</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>FlickType_LIVE_SUGGESTIONS</string>
+			<key>Title</key>
+			<string>Live suggestions</string>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

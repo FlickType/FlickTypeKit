@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
-    <device id="watch44" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+    <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
     </dependencies>
     <scenes>
         <!--Gatekeeper-->
@@ -186,5 +184,46 @@ some work</string>
             </objects>
             <point key="canvasLocation" x="-112" y="502"/>
         </scene>
+        <!--FlickType2-->
+        <scene sceneID="PPA-ma-Y53">
+            <objects>
+                <controller identifier="FlickType2" fullBounds="YES" id="vBs-K4-eVG" customClass="FlickTypeController2" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" radius="0.0" spacing="0.0" id="3la-r8-o9p">
+                            <items>
+                                <spriteKitScene width="1" height="1" alignment="left" id="Ioh-2u-rbm" customClass="FlickTypeScene" customModule="FlickTypeKit">
+                                    <gestureRecognizers>
+                                        <panGestureRecognizer id="IpH-5L-rig">
+                                            <connections>
+                                                <action selector="handlePan:" destination="vBs-K4-eVG" id="o88-IQ-bOZ"/>
+                                            </connections>
+                                        </panGestureRecognizer>
+                                        <longPressGestureRecognizer allowableMovement="999" minimumPressDuration="0.0" id="pSV-t1-oqI">
+                                            <connections>
+                                                <action selector="handleLongPress:" destination="vBs-K4-eVG" id="U3a-Jx-qmh"/>
+                                            </connections>
+                                        </longPressGestureRecognizer>
+                                    </gestureRecognizers>
+                                    <variation key="default">
+                                        <mask key="gestureRecognizers">
+                                            <exclude reference="IpH-5L-rig"/>
+                                        </mask>
+                                    </variation>
+                                </spriteKitScene>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="scene" destination="Ioh-2u-rbm" id="OFi-gl-xaa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="41" y="1235"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="keyboard" width="45" height="45"/>
+    </resources>
 </document>
