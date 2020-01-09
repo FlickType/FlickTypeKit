@@ -10,11 +10,13 @@ Try out the latest version of the keyboard in the [FlickType Notes](https://test
 
 ![FlickTypeKit screenshots](screenshot-header.png)
 
-## Integration -- Xcode 11.3
+## Integration
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project folder.
 
+### In your watch extension target: 
+- Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
+
 ### In you watch app target:
-  - Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
   - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` and `App Resources/keyboard.png` files.
   - Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
 
