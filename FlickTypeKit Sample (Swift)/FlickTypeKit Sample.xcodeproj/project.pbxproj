@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A5DA21821DADAE600C33791 /* FlickType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21621DADAE600C33791 /* FlickType.storyboard */; };
-		0A5DA21921DADAE600C33791 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DA21721DADAE600C33791 /* keyboard.png */; };
 		0ABA403223639DB9008F200F /* FlickTypeKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */; };
 		0ABA403323639DB9008F200F /* FlickTypeKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0ADD2FF021DAC5AA00EDD5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */; };
@@ -80,7 +79,6 @@
 
 /* Begin PBXFileReference section */
 		0A5DA21621DADAE600C33791 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
-		0A5DA21721DADAE600C33791 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboard.png; path = "FlickTypeKit/App Resources/keyboard.png"; sourceTree = "<group>"; };
 		0ABA403123639DB9008F200F /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
 		0ADD2FEC21DAC5AA00EDD5C3 /* FlickTypeKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADD2FEF21DAC5AA00EDD5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				0A5DA21621DADAE600C33791 /* FlickType.storyboard */,
-				0A5DA21721DADAE600C33791 /* keyboard.png */,
 				0ADD2FEE21DAC5AA00EDD5C3 /* FlickTypeKit Sample */,
 				0ADD300221DAC5AC00EDD5C3 /* FlickTypeKit Sample WatchKit App */,
 				0ADD301121DAC5AD00EDD5C3 /* FlickTypeKit Sample WatchKit Extension */,
@@ -302,7 +299,6 @@
 				0ADD300721DAC5AD00EDD5C3 /* Assets.xcassets in Resources */,
 				0ADD300521DAC5AC00EDD5C3 /* Interface.storyboard in Resources */,
 				0A5DA21821DADAE600C33791 /* FlickType.storyboard in Resources */,
-				0A5DA21921DADAE600C33791 /* keyboard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
