@@ -17,7 +17,7 @@ Try out the latest version of the keyboard in the [FlickType Notes](https://test
 - Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
 
 ### In you watch app target:
-  - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` and `App Resources/keyboard.png` files.
+  - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` file.
   - Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
 
 That's it!
