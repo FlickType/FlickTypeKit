@@ -6,8 +6,6 @@
 
 ["Makes Typing a Breeze"](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 
-Try out the latest version of the keyboard in the [FlickType Notes](https://testflight.apple.com/join/4DvMpMl2) app.
-
 ![FlickTypeKit screenshots](screenshot-header.png)
 
 ## Integration
