@@ -10,9 +10,9 @@
 #define BigramContextProvider_h
 
 #import <Foundation/Foundation.h>
+#import "./GeometryCommon.h"
 
 typedef u_int16_t WordID;
-typedef Float32   Probability;
 
 @interface BigramContextProvider : NSObject {
   void* internalProvider;
@@ -23,7 +23,7 @@ typedef Float32   Probability;
 // Data argument expected to be NSData*. Using `id` to ensure we avoid any unnecessary NSData<>Data Swift conversion work (TODO: profile to see if this is actually true)
 - (instancetype) initWithData: (id) data NS_DESIGNATED_INITIALIZER;
 - (instancetype) initWithFile: (NSURL*) fileURL;
-- (long) dataForPrecedingTokenID: (WordID) tokenID results: (Probability*) results maxWordID: (WordID) maxWordID;
+- (long) dataForPrecedingTokenID: (WordID) tokenID results: (FLFloat*) results maxWordID: (WordID) maxWordID;
 
 @end
 

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target i386-apple-watchos4.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=unchecked -O -module-name FlickTypeKit
 import AVFoundation
 import CoreGraphics.CGBase
@@ -15,10 +15,11 @@ import WatchKit
 import os.log
 import os
 extension Statistics {
-  public static func normalDistribution(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.ShapeScore
-  public static func normalDensity(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.ShapeScore
+  public static func normalDistribution(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.FLFloat
+  public static func normalDensity(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.FLFloat
+  public static func normalDensity(x: FlickTypeKit.FLFloat, μ: FlickTypeKit.FLFloat = 0, σ: FlickTypeKit.FLFloat = 1) -> FlickTypeKit.FLFloat
 }
-public class Statistics {
+@_hasMissingDesignatedInitializers public class Statistics {
   public static func normalDistribution(x: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double
   public static func normalDensity(x: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double
   public static func normalQuantile(p: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double?
@@ -120,9 +121,6 @@ extension Device.BatteryState : Swift.Comparable {
 }
 extension UIAccessibility {
   public static func post(notification: UIKit.UIAccessibility.Notification, argument: Any?)
-  public static var isVoiceOverRunning: Swift.Bool {
-    get
-  }
 }
 public var isVoiceOverEnabled: Swift.Bool {
   get
@@ -152,13 +150,53 @@ extension UIAccessibility {
   @objc dynamic public var themeColor: UIKit.UIColor {
     @objc get
   }
+  @objc dynamic public var hasPerformedStatusBarFlick: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var keyboardType: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var watchPresentationStyle: Swift.Int {
+    @objc get
+  }
+  @objc dynamic public var isAutocorrectEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isCharacterPreviewEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isSwipeEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var areFlicksEnabled: Swift.Bool {
+    @objc get
+  }
   @objc dynamic public var voiceFeedback: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var liveSuggestions: Swift.Bool {
+  @objc dynamic public var favoriteContact1Nickname: Swift.String? {
     @objc get
+    @objc set
+  }
+  @objc dynamic public var favoriteContact1Address: Swift.String? {
+    @objc get
+    @objc set
   }
   @objc dynamic public var launches: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var lastFeedbackPromptTime: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hasChosenToWriteReview: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hasGivenBadFeedback: Swift.Bool {
     @objc get
     @objc set
   }
@@ -221,6 +259,20 @@ extension UIColor {
     get
   }
 }
+extension FLPoint {
+  public static func - (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func + (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func * (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func * (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLFloat) -> FlickTypeKit.FLPoint
+  public static func / (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLFloat) -> FlickTypeKit.FLPoint
+  public static func nextUniformPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> FlickTypeKit.FLPoint
+  public static func nextGaussianPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> FlickTypeKit.FLPoint
+  public init(_ point: CoreGraphics.CGPoint)
+  public init(x: Swift.Double, y: Swift.Double)
+}
+extension FLPoint : Swift.Equatable {
+  public static func == (lhs: FlickTypeKit.FLPoint, rhs: FlickTypeKit.FLPoint) -> Swift.Bool
+}
 public protocol SoundEffectManager {
   static var shared: FlickTypeKit.SoundEffectManager { get }
   func playTap(withPan pan: Swift.Float)
@@ -231,8 +283,21 @@ public protocol SoundEffectManager {
   func playDirectionUp()
   func playDirectionDown()
 }
+extension UnsafeBufferPointer : Swift.Equatable where Element == Swift.UInt8 {
+  public static func == (lhs: Swift.UnsafeBufferPointer<Element>, rhs: Swift.UnsafeBufferPointer<Element>) -> Swift.Bool
+}
+extension UnsafeBufferPointer : Swift.Hashable where Element == Swift.UInt8 {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UnsafeBufferPointer : Swift.CustomStringConvertible where Element == Swift.UInt8 {
+  public var description: Swift.String {
+    get
+  }
+}
 extension RandomNumberGeneratorObjC : Swift.RandomNumberGenerator {
-  public func next() -> Swift.UInt64
 }
 public class LowPassFilter1D {
   public var out: CoreGraphics.CGFloat?
@@ -250,21 +315,10 @@ extension String {
     get
   }
 }
-extension CGPoint {
-  public static func + (left: CoreGraphics.CGPoint, right: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
-  public static func - (left: CoreGraphics.CGPoint, right: CoreGraphics.CGPoint) -> CoreGraphics.CGPoint
-  public static func * (left: CoreGraphics.CGPoint, right: CoreGraphics.CGSize) -> CoreGraphics.CGPoint
-  public static func / (left: CoreGraphics.CGPoint, right: CoreGraphics.CGSize) -> CoreGraphics.CGPoint
-  public static func * (left: CoreGraphics.CGPoint, right: CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
-  public static func / (left: CoreGraphics.CGPoint, right: CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
-  public static func nextUniformPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> CoreGraphics.CGPoint
-  public static func nextGaussianPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> CoreGraphics.CGPoint
-  public var magnitude: CoreGraphics.CGFloat {
-    get
-  }
+extension CGRect {
 }
 public protocol EventTrackerImplementationProtocol {
-  func log(_ message: Swift.String)
+  func logger(_ message: Swift.String)
   func timeEvent(_ eventName: Swift.String)
   func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any])
   func incrementProfileProperty(_ property: Swift.String, by amount: Swift.Int)
@@ -281,35 +335,34 @@ public class EventTracker {
   @objc deinit
 }
 extension NSObject {
-  @objc public static func log(_ text: Swift.String = "", function: Swift.String = #function, object: Swift.AnyObject? = nil)
-  @objc dynamic open func log(_ text: Swift.String = "", function: Swift.String = #function)
+  public static func logger(_ text: Swift.String = "", function: Swift.String = #function, object: Swift.AnyObject? = nil)
+  open func logger(_ text: Swift.String = "", function: Swift.String = #function)
 }
 public class EventTrackerDebugImplementation : FlickTypeKit.EventTrackerImplementationProtocol {
   public init()
-  public func log(_ message: Swift.String)
+  public func logger(_ message: Swift.String)
   public func timeEvent(_ eventName: Swift.String)
   public func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any] = [:])
   public func incrementProfileProperty(_ property: Swift.String, by amount: Swift.Int)
   @objc deinit
 }
+public struct FLSize {
+  public var width: FlickTypeKit.FLFloat
+  public var height: FlickTypeKit.FLFloat
+}
+extension Character : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
 extension WKInterfaceController {
   @objc dynamic public func presentTextInputController(withSuggestions suggestions: [Swift.String]?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Any] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
   @objc dynamic public func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((Swift.String) -> [Any]?)?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Any] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
 }
-@objc public class FlickType : ObjectiveC.NSObject {
+extension FlickType {
   @objc public enum Mode : Swift.Int {
     case ask
     case always
     case off
-    public typealias RawValue = Swift.Int
-    public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  @objc public enum PresentationStyle : Swift.Int {
-    case push
-    case modal
     public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
     public var rawValue: Swift.Int {
@@ -323,20 +376,18 @@ extension WKInterfaceController {
   }
   public static func setLocalResourceFile(_ fileUrl: Foundation.URL) throws
   @objc public static func startDownloadingInBackground()
-  public static func notifyAppDidBecomeActive()
-  @objc deinit
 }
 extension FlickType.Mode : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
-extension WKApplicationState : Swift.CustomStringConvertible {
-  public var description: Swift.String {
+extension Array {
+  public var dismissType: FlickTypeKit.FlickType.DismissType {
     get
   }
 }
-extension WKGestureRecognizerState : Swift.CustomStringConvertible {
+extension WKApplicationState : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
@@ -346,6 +397,39 @@ extension WCSessionActivationState : Swift.CustomStringConvertible {
     get
   }
 }
+extension WKSwipeGestureRecognizerDirection : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension WKGestureRecognizerState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FlickType : ObjectiveC.NSObject {
+  @objc public enum PresentationStyle : Swift.Int {
+    case modal
+    case push
+    case root
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum DismissType : Swift.Int {
+    case statusBar
+    case flick
+    case menu
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
 extension CGSize {
   public static let greatestFiniteSize: CoreGraphics.CGSize
   public func contains(_ size: CoreGraphics.CGSize) -> Swift.Bool
@@ -353,7 +437,12 @@ extension CGSize {
     get
   }
 }
+extension FlickTypeKit.FlickType.Mode : Swift.Equatable {}
 extension FlickTypeKit.FlickType.Mode : Swift.Hashable {}
 extension FlickTypeKit.FlickType.Mode : Swift.RawRepresentable {}
+extension FlickTypeKit.FlickType.PresentationStyle : Swift.Equatable {}
 extension FlickTypeKit.FlickType.PresentationStyle : Swift.Hashable {}
 extension FlickTypeKit.FlickType.PresentationStyle : Swift.RawRepresentable {}
+extension FlickTypeKit.FlickType.DismissType : Swift.Equatable {}
+extension FlickTypeKit.FlickType.DismissType : Swift.Hashable {}
+extension FlickTypeKit.FlickType.DismissType : Swift.RawRepresentable {}

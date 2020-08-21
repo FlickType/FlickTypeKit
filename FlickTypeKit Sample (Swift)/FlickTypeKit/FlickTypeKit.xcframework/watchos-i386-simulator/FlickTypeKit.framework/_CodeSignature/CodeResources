@@ -4,79 +4,11 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BigramContextProvider.h</key>
+		<key>FlickTypeKit-Defaults.bundle/Root.plist</key>
 		<data>
-		K9TUqxAq0ApAaHCudzeVOAWlG6k=
+		X8ttxKgvfppWIOImfBfKM1ZQZ5M=
 		</data>
-		<key>Headers/DCTar.h</key>
-		<data>
-		38nwbcGnULkFL4Tv03yHuAgk7mM=
-		</data>
-		<key>Headers/FlickTypeKit-Swift.h</key>
-		<data>
-		j/hwiAn29sQIGjvR84Dmr6jq97o=
-		</data>
-		<key>Headers/FlickTypeKit.h</key>
-		<data>
-		oi5JTUwE87RgCTijGyz/fmxzrOY=
-		</data>
-		<key>Headers/GeometricHashCommon.h</key>
-		<data>
-		DDPgE6bx9GNqtWbZNljjw2JqD8Y=
-		</data>
-		<key>Headers/GeometricHashReader.h</key>
-		<data>
-		a02CgjiykpqnwseZ40aTCItMQbs=
-		</data>
-		<key>Headers/NSString+Emoji.h</key>
-		<data>
-		CvFzPPk/4KSkqFt8aY200+djnEg=
-		</data>
-		<key>Headers/ObjcUtilities.h</key>
-		<data>
-		WbGLdXk4V986W9I/9PmKdb82q04=
-		</data>
-		<key>Headers/RandomNumberGeneratorObjC.h</key>
-		<data>
-		lou3COMvUxQ4YDjoz+bUFRwNFDA=
-		</data>
-		<key>Info.plist</key>
-		<data>
-		9qh8zBwbMXzziG2TnQAgDAgV0Ws=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
-		<data>
-		nhSlVmnVqrEE4Ut4wZSvhfvxpvc=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
-		<data>
-		LZpH5AAIHGnTtpNl+oW/yO1RUF0=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
-		<data>
-		fFAlVIwusfePLVpXG+AnpUak2gQ=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
-		<data>
-		nhSlVmnVqrEE4Ut4wZSvhfvxpvc=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
-		<data>
-		LZpH5AAIHGnTtpNl+oW/yO1RUF0=
-		</data>
-		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
-		<data>
-		fFAlVIwusfePLVpXG+AnpUak2gQ=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		6wOiw1T2gvuOZNvXdwox4fvvaeU=
-		</data>
-		<key>Settings-Watch.bundle/Root.plist</key>
-		<data>
-		GwvPu3mXSicZM/tlQA2Banl14Aw=
-		</data>
-		<key>Settings-Watch.bundle/en.lproj/Root.strings</key>
+		<key>FlickTypeKit-Defaults.bundle/en.lproj/Root.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -85,13 +17,81 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Headers/BigramContextProvider.h</key>
+		<data>
+		pcqLZSEaxeNvSDfrVaSpM7cTEJ8=
+		</data>
+		<key>Headers/DCTar.h</key>
+		<data>
+		38nwbcGnULkFL4Tv03yHuAgk7mM=
+		</data>
+		<key>Headers/FlickTypeKit-Swift.h</key>
+		<data>
+		IflQnXoqUmxQUZ8NTVkoLG0BlOI=
+		</data>
+		<key>Headers/FlickTypeKit.h</key>
+		<data>
+		hWnJF/StrBFxTxvelFiPWGi2i/8=
+		</data>
+		<key>Headers/GeometricHashReader.h</key>
+		<data>
+		B0Kwbo44Yk43zQUbFHQmJhgC/Nw=
+		</data>
+		<key>Headers/GeometryCommon.h</key>
+		<data>
+		FSFjQ3VELxSedBlc8ktseOAH6RM=
+		</data>
+		<key>Headers/NSString+Emoji.h</key>
+		<data>
+		CvFzPPk/4KSkqFt8aY200+djnEg=
+		</data>
+		<key>Headers/ObjcUtilities.h</key>
+		<data>
+		5dDNnYQ5l3AgHGdz0KdroUD9ODM=
+		</data>
+		<key>Headers/PointProvider.h</key>
+		<data>
+		4XvgrmUPK1paE/2C6xQLslh7RHs=
+		</data>
+		<key>Headers/RandomNumberGeneratorObjC.h</key>
+		<data>
+		WHcYGFt8MeNR5t4HTEDfqi2OfjY=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		Hsii9M1tD6JRRZL4qA5XKkZfO5E=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
+		<data>
+		gFrvfK5rlSffrrzSM1cwDhwTuLA=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
+		<data>
+		RIck4mRV87+Ru6DosVp7LkDlCY8=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
+		<data>
+		3UBQBgFlKeayFTmIJsunYooPhT4=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
+		<data>
+		gFrvfK5rlSffrrzSM1cwDhwTuLA=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
+		<data>
+		RIck4mRV87+Ru6DosVp7LkDlCY8=
+		</data>
+		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
+		<data>
+		3UBQBgFlKeayFTmIJsunYooPhT4=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		6wOiw1T2gvuOZNvXdwox4fvvaeU=
+		</data>
 		<key>blacklist-words.txt</key>
 		<data>
 		5y0L7PmIVMfFr8Dn6xL8NYiIuqM=
-		</data>
-		<key>keyboard.png</key>
-		<data>
-		fKK6ozJi9n4dGl/5UrCT+KcJJGI=
 		</data>
 		<key>preloaded-words.txt</key>
 		<data>
@@ -100,15 +100,39 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FlickTypeKit-Defaults.bundle/Root.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X8ttxKgvfppWIOImfBfKM1ZQZ5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q/Yetjo2po99gtV8OXIEE0Ac4jf1NeWll7brxfP9sdQ=
+			</data>
+		</dict>
+		<key>FlickTypeKit-Defaults.bundle/en.lproj/Root.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t4KY9Gh4uIiOv7VnHtRrKEuPRY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			xUzNd7J7w99oAnMIWGe1dAGArHMuEXwQqxSziDU5vLk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Headers/BigramContextProvider.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K9TUqxAq0ApAaHCudzeVOAWlG6k=
+			pcqLZSEaxeNvSDfrVaSpM7cTEJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fu3KTWsqm4fu76B6TW79dEBc9EUw0umk6pe7/49g9bk=
+			Uv+P9WE7thfZ794w0eecIlZVkmyaBkrDxj+8+wGM4IM=
 			</data>
 		</dict>
 		<key>Headers/DCTar.h</key>
@@ -126,44 +150,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j/hwiAn29sQIGjvR84Dmr6jq97o=
+			IflQnXoqUmxQUZ8NTVkoLG0BlOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			WLeWUUmyIV5bpLw+TdCJ9SZHWSPdF8hjWahM5/K0y2Y=
+			u79N7SCypbcAjl6wflCLuh24wgqDz/pJ9uYa0BzoDV0=
 			</data>
 		</dict>
 		<key>Headers/FlickTypeKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oi5JTUwE87RgCTijGyz/fmxzrOY=
+			hWnJF/StrBFxTxvelFiPWGi2i/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WxKOkatCeoAm6LNVuvRni0DcPlo5pKUEgE82d7iufG8=
-			</data>
-		</dict>
-		<key>Headers/GeometricHashCommon.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DDPgE6bx9GNqtWbZNljjw2JqD8Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			giaT9JzryU2QdWHuykMATB4DClheM7lHMCuVvP3M/mU=
+			ImqAvbWkqyBbao9sn+DqO/iAZJ7xzl8ofUiAgjofZD0=
 			</data>
 		</dict>
 		<key>Headers/GeometricHashReader.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a02CgjiykpqnwseZ40aTCItMQbs=
+			B0Kwbo44Yk43zQUbFHQmJhgC/Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ubTK11tTu+IVZuJx63DSMm0lYmPdVF31fn5DqPg0Wck=
+			NRI0nxgqFS6r/VSx+eVwMdaWAYC7nVFWpvrIoMdrN7I=
+			</data>
+		</dict>
+		<key>Headers/GeometryCommon.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FSFjQ3VELxSedBlc8ktseOAH6RM=
+			</data>
+			<key>hash2</key>
+			<data>
+			wbDieDBpXdZ1ab3LJzLPHAhg/qkPx508jlC6Zy+jhlQ=
 			</data>
 		</dict>
 		<key>Headers/NSString+Emoji.h</key>
@@ -181,88 +205,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WbGLdXk4V986W9I/9PmKdb82q04=
+			5dDNnYQ5l3AgHGdz0KdroUD9ODM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kPakwt5pGkx0RzZygqYxTfxFWfWqrpQMNM3rqLFLK4s=
+			I5LHNmNhVVcPzIOVigkB4EehefZDw+/Mezzu7Spl2Gg=
+			</data>
+		</dict>
+		<key>Headers/PointProvider.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4XvgrmUPK1paE/2C6xQLslh7RHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jo5WJHxvvbP38M18vCG1aRX/mQT7iligJEQKpGoRUeA=
 			</data>
 		</dict>
 		<key>Headers/RandomNumberGeneratorObjC.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lou3COMvUxQ4YDjoz+bUFRwNFDA=
+			WHcYGFt8MeNR5t4HTEDfqi2OfjY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mjW8bjaHakyBf67Mb6RN8TNPf6gyi5azw1jsfKduxqQ=
+			MB5GXduCMwwKMuDf3h8PNK9gbhi/50MxJ+dZsTB4JGs=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nhSlVmnVqrEE4Ut4wZSvhfvxpvc=
+			gFrvfK5rlSffrrzSM1cwDhwTuLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			drarT6hN7CalFi+6/i/WWYKm+snQNXTUvcgU6bMexTo=
+			SqU1oMMbzID5/jZUctJC2Z0ykWwlC59PuW5ItGQgJac=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LZpH5AAIHGnTtpNl+oW/yO1RUF0=
+			RIck4mRV87+Ru6DosVp7LkDlCY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bgw7HH+bKrSbLHnL2wOjy3P653ubow5wXAK6myg9XWo=
+			qg13EJ6RzJ9NKqj7JaIVhFPHNqnx6qrfdudRESfPuao=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fFAlVIwusfePLVpXG+AnpUak2gQ=
+			3UBQBgFlKeayFTmIJsunYooPhT4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gFOZOFn5oP/U4BI7fWY8VTnNkI+CFF7euV0d5XtltSA=
+			BJ5FCkuCkgU7Xobo3hm5dJOm6EByfv0O9KhLoxDiOos=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nhSlVmnVqrEE4Ut4wZSvhfvxpvc=
+			gFrvfK5rlSffrrzSM1cwDhwTuLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			drarT6hN7CalFi+6/i/WWYKm+snQNXTUvcgU6bMexTo=
+			SqU1oMMbzID5/jZUctJC2Z0ykWwlC59PuW5ItGQgJac=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LZpH5AAIHGnTtpNl+oW/yO1RUF0=
+			RIck4mRV87+Ru6DosVp7LkDlCY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bgw7HH+bKrSbLHnL2wOjy3P653ubow5wXAK6myg9XWo=
+			qg13EJ6RzJ9NKqj7JaIVhFPHNqnx6qrfdudRESfPuao=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fFAlVIwusfePLVpXG+AnpUak2gQ=
+			3UBQBgFlKeayFTmIJsunYooPhT4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gFOZOFn5oP/U4BI7fWY8VTnNkI+CFF7euV0d5XtltSA=
+			BJ5FCkuCkgU7Xobo3hm5dJOm6EByfv0O9KhLoxDiOos=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -276,30 +311,6 @@
 			n7ndDWwTYXCJQ4ro3N+AmtO4aCIezX7d5b7HqJbkm5U=
 			</data>
 		</dict>
-		<key>Settings-Watch.bundle/Root.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GwvPu3mXSicZM/tlQA2Banl14Aw=
-			</data>
-			<key>hash2</key>
-			<data>
-			JnQZBk/Sg4U96VyIQUYK2HlWjQCdXeaaC/jpzi8WO68=
-			</data>
-		</dict>
-		<key>Settings-Watch.bundle/en.lproj/Root.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t4KY9Gh4uIiOv7VnHtRrKEuPRY8=
-			</data>
-			<key>hash2</key>
-			<data>
-			xUzNd7J7w99oAnMIWGe1dAGArHMuEXwQqxSziDU5vLk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>blacklist-words.txt</key>
 		<dict>
 			<key>hash</key>
@@ -309,17 +320,6 @@
 			<key>hash2</key>
 			<data>
 			wWFrZobzzY068dxf9SLgH5sGU9iFzrWz0u6qX0o9POU=
-			</data>
-		</dict>
-		<key>keyboard.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fKK6ozJi9n4dGl/5UrCT+KcJJGI=
-			</data>
-			<key>hash2</key>
-			<data>
-			k+V6EmJUig6SbWv22OOoI+wRy9xCOSOxefhHEm1QSL0=
 			</data>
 		</dict>
 		<key>preloaded-words.txt</key>

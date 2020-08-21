@@ -10,11 +10,16 @@
 #define GeometricHashReader_h
 
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CoreGraphics.h>
 
-#import "GeometricHashCommon.h"
+#include "./GeometryCommon.h"
 
 struct GeometricHashReaderPimpl;
+
+struct GeometricReaderInternalData {
+  long kernelsUsed;
+  long cellsUsed;
+  double votesCast;
+};
 
 @interface GeometricHashReader : NSObject {
   ShapeID maxShapeID;
@@ -28,8 +33,8 @@ struct GeometricHashReaderPimpl;
 
 // Querying (incremental)
 - (void) reset;
-- (void) processLastPointFromPoints: (NSArray<NSValue*>*) points estimatedInputNoise: (CGPoint) estimatedInputNoise kernelsUsed: (long*) kernelsUsed cellsUsed: (long*) cellsUsed votesCast: (double*) votesCast;
-- (void) peekUnsortedResultScores: (ShapeScore*) resultScores maxResults: (long) maxResults;
+- (struct GeometricReaderInternalData) processLastPointFromPoints: (NSArray<NSValue*>*) points estimatedInputNoise: (FLPoint) estimatedInputNoise;
+- (void) peekUnsortedResultScores: (FLFloat*) resultScores maxResults: (long) maxResults;
 - (long) pointsAdded;
 
 @property (readonly) ShapeID maxShapeID;

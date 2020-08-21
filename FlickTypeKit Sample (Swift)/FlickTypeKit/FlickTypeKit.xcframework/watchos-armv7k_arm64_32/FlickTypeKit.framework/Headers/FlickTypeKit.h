@@ -22,6 +22,8 @@ FOUNDATION_EXPORT const unsigned char FlickTypeKitVersionString[];
 #import <FlickTypeKit/NSString+Emoji.h>
 
 #import <FlickTypeKit/DCTar.h>
+#import <FlickTypeKit/GeometryCommon.h>
+#import <FlickTypeKit/PointProvider.h>
 #import <FlickTypeKit/GeometricHashReader.h>
 #import <FlickTypeKit/RandomNumberGeneratorObjC.h>
 

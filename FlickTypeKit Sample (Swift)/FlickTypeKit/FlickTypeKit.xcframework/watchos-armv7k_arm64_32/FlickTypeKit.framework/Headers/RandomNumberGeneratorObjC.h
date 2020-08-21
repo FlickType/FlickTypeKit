@@ -10,7 +10,10 @@
 #define RandomNumberGeneratorObjC_h
 
 #import <Foundation/Foundation.h>
-#import <CoreGraphics/CGBase.h>
+#include "./GeometryCommon.h"
+
+// We need this class for the `nextGaussian` function.
+// If GameplayKit was available for watchOS we'd use that instead, but it's not there yet :(
 
 @interface RandomNumberGeneratorObjC : NSObject {
   void* internalGenerator;
@@ -18,8 +21,9 @@
 - (instancetype) init NS_UNAVAILABLE;
 - (instancetype) initWithSeed: (long) seed NS_DESIGNATED_INITIALIZER;
 - (void) seedWith: (long) seed;
-- (CGFloat) nextGaussian;
-- (CGFloat) nextUniform;
+- (FLFloat) nextGaussian;
+- (FLFloat) nextUniform;
+- (UInt64) next;
 @end
 
 

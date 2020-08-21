@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
     <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Gatekeeper-->
@@ -60,138 +60,13 @@ some work</string>
             <point key="canvasLocation" x="42" y="1020"/>
         </scene>
         <!--FlickType-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller identifier="FlickType" fullBounds="YES" id="AgC-eL-Hgc" customClass="FlickTypeController" customModule="FlickTypeKit">
-                    <items>
-                        <group width="1" height="1" alignment="left" isAccessibilityElement="YES" layout="vertical" spacing="0.0" id="8eU-U7-C71">
-                            <items>
-                                <group width="1" alignment="center" layout="vertical" spacing="0.0" id="i8J-jb-rsB" userLabel="Announcement">
-                                    <items>
-                                        <label width="1" height="1" alignment="center" isAccessibilityElement="NO" textAlignment="center" baselineAdjustment="alignCenters" numberOfLines="0" minimumScaleFactor="0.10000000000000001" id="9Da-tT-I6o">
-                                            <fontDescription key="font" type="system" pointSize="30"/>
-                                        </label>
-                                    </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                </group>
-                                <group width="1" alignment="center" layout="vertical" radius="0.0" spacing="0.0" id="DFM-qu-kPM" userLabel="Keyboard">
-                                    <items>
-                                        <imageView width="1" alignment="center" image="keyboard" contentMode="scaleAspectFit" id="zsJ-Ho-v9X"/>
-                                        <group width="1" alignment="center" id="9kh-Ot-GUm">
-                                            <items>
-                                                <button width="0.29999999999999999" alignment="left" verticalAlignment="center" title="123" id="OOG-Pz-ita">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <connections>
-                                                        <action selector="systemInput" destination="AgC-eL-Hgc" id="V0q-aI-FEr"/>
-                                                    </connections>
-                                                </button>
-                                                <group width="1" alignment="center" verticalAlignment="center" radius="6" id="b0s-WF-Hct">
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </group>
-                                                <button width="0.29999999999999999" alignment="right" verticalAlignment="center" title="⌫" id="4Tp-hy-MA4">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <connections>
-                                                        <action selector="handleDeleteTap" destination="AgC-eL-Hgc" id="Ey5-3d-w25"/>
-                                                    </connections>
-                                                </button>
-                                            </items>
-                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                        </group>
-                                    </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                </group>
-                            </items>
-                            <gestureRecognizers>
-                                <tapGestureRecognizer enabled="NO" id="wPw-OH-NU5">
-                                    <connections>
-                                        <action selector="handleTap:" destination="AgC-eL-Hgc" id="gn9-og-rkb"/>
-                                    </connections>
-                                </tapGestureRecognizer>
-                                <swipeGestureRecognizer enabled="NO" id="AxI-QK-UFg">
-                                    <connections>
-                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="Rga-Uf-GmE"/>
-                                    </connections>
-                                </swipeGestureRecognizer>
-                                <swipeGestureRecognizer enabled="NO" direction="2" id="wnW-oc-uyn">
-                                    <connections>
-                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="9GC-io-nck"/>
-                                    </connections>
-                                </swipeGestureRecognizer>
-                                <swipeGestureRecognizer enabled="NO" direction="8" id="sBc-2I-SNj">
-                                    <connections>
-                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="7Ac-LU-eu5"/>
-                                    </connections>
-                                </swipeGestureRecognizer>
-                                <swipeGestureRecognizer enabled="NO" direction="4" id="kWH-6N-UMH">
-                                    <connections>
-                                        <action selector="handleSwipe:" destination="AgC-eL-Hgc" id="tAI-tB-F7Z"/>
-                                    </connections>
-                                </swipeGestureRecognizer>
-                            </gestureRecognizers>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                        </group>
-                    </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                    <connections>
-                        <outlet property="announcementLabel" destination="9Da-tT-I6o" id="Rdr-LW-Dxq"/>
-                        <outlet property="announcementView" destination="i8J-jb-rsB" id="Ya6-oE-krp"/>
-                        <outlet property="bottomRow" destination="9kh-Ot-GUm" id="c5i-8Q-2xr"/>
-                        <outlet property="downSwipeRecognizer" destination="sBc-2I-SNj" id="JDU-hg-xBX"/>
-                        <outlet property="keyboardImage" destination="zsJ-Ho-v9X" id="mOc-11-bc8"/>
-                        <outlet property="keyboardView" destination="DFM-qu-kPM" id="8Dv-ME-RVD"/>
-                        <outlet property="leftSwipeRecognizer" destination="wnW-oc-uyn" id="v45-xM-bHo"/>
-                        <outlet property="mainView" destination="8eU-U7-C71" id="MZv-Yh-tpw"/>
-                        <outlet property="rightSwipeRecognizer" destination="AxI-QK-UFg" id="rja-bI-koy"/>
-                        <outlet property="spacebar" destination="b0s-WF-Hct" id="qpI-aU-vZA"/>
-                        <outlet property="tapRecognizer" destination="wPw-OH-NU5" id="0HG-aZ-Nw2"/>
-                        <outlet property="upSwipeRecognizer" destination="kWH-6N-UMH" id="t4C-8u-oPi"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="215" y="846"/>
-        </scene>
-        <!--Close-->
-        <scene sceneID="OeX-pD-UeD">
-            <objects>
-                <controller identifier="TipController" title="Close" hidesWhenLoading="NO" id="6ib-II-dJV" customClass="TipController" customModule="FlickTypeKit">
-                    <items>
-                        <group width="1" alignment="center" id="0e4-Yh-XW7">
-                            <items>
-                                <group width="1" alignment="left" verticalAlignment="center" radius="6" id="Slk-AT-Zdw">
-                                    <items>
-                                        <label width="1" alignment="left" verticalAlignment="center" textAlignment="left" numberOfLines="0" id="U9V-aY-tUe">
-                                            <string key="text">• Some text goes here
-
-• Some text goes here
-
-• Some text goes here</string>
-                                        </label>
-                                    </items>
-                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </group>
-                            </items>
-                        </group>
-                    </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                    <connections>
-                        <outlet property="group" destination="Slk-AT-Zdw" id="BJz-5t-WyS"/>
-                        <outlet property="label" destination="U9V-aY-tUe" id="1Xg-Ml-Jys"/>
-                        <outlet property="outerGroup" destination="0e4-Yh-XW7" id="LIe-Lg-u4K"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="-112" y="502"/>
-        </scene>
-        <!--FlickType2-->
         <scene sceneID="PPA-ma-Y53">
             <objects>
-                <controller identifier="FlickType2" fullBounds="YES" id="vBs-K4-eVG" customClass="FlickTypeController2" customModule="FlickTypeKit">
+                <controller identifier="FlickType" fullScreen="YES" id="vBs-K4-eVG" customClass="FlickTypeController" customModule="FlickTypeKit">
                     <items>
-                        <group width="1" alignment="center" layout="vertical" radius="0.0" spacing="0.0" id="3la-r8-o9p">
+                        <group width="1" height="1" alignment="center" isAccessibilityElement="YES" accessibilityLabel="FlickType" accessibilityHint="Use the Digital Crown to scroll through suggestions. Flick down to dismiss the keyboard." layout="vertical" radius="0.0" spacing="0.0" id="3la-r8-o9p">
                             <items>
-                                <spriteKitScene width="1" height="1" alignment="left" id="Ioh-2u-rbm" customClass="FlickTypeScene" customModule="FlickTypeKit">
+                                <spriteKitScene width="1" height="1" alignment="left" id="Ioh-2u-rbm">
                                     <gestureRecognizers>
                                         <panGestureRecognizer id="IpH-5L-rig">
                                             <connections>
@@ -216,14 +91,54 @@ some work</string>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
+                        <outlet property="mainView" destination="3la-r8-o9p" id="7m2-i3-c9h"/>
                         <outlet property="scene" destination="Ioh-2u-rbm" id="OFi-gl-xaa"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="41" y="1235"/>
         </scene>
+        <!--TipController-->
+        <scene sceneID="FJl-eW-gB5">
+            <objects>
+                <controller identifier="TipController" hidesWhenLoading="NO" id="lMv-gs-llQ">
+                    <items>
+                        <separator alignment="center" alpha="0.20000000000000001" id="3PE-UZ-rDU"/>
+                        <label width="1" alignment="left" numberOfLines="0" id="DG4-XC-jdX">
+                            <string key="text">
+Typing:
+
+- Double space for “.” 
+- Use the Digital Crown to change “.” or word suggestions 
+- Use ⊕ to Scribble numbers or symbols
+
+- Force touch to review your text
+</string>
+                        </label>
+                        <separator alignment="center" alpha="0.20000000000000001" id="WhD-An-eZI"/>
+                        <label width="1" alignment="left" textAlignment="left" numberOfLines="0" id="YET-0v-dNu">
+                            <string key="text">
+Replying to Messages:
+
+With the complication on your watch face:
+
+1. Flick down to dismiss the incoming notification (without opening Messages)
+
+2. Tap FlickType on your watch face
+
+3. Type your reply and tap "Send" </string>
+                        </label>
+                        <separator alignment="center" alpha="0.20000000000000001" id="TwG-6F-ab3"/>
+                        <label width="1" alignment="left" textAlignment="center" numberOfLines="0" id="g3y-Ys-K2R">
+                            <string key="text">
+Enjoying FlickType? Leave us a review!
+
+Made with ❤️ in 🇺🇸</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="41" y="1461"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="keyboard" width="45" height="45"/>
-    </resources>
 </document>

@@ -10,7 +10,9 @@
 #define ObjcUtilities_h
 
 // For UUID_from hack
-#import <UIKit/UIKit.h>
+#import <Foundation/NSUUID.h>
+// For UIAccessibilityNotifications
+#import <UIKit/UIAccessibilityConstants.h>
 
 @interface NSUUID (NoCrash)
 - (BOOL) isNil;
@@ -23,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 #if TARGET_OS_IOS
 // This is needed because when the UUID is nil (happens when switching fields), calling textDocumentProxy.documentIdentifier from Swift
 // results in a really awesome crash: https://bugs.swift.org/browse/SR-6143
-+ (NSUUID*) UUID_from:(NSObject<UITextDocumentProxy>*) textDocumentProxy;
++ (NSUUID*) UUID_from:(id) textDocumentProxy; // UITextDocumentProxy
 #endif
 
 + (NSArray<NSString*> *) tokenize: (NSString*) string;
@@ -41,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface WatchOSObjCHelper : NSObject
 // [UIView setAnimationsEnabled:]
 + (void) setAnimationsEnabled:(BOOL)enabled;
-+ (void) setBackgroundColor: (UIColor*) color forObject: (id) object;
++ (void) setBackgroundColor: (id) color forObject: (id) object;
 + (id) superviewOf: (id) object;
 @end
 
