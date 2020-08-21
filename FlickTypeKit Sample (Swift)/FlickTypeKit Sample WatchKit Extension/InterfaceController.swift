@@ -96,6 +96,7 @@ class InterfaceController: WKInterfaceController {
       case .always:   settingButton.setBackgroundColor(.alwaysColor)
       case .off:      settingButton.setBackgroundColor(.disabledColor)
       case .ask:      settingButton.setBackgroundColor(.askColor)
+      default: preconditionFailure()
       }
     }
   }
