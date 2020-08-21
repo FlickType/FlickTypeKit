@@ -426,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,7 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,7 +471,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp";
@@ -490,7 +490,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp";
@@ -508,7 +508,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,7 +521,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 465XJUTDZJ;
+				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
