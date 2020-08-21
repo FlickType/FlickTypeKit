@@ -40,8 +40,11 @@ class InterfaceController: WKInterfaceController {
     // Initialize to always ask between FlickType and Standard input modes.
     flickTypeMode = .ask
     
-    // This is useful for testing the initial downloading of FlickType resources.
-    addMenuItem(with: .trash, title: "Delete resource files", action: #selector(deleteResourceFiles))
+    
+    if ProcessInfo().operatingSystemVersion.majorVersion < 7 {
+      // This is useful for testing the initial downloading of FlickType resources.
+      addMenuItem(with: .trash, title: "Delete resource files", action: #selector(deleteResourceFiles))
+    }
   }
   
   // We need a place to initialize `recognizerLabels`, but we can't yet access the fully
