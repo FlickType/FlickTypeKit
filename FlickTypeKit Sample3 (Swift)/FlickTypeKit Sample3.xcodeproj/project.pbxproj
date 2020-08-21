@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		0A83100F24F056CD00115FC8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83100E24F056CD00115FC8 /* InterfaceController.swift */; };
 		0A83101124F056CD00115FC8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */; };
 		0A83101324F056CD00115FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83101224F056CD00115FC8 /* Assets.xcassets */; };
+		0A83102424F0581900115FC8 /* FlickTypeKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */; };
+		0A83102524F0581900115FC8 /* FlickTypeKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0A83102824F0589900115FC8 /* FlickType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A83102724F0589900115FC8 /* FlickType.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A83102624F0581900115FC8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A83102524F0581900115FC8 /* FlickTypeKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +83,8 @@
 		0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0A83101224F056CD00115FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A83101424F056CD00115FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
+		0A83102724F0589900115FC8 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A83102424F0581900115FC8 /* FlickTypeKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +102,11 @@
 		0A830FEF24F056CC00115FC8 = {
 			isa = PBXGroup;
 			children = (
+				0A83102724F0589900115FC8 /* FlickType.storyboard */,
 				0A830FFE24F056CC00115FC8 /* FlickTypeKit Sample3 WatchKit App */,
 				0A83100D24F056CD00115FC8 /* FlickTypeKit Sample3 WatchKit Extension */,
 				0A830FF724F056CC00115FC8 /* Products */,
+				0A83102224F0581900115FC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +139,14 @@
 				0A83101424F056CD00115FC8 /* Info.plist */,
 			);
 			path = "FlickTypeKit Sample3 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A83102224F0581900115FC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +193,7 @@
 				0A83100524F056CD00115FC8 /* Sources */,
 				0A83100624F056CD00115FC8 /* Frameworks */,
 				0A83100724F056CD00115FC8 /* Resources */,
+				0A83102624F0581900115FC8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A83102824F0589900115FC8 /* FlickType.storyboard in Resources */,
 				0A83100324F056CC00115FC8 /* Assets.xcassets in Resources */,
 				0A83100124F056CC00115FC8 /* Interface.storyboard in Resources */,
 			);

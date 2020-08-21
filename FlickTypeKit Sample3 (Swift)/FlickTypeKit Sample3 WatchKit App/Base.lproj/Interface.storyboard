@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--FlickType-->
@@ -19,7 +16,7 @@
         <!--FlickTypeKit Sample-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="FlickTypeKit" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit Sample" customClass="InterfaceController" customModule="FlickTypeKit_Sample_WatchKit_App" customModuleProvider="target">
+                <controller title="FlickTypeKit" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit Sample" customClass="InterfaceController" customModule="FlickTypeKit_Sample3_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" id="akQ-Qf-B2D">
                             <items>
@@ -80,6 +77,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="34" y="31"/>
         </scene>
     </scenes>
 </document>
