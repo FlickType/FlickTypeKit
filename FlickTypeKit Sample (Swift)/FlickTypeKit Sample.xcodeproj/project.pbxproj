@@ -433,7 +433,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -455,7 +455,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -474,7 +474,7 @@
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -493,7 +493,7 @@
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -510,7 +510,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -523,7 +523,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flicktype.FlickTypeKit-Sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
