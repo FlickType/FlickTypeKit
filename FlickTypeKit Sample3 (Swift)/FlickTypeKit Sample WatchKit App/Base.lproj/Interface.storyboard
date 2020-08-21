@@ -16,7 +16,7 @@
         <!--FlickTypeKit Sample-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="FlickTypeKit" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit Sample" customClass="InterfaceController" customModule="FlickTypeKit_Sample3_WatchKit_App" customModuleProvider="target">
+                <controller title="FlickTypeKit" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit Sample" customClass="InterfaceController" customModule="FlickTypeKit_Sample_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" id="akQ-Qf-B2D">
                             <items>
