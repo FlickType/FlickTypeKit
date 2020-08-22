@@ -7,11 +7,13 @@
 //
 
 import WatchKit
+import FlickTypeKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        FlickType.returnURL = URL(string: "https://www.flicktype.com/flicktype")
     }
 
     func applicationDidBecomeActive() {
@@ -23,4 +25,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         // Use this method to pause ongoing tasks, disable timers, etc.
     }
 
+}
+
+extension ExtensionDelegate {
+  
+  func handle(_ userActivity: NSUserActivity) {
+    if FlickType.handle(userActivity) { return }
+    print("Received non-FlickType activity \(userActivity)")
+  }
+  
 }
