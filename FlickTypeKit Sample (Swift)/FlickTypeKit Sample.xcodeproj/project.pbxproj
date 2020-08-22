@@ -85,6 +85,7 @@
 		0A83101424F056CD00115FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
 		0A83102724F0589900115FC8 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
+		0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlickTypeKit Sample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +134,7 @@
 		0A83100D24F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample WatchKit Extension.entitlements */,
 				0A83100E24F056CD00115FC8 /* InterfaceController.swift */,
 				0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */,
 				0A83101224F056CD00115FC8 /* Assets.xcassets */,
@@ -425,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample WatchKit Extension/FlickTypeKit Sample WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
@@ -447,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample WatchKit Extension/FlickTypeKit Sample WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample WatchKit Extension/Info.plist";
