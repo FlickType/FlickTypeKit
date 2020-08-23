@@ -15,7 +15,7 @@
 		0A83101124F056CD00115FC8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */; };
 		0A83101324F056CD00115FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83101224F056CD00115FC8 /* Assets.xcassets */; };
 		0A83102424F0581900115FC8 /* FlickTypeKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */; };
-		0A83102524F0581900115FC8 /* FlickTypeKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0A83102524F0581900115FC8 /* FlickTypeKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A83102824F0589900115FC8 /* FlickType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A83102724F0589900115FC8 /* FlickType.storyboard */; };
 /* End PBXBuildFile section */
 
