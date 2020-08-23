@@ -18,9 +18,41 @@
   - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` file.
   - Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
 
-That's it!
-
 _**Note**: If your app is in Objective-C, make sure [Always Embed Swift Standard Libraries](https://indiestack.com/2017/03/implicit-swift-dependencies/) is set to YES for the watch extension target. You can also watch this [integration tutorial](https://www.youtube.com/watch?v=f7TkCE7gaDc)_
+
+## watchOS 7
+Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the main FlickType app on the user's device, and return back to your app when text input is completed. This ensures that the text input experience is always up-to-date without you having to update your app, and will utilize the user's FlickType settings and custom dictionary across all other apps. To support universal links in your app: 
+
+
+1. Add an associated domain entitlement to your watch extension target:
+![Associated domains screenshot](docs/associated-domains.png)
+
+2. Host a `https://your.app.domain/.well-known/apple-app-site-association` file with the following contents:
+```{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "<Team ID>.your.watchkitextension.identifier" ],
+             "components": [
+               {
+                  "/": "/flicktype/*",
+                  "comment": "Matches any URL whose path starts with /flicktype/"
+               }
+             ]
+           }
+       ]
+   }
+}
+```
+
+3. Add the following inside your `WKExtensionDelegate.applicationDidFinishLaunching()`:
+```
+FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
+```
+4. Add the following inside your `WKExtensionDelegate.handle(_ userActivity: NSUserActivity)`:
+```
+if FlickType.handle(userActivity) { return }
+```
 
 ## Usage
 Simply `import FlickType` and then modify your existing `presentTextInputController()` calls to include the additional `flickTypeMode` argument:
