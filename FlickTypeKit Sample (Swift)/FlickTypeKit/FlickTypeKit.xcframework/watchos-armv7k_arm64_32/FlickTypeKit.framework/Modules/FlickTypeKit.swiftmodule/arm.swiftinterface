@@ -376,6 +376,8 @@ extension FlickType {
   }
   public static func setLocalResourceFile(_ fileUrl: Foundation.URL) throws
   @objc public static func startDownloadingInBackground()
+  public static var returnURL: Foundation.URL!
+  public static func handle(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
 }
 extension FlickType.Mode : Swift.CustomStringConvertible {
   public var description: Swift.String {

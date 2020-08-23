@@ -41,9 +41,6 @@ some work</string>
                                     <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
-                                <label width="1" alignment="left" verticalAlignment="center" text="When using FlickType, press firmly for help &amp; menu." textAlignment="left" numberOfLines="0" id="XB1-5x-8Gw">
-                                    <fontDescription key="font" type="system" pointSize="16"/>
-                                </label>
                             </items>
                         </group>
                     </items>

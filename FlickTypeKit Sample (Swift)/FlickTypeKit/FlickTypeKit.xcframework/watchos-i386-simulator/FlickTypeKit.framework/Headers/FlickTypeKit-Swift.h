@@ -226,6 +226,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit18BasePathRecognizer")
 
 
 
+
+
 @interface NSBundle (SWIFT_EXTENSION(FlickTypeKit))
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isExtension;)
 + (BOOL)isExtension SWIFT_WARN_UNUSED_RESULT;
@@ -399,6 +401,7 @@ SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
 - (void)didAppear;
 - (void)willDisappear;
 - (void)didDeactivate;
+- (void)cancel;
 - (void)togglePopups;
 - (void)toggleInvisible;
 - (IBAction)handleLongPress:(WKLongPressGestureRecognizer * _Nonnull)sender;
