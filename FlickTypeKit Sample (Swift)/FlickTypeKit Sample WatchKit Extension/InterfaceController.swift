@@ -38,7 +38,7 @@ class InterfaceController: WKInterfaceController {
       label.setText("", storeIn: labelTexts)
     }
     // Initialize to always ask between FlickType and Standard input modes.
-    flickTypeMode = .ask
+    flickTypeMode = .always
     
     
     if ProcessInfo().operatingSystemVersion.majorVersion < 7 {
