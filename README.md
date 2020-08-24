@@ -6,7 +6,8 @@
 
 ["Makes Typing a Breeze"](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 
-![FlickTypeKit screenshots](screenshot-header.png)
+![FlickTypeKit screenshot](docs/screenshot-1.png)
+![FlickTypeKit screenshot](docs/screenshot-2.png)
 
 ## Integration
 - Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project folder.
