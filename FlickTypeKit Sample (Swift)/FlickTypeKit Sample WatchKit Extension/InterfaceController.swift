@@ -37,14 +37,8 @@ class InterfaceController: WKInterfaceController {
     [label1, label2, label3].forEach { label in
       label.setText("", storeIn: labelTexts)
     }
-    // Initialize to always ask between FlickType and Standard input modes.
-    flickTypeMode = .always
-    
-    
-    if ProcessInfo().operatingSystemVersion.majorVersion < 7 {
-      // This is useful for testing the initial downloading of FlickType resources.
-      addMenuItem(with: .trash, title: "Delete resource files", action: #selector(deleteResourceFiles))
-    }
+    // Include FlickType among the standard input modes.
+    flickTypeMode = .ask
   }
   
   // We need a place to initialize `recognizerLabels`, but we can't yet access the fully
@@ -88,19 +82,17 @@ class InterfaceController: WKInterfaceController {
   //////////////////////////////////////
   
   @IBAction func settingButtonTapped() {
-    flickTypeMode = FlickType.Mode(rawValue: (flickTypeMode.rawValue + 1) % 3)!
+    switch flickTypeMode {
+      case .always: flickTypeMode = .off
+      case .off:    flickTypeMode = .ask
+      case .ask:    flickTypeMode = .always
+      default:      flickTypeMode = .ask
+    }
   }
   
   var flickTypeMode: FlickType.Mode! {
-    // Update button appearance
     didSet {
-      settingButton.setAttributedTitle(NSAttributedString(string: "FlickType: \(flickTypeMode!)", attributes: [.foregroundColor: UIColor.gray]))
-      switch flickTypeMode! {
-      case .always:   settingButton.setBackgroundColor(.alwaysColor)
-      case .off:      settingButton.setBackgroundColor(.disabledColor)
-      case .ask:      settingButton.setBackgroundColor(.askColor)
-      default: preconditionFailure()
-      }
+      settingButton.setTitle("FlickType: \(flickTypeMode!)")
     }
   }
   
@@ -117,17 +109,5 @@ extension WKInterfaceLabel {
       setTextColor(.white)
     }
     labelTexts[self.interfaceProperty] = text
-  }
-}
-
-extension UIColor {
-  static let alwaysColor   = UIColor(red:  32.0/255.0, green: 222.0/255.0, blue: 113.0/255.0, alpha: 0.3)
-  static let disabledColor = UIColor(red: 252.0/255.0, green:  34.0/255.0, blue:  79.0/255.0, alpha: 0.3)
-  static let askColor: UIColor? = nil
-}
-
-extension InterfaceController {
-  @objc func deleteResourceFiles() {
-    FlickType.deleteLocalResourceFiles()
   }
 }
