@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?token=M5jL2wCRr8xA3Hqvsyxq&branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
+[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcode12)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 # FlickTypeKit 🚀
 
