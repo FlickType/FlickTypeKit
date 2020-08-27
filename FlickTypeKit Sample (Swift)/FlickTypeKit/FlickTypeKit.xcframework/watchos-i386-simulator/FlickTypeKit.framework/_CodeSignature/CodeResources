@@ -59,7 +59,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fVQqrvVyPmbFGAs7o9uuRtENtAI=
+		+d/rI0warOCJX9pmCnqER8dQCWk=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -67,11 +67,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		3Rf2EK8AQR1qKz17K21lzSPNh8M=
+		fuPtujp3KBGqUJPpFNDOnhMgZvo=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		ccEf0PrBA3cbtrH76uBlXJ8C3sw=
+		g5iNSWyGbiG9QE0oe4RBErsrnC4=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -79,11 +79,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		3Rf2EK8AQR1qKz17K21lzSPNh8M=
+		fuPtujp3KBGqUJPpFNDOnhMgZvo=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		ccEf0PrBA3cbtrH76uBlXJ8C3sw=
+		g5iNSWyGbiG9QE0oe4RBErsrnC4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -249,22 +249,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Rf2EK8AQR1qKz17K21lzSPNh8M=
+			fuPtujp3KBGqUJPpFNDOnhMgZvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			aQ/dnDXreoHVl/rfzM+XIWZ8Ai5E1GWvB7gRcu0iWLY=
+			jeS1u54Zw/1aOduTF92m8ztQq87W3BQT2vM8/t+7UdU=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ccEf0PrBA3cbtrH76uBlXJ8C3sw=
+			g5iNSWyGbiG9QE0oe4RBErsrnC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gp5hFvdY+cjn1zOajrNFDHthUAjctntorCJmNAv8sk0=
+			G+cRKQ2mJ3C1EJuyzAcT0+BW5+0M7ZvUJPpOerxHKs4=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
@@ -282,22 +282,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Rf2EK8AQR1qKz17K21lzSPNh8M=
+			fuPtujp3KBGqUJPpFNDOnhMgZvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			aQ/dnDXreoHVl/rfzM+XIWZ8Ai5E1GWvB7gRcu0iWLY=
+			jeS1u54Zw/1aOduTF92m8ztQq87W3BQT2vM8/t+7UdU=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ccEf0PrBA3cbtrH76uBlXJ8C3sw=
+			g5iNSWyGbiG9QE0oe4RBErsrnC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gp5hFvdY+cjn1zOajrNFDHthUAjctntorCJmNAv8sk0=
+			G+cRKQ2mJ3C1EJuyzAcT0+BW5+0M7ZvUJPpOerxHKs4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -9,6 +9,7 @@ import CoreGraphics
 import Foundation
 import SpriteKit
 import Swift
+import SwiftUI
 import UIKit
 import WatchConnectivity
 import WatchKit
@@ -394,6 +395,14 @@ extension Array {
     get
   }
 }
+@available(watchOSApplicationExtension 6.0, *)
+public struct FlickTypeView : SwiftUI.View {
+  public init(title: Swift.String, text: Swift.String = "", flickTypeMode: FlickTypeKit.FlickType.Mode = .ask)
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12FlickTypeKit0aB4ViewV4bodyQrvp", 0) 🦸
+}
 extension WKApplicationState : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
@@ -403,6 +412,9 @@ extension WCSessionActivationState : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
+}
+extension Bundle {
+  public static var flickTypeKitBundle: Foundation.Bundle
 }
 extension WKSwipeGestureRecognizerDirection : Swift.CustomStringConvertible {
   public var description: Swift.String {
