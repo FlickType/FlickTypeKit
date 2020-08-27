@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?token=M5jL2wCRr8xA3Hqvsyxq&branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
+[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 # FlickTypeKit 🚀
 
@@ -8,42 +8,62 @@
 ![FlickTypeKit screenshot](docs/screenshot-1.png)
 ![FlickTypeKit screenshot](docs/screenshot-2.png)
 
-## Integration
-- Copy the `FlickTypeKit` directory from `FlickTypeKit Sample (Swift)` into your project folder.
+### SwiftUI
+Simply `import FlickTypeKit` and use `FlickTypeView`: 
 
-### In your watch extension target: 
-- Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
+<pre>
+<b>import FlickTypeKit</b>
 
-### In you watch app target:
-  - Under **Build Phases** > **Copy Bundle Resources**, add the `App Resources/FlickType.storyboard` file.
-  - Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
+struct ContentView: View {
+  var body: some View {
+    ScrollView {
+      VStack {
+        // other views here...
+        <b>FlickTypeView(title: "Message")</b>
+        // more views here...
+      }
+    }
+  }
+}
+</pre>
 
-_**Note**: If your app is in Objective-C, make sure [Always Embed Swift Standard Libraries](https://indiestack.com/2017/03/implicit-swift-dependencies/) is set to YES for the watch extension target. You can also watch this [integration tutorial](https://www.youtube.com/watch?v=f7TkCE7gaDc)_
+### WatchKit
+Simply `import FlickTypeKit` and modify your `presentTextInputController()` calls to include `flickTypeMode`:
 
-## Usage
-Simply `import FlickType` and then modify your existing `presentTextInputController()` calls to include the additional `flickTypeMode` argument:
+<pre>
+<b>import FlickTypeKit</b>
 
-```
-import FlickTypeKit
-
-presentTextInputController(withSuggestions: nil, allowedInputMode: .allowEmoji, flickTypeMode: .ask) { items in
+presentTextInputController(
+  withSuggestions: nil,
+  allowedInputMode: .allowEmoji,
+  <b>flickTypeMode: .ask</b>) { items in
   if let text = items?.first as? String {
     print("User typed text: \(text)")
   }
 }
-```
+</pre>
 
-### Configuration
- - `FlickType.Mode.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
- - `FlickType.Mode.always` will _only_ offer FlickType, skipping the input method selection.
- - `FlickType.Mode.off` will _only_ offer the standard input methods.
+When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI `FlickTypeView` does that automatically for you.
 
-### Editing
-The optional `startingText` argument can be used to support editing of existing text. Editing is currently only supported with FlickType; the value of `startingText` is ignored when using one of the standard input methods.
+### FlickType.Mode
+- `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
+- `.always` will open FlickType, skipping the input method selection.
+- `.off` will offer the standard input methods without the FlickType option.
 
-## watchOS 7
-Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the main FlickType app on the user's device, and return back to your app when text input is completed. This ensures that the text input experience is always up-to-date without you having to update your app, and will utilize the user's FlickType settings and custom dictionary across all other apps. To support universal links in your app: 
 
+## Integration
+
+### In your watch extension target: 
+  - Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
+
+### In you watch app target:
+  1. Under **Build Phases** > **Copy Bundle Resources**, add the `FlickType.storyboard` file.
+  2. Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
+
+If your project is in Objective-C, see [this note](docs/Notes.md#objective-c).
+
+### Supporting watchOS 7 and later
+Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [main FlickType app](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719), and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and will utilize the user's custom settings and dictionary across other apps. To support universal links in your app: 
 
 1. Add an associated domain entitlement to your watch extension target:
 ![Associated domains screenshot](docs/associated-domains.png)
@@ -75,10 +95,12 @@ FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
 if FlickType.handle(userActivity) { return }
 ```
 
-### watchOS 6 and earlier
-Once you get things working in the Simulator, email us at [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target, so we can whitelist it for use on real devices.
+### Supporting watchOS 6 and earlier
+Once you get things working in the Simulator, email [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to get whitelisted for use on real devices.
 
 ### Help & support
-See the included sample app, join us on [Discord](https://discord.gg/MFyvmhe), or [email](mailto:sdk@flicktype.com) us!
+ - See the included sample app
+ - Join our [Discord](https://discord.gg/MFyvmhe)
+ - [Email](mailto:sdk@flicktype.com) us!
 
 # ⌚️
