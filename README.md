@@ -48,7 +48,9 @@ presentTextInputController(
 
 ### FlickType.Mode
  `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
+ <br>
  `.always` will open FlickType, skipping the input method selection.
+ <br>
  `.off` will offer the standard input methods without the FlickType option.
 
 _**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI, `FlickTypeView` does that automatically for you._
