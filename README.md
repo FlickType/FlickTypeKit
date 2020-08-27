@@ -1,11 +1,13 @@
-### [_“Makes Typing a Breeze”_](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 ![FlickTypeKit screenshot](docs/icon.png)
 ![FlickTypeKit screenshot](docs/screenshot-1.png)
 ![FlickTypeKit screenshot](docs/screenshot-2.png)
 ### [_“Apple Watch App of the Year”_](https://appadvice.com/post/appadvices-top-10-apple-watch-apps-2018/764638) - AppAdvice
+### [_“Makes Typing a Breeze”_](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 
 # FlickTypeKit 🚀
 [![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
+
+Add a powerful keyboard to your watchOS apps and dramatically improve the text input experience for users. Leverage full typing and editing capabilities to greatly enhance existing parts of your app, or enable entirely new features like messaging and note-taking directly on Apple Watch.
 
 ### SwiftUI
 Use `FlickTypeView` as a replacement for `TextField` or `TextEditor` as needed: 
@@ -43,11 +45,11 @@ presentTextInputController(
 </pre>
 
 ### FlickType.Mode
-- `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
-- `.always` will open FlickType, skipping the input method selection.
-- `.off` will offer the standard input methods without the FlickType option.
+ `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
+ `.always` will open FlickType, skipping the input method selection.
+ `.off` will offer the standard input methods without the FlickType option.
 
-_**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI `FlickTypeView` does that automatically for you._
+_**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI, `FlickTypeView` does that automatically for you._
 
 ## Integration
 
