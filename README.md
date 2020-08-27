@@ -70,7 +70,8 @@ Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.a
 ![Associated domains screenshot](docs/associated-domains.png)
 
 2. Host a `https://your.app.domain/.well-known/apple-app-site-association` file with the following contents:
-```{
+```
+{
   "applinks": {
       "details": [
            {
@@ -96,8 +97,8 @@ FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
 if FlickType.handle(userActivity) { return }
 ```
 
-### watchOS 6 and earlier
-Once you get things working in the Simulator, email [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to get whitelisted for use on real devices.
+### Earlier watchOS versions
+If you wish to support users on watchOS 6 and earlier, please email [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to get whitelisted for use on real devices. This is not required for users on watchOS 7 and later.
 
 ### Help & support
  - The sample app contains implementations for both SwiftUI & WatchKit. 
