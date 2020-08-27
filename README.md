@@ -46,7 +46,6 @@ presentTextInputController(
 }
 </pre>
 
-### FlickType.Mode
  `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
  <br>
  `.always` will open FlickType, skipping the input method selection.
@@ -64,7 +63,7 @@ _**Note:** When using WatchKit, the optional `startingText` argument can be used
   1. Under **Build Phases** > **Copy Bundle Resources**, add the `FlickType.storyboard` file.
   2. Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
 
-### Supporting watchOS 7 and later
+### watchOS 7 and later
 Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [main FlickType app](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719), and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and will utilize the user's custom settings and dictionary across other apps. To support universal links in your app: 
 
 1. Add an associated domain entitlement to your watch extension target:
@@ -97,7 +96,7 @@ FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
 if FlickType.handle(userActivity) { return }
 ```
 
-### Supporting watchOS 6 and earlier
+### watchOS 6 and earlier
 Once you get things working in the Simulator, email [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to get whitelisted for use on real devices.
 
 ### Help & support
