@@ -57,14 +57,14 @@ _**Note:** When using WatchKit, the optional `startingText` argument can be used
 ## Integration
 
 ### In your watch extension target: 
-  - Under **General** > **Frameworks, Libraries, and Embedded Content**: click the **+** button, then `Add Other...`/`Add Files...` and add `FlickTypeKit.xcframework`.
+  - Under **General** > **Frameworks, Libraries, and Embedded Content**, click the **+** button, `Add Other...` and add the `FlickTypeKit.xcframework` bundle.
 
 ### In you watch app target:
   1. Under **Build Phases** > **Copy Bundle Resources**, add the `FlickType.storyboard` file.
-  2. Add a "Storyboard Reference" to your main watch storyboard file and set its "Referenced ID" to `FlickType`.
+  2. Add a "Storyboard Reference" to your main storyboard file and set its "Referenced ID" to `FlickType`.
 
 ### watchOS 7 and later
-Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [main FlickType app](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719), and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and will utilize the user's custom settings and dictionary across other apps. To support universal links in your app: 
+Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
 
 1. Add an associated domain entitlement to your watch extension target:
 ![Associated domains screenshot](docs/associated-domains.png)
