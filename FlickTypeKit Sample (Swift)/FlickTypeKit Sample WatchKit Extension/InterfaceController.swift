@@ -19,7 +19,7 @@ class InterfaceController: WKInterfaceController {
   @IBOutlet weak var tapRecognizer1: WKTapGestureRecognizer!
   @IBOutlet weak var tapRecognizer2: WKTapGestureRecognizer!
   @IBOutlet weak var tapRecognizer3: WKTapGestureRecognizer!
-  @IBOutlet weak var settingButton: WKInterfaceButton!
+  @IBOutlet weak var versionLabel: WKInterfaceLabel!
   
   // We keep this mapping in order to use the same action code for all recognizers/labels
   var recognizerLabels: [WKTapGestureRecognizer : WKInterfaceLabel]!
@@ -37,8 +37,7 @@ class InterfaceController: WKInterfaceController {
     [label1, label2, label3].forEach { label in
       label.setText("", storeIn: labelTexts)
     }
-    // Include FlickType among the standard input modes.
-    flickTypeMode = .ask
+    versionLabel.setText("FlickTypeKit v\(Bundle.flickTypeKitBundle.versionAndBuild)")
   }
   
   // We need a place to initialize `recognizerLabels`, but we can't yet access the fully
@@ -69,30 +68,11 @@ class InterfaceController: WKInterfaceController {
     presentTextInputController(
       withSuggestions: nil,
       allowedInputMode: .allowEmoji,
-      flickTypeMode: flickTypeMode,
+      flickTypeMode: .ask,
       startingText: startingText) { items in
         if let text = items?.first as? String {
           label.setText(text, storeIn: self.labelTexts)
         }
-    }
-  }
-  
-  //////////////////////////////////////
-  //////  Changing flickTypeMode  //////
-  //////////////////////////////////////
-  
-  @IBAction func settingButtonTapped() {
-    switch flickTypeMode {
-      case .always: flickTypeMode = .off
-      case .off:    flickTypeMode = .ask
-      case .ask:    flickTypeMode = .always
-      default:      flickTypeMode = .ask
-    }
-  }
-  
-  var flickTypeMode: FlickType.Mode! {
-    didSet {
-      settingButton.setTitle("FlickType: \(flickTypeMode!)")
     }
   }
   
@@ -102,12 +82,18 @@ class InterfaceController: WKInterfaceController {
 extension WKInterfaceLabel {
   func setText(_ text: String, storeIn labelTexts: NSMutableDictionary) {
     if text.isEmpty {
-      setAttributedText(NSAttributedString(string: "Tap to edit...", attributes: [.obliqueness: 0.2]))
-      setTextColor(.lightGray)
+      setAttributedText(NSAttributedString(string: "Tap to edit…"))
+      setTextColor(.gray)
     } else {
       setText(text)
       setTextColor(.white)
     }
     labelTexts[self.interfaceProperty] = text
+  }
+}
+
+extension InterfaceController {
+  @IBAction func switchToSwiftUISample() {
+    WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("Root-SwiftUI", NSObject())])
   }
 }
