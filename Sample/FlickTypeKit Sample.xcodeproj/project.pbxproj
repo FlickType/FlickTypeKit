@@ -88,7 +88,7 @@
 		0A83101224F056CD00115FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A83101424F056CD00115FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = ../FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
-		0A83102724F0589900115FC8 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = "../FlickTypeKit/App Resources/FlickType.storyboard"; sourceTree = "<group>"; };
+		0A83102724F0589900115FC8 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = ../../FlickTypeKit/FlickType.storyboard; sourceTree = "<group>"; };
 		0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlickTypeKit Sample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +116,6 @@
 		0A830FEF24F056CC00115FC8 = {
 			isa = PBXGroup;
 			children = (
-				0A83102724F0589900115FC8 /* FlickType.storyboard */,
 				0A830FFE24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App */,
 				0A83100D24F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension */,
 				0A830FF724F056CC00115FC8 /* Products */,
@@ -137,6 +136,7 @@
 		0A830FFE24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				0A83102724F0589900115FC8 /* FlickType.storyboard */,
 				0A830FFF24F056CC00115FC8 /* Interface.storyboard */,
 				0A83100224F056CC00115FC8 /* Assets.xcassets */,
 				0A83100424F056CC00115FC8 /* Info.plist */,
