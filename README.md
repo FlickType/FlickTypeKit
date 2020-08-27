@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 [_“Apple Watch App of the Year”_](https://appadvice.com/post/appadvices-top-10-apple-watch-apps-2018/764638) - AppAdvice
-
+<br>
 [_“Makes Typing a Breeze”_](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
 
 Add a powerful keyboard to your watchOS apps and dramatically improve the text input experience for users. Leverage full typing and editing capabilities to greatly enhance existing parts of your app, or enable entirely new features like messaging and note-taking directly on Apple Watch.
