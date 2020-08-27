@@ -10,22 +10,17 @@ import SwiftUI
 import FlickTypeKit
 
 struct ContentView: View {
-  @State var text1: String = ""
-  @State var text2: String = "Testing"
   var body: some View {
     ScrollView {
-      VStack {
+      VStack(spacing: 8) {
         Button(action: {
           WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("Root-WatchKit", NSObject())])
         }) {
           Text("SwiftUI").foregroundColor(.orange)
-        }
-        FlickTypeView(title: "Tap to edit…", text: "")
-        Spacer()
-        FlickTypeView(title: "Tap to edit…", text: "")
-        Spacer()
-        FlickTypeView(title: "Tap to edit…", text: "")
-        Spacer()
+        }.frame(maxWidth: 100)
+        FlickTypeView(title: "Tap to edit…")
+        FlickTypeView(title: "Tap to edit…")
+        FlickTypeView(title: "Tap to edit…")
         Text("FlickTypeKit v\(Bundle.flickTypeKitBundle.versionAndBuild)").font(.footnote).foregroundColor(.gray)
       }
     }
