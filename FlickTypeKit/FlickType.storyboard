@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+    <device id="watch44"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Gatekeeper-->
+        <scene sceneID="GIh-Yk-IvM">
+            <objects>
+                <controller identifier="Gatekeeper" hidesWhenLoading="NO" alwaysBounce="YES" id="guT-eH-WKt" customClass="GatekeeperController" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="2BM-xd-Z25" userLabel="Content">
+                            <items>
+                                <group width="1" alignment="left" verticalAlignment="center" layout="overlap" radius="8" id="fJg-5X-f7r">
+                                    <items>
+                                        <group width="0.5" height="44" alignment="left" verticalAlignment="center" id="e9F-9T-eKN" userLabel="progress">
+                                            <color key="backgroundColor" red="0.10980392160000001" green="0.4941176471" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                        </group>
+                                        <button width="1" alignment="left" verticalAlignment="center" id="9md-ax-fdq" userLabel="Label">
+                                            <string key="title">Doing
+some work</string>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="downloadButtonTapped" destination="guT-eH-WKt" id="8HX-ZW-3ys"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <button width="1" alignment="left" verticalAlignment="center" title="FlickType" id="ZVC-4A-u5f">
+                                    <color key="backgroundColor" red="0.10980392160000001" green="0.4941176471" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="flicktypeTapped" destination="guT-eH-WKt" id="EZA-yD-VBg"/>
+                                    </connections>
+                                </button>
+                                <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Transfer can continue in the background. Ensure your device is at least 30% charged." textAlignment="center" numberOfLines="0" id="QBd-pB-wNL">
+                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="content" destination="2BM-xd-Z25" id="7IY-rG-DKZ"/>
+                        <outlet property="downloadInfoLabel" destination="QBd-pB-wNL" id="efr-Zj-JWM"/>
+                        <outlet property="downloadingGroup" destination="fJg-5X-f7r" id="jZc-5w-YRB"/>
+                        <outlet property="downloadingLabel" destination="9md-ax-fdq" id="K60-pd-xdm"/>
+                        <outlet property="flicktypeButton" destination="ZVC-4A-u5f" id="hv6-WO-ugk"/>
+                        <outlet property="progressBar" destination="e9F-9T-eKN" id="fs1-OS-Nwd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="42" y="1020"/>
+        </scene>
+        <!--FlickType-->
+        <scene sceneID="PPA-ma-Y53">
+            <objects>
+                <controller identifier="FlickType" fullScreen="YES" id="vBs-K4-eVG" customClass="FlickTypeController" customModule="FlickTypeKit">
+                    <items>
+                        <group width="1" height="1" alignment="center" isAccessibilityElement="YES" accessibilityLabel="FlickType" accessibilityHint="Use the Digital Crown to scroll through suggestions. Flick down to dismiss the keyboard." layout="vertical" radius="0.0" spacing="0.0" id="3la-r8-o9p">
+                            <items>
+                                <spriteKitScene width="1" height="1" alignment="left" id="Ioh-2u-rbm">
+                                    <gestureRecognizers>
+                                        <panGestureRecognizer id="IpH-5L-rig">
+                                            <connections>
+                                                <action selector="handlePan:" destination="vBs-K4-eVG" id="o88-IQ-bOZ"/>
+                                            </connections>
+                                        </panGestureRecognizer>
+                                        <longPressGestureRecognizer allowableMovement="999" minimumPressDuration="0.0" id="pSV-t1-oqI">
+                                            <connections>
+                                                <action selector="handleLongPress:" destination="vBs-K4-eVG" id="U3a-Jx-qmh"/>
+                                            </connections>
+                                        </longPressGestureRecognizer>
+                                    </gestureRecognizers>
+                                    <variation key="default">
+                                        <mask key="gestureRecognizers">
+                                            <exclude reference="IpH-5L-rig"/>
+                                        </mask>
+                                    </variation>
+                                </spriteKitScene>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="mainView" destination="3la-r8-o9p" id="7m2-i3-c9h"/>
+                        <outlet property="scene" destination="Ioh-2u-rbm" id="OFi-gl-xaa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="41" y="1235"/>
+        </scene>
+        <!--TipController-->
+        <scene sceneID="FJl-eW-gB5">
+            <objects>
+                <controller identifier="TipController" hidesWhenLoading="NO" id="lMv-gs-llQ">
+                    <items>
+                        <label width="1" alignment="left" numberOfLines="0" id="DG4-XC-jdX">
+                            <string key="text">• Double tap the space bar for punctuation.
+
+• Scroll the Digital Crown for alternatives.
+
+• Tap ⊕ for nmbers, symbols, and emoji.
+
+• Force touch to review your text.
+</string>
+                        </label>
+                        <separator alignment="center" alpha="0.20000000000000001" id="WhD-An-eZI"/>
+                        <label width="1" alignment="left" textAlignment="center" numberOfLines="0" id="g3y-Ys-K2R">
+                            <string key="text">
+Made with ❤️ in 🇺🇸
+</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="41" y="1461"/>
+        </scene>
+    </scenes>
+</document>
