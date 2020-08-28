@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
     <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
@@ -100,37 +100,21 @@ some work</string>
             <objects>
                 <controller identifier="TipController" hidesWhenLoading="NO" id="lMv-gs-llQ">
                     <items>
-                        <separator alignment="center" alpha="0.20000000000000001" id="3PE-UZ-rDU"/>
                         <label width="1" alignment="left" numberOfLines="0" id="DG4-XC-jdX">
-                            <string key="text">
-Typing:
+                            <string key="text">• Double tap the space bar for punctuation.
 
-- Double space for “.” 
-- Use the Digital Crown to change “.” or word suggestions 
-- Use ⊕ to Scribble numbers or symbols
+• Scroll the Digital Crown for alternatives.
 
-- Force touch to review your text
+• Tap ⊕ for nmbers, symbols, and emoji.
+
+• Force touch to review your text.
 </string>
                         </label>
                         <separator alignment="center" alpha="0.20000000000000001" id="WhD-An-eZI"/>
-                        <label width="1" alignment="left" textAlignment="left" numberOfLines="0" id="YET-0v-dNu">
-                            <string key="text">
-Replying to Messages:
-
-With the complication on your watch face:
-
-1. Flick down to dismiss the incoming notification (without opening Messages)
-
-2. Tap FlickType on your watch face
-
-3. Type your reply and tap "Send" </string>
-                        </label>
-                        <separator alignment="center" alpha="0.20000000000000001" id="TwG-6F-ab3"/>
                         <label width="1" alignment="left" textAlignment="center" numberOfLines="0" id="g3y-Ys-K2R">
                             <string key="text">
-Enjoying FlickType? Leave us a review!
-
-Made with ❤️ in 🇺🇸</string>
+Made with ❤️ in 🇺🇸
+</string>
                         </label>
                     </items>
                 </controller>

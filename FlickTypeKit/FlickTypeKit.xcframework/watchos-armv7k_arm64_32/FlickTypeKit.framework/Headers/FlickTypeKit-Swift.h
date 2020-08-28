@@ -343,10 +343,9 @@ typedef SWIFT_ENUM(NSInteger, PresentationStyle, open) {
   PresentationStyleRoot = 2,
 };
 
-typedef SWIFT_ENUM(NSInteger, DismissType, open) {
-  DismissTypeStatusBar = 0,
-  DismissTypeFlick = 1,
-  DismissTypeMenu = 2,
+typedef SWIFT_ENUM(NSInteger, CompletionType, open) {
+  CompletionTypeDismiss = 0,
+  CompletionTypeAction = 1,
 };
 
 
@@ -1053,10 +1052,9 @@ typedef SWIFT_ENUM(NSInteger, PresentationStyle, open) {
   PresentationStyleRoot = 2,
 };
 
-typedef SWIFT_ENUM(NSInteger, DismissType, open) {
-  DismissTypeStatusBar = 0,
-  DismissTypeFlick = 1,
-  DismissTypeMenu = 2,
+typedef SWIFT_ENUM(NSInteger, CompletionType, open) {
+  CompletionTypeDismiss = 0,
+  CompletionTypeAction = 1,
 };
 
 

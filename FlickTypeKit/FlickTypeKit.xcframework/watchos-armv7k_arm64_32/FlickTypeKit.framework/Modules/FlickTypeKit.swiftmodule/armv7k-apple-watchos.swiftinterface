@@ -391,17 +391,17 @@ extension FlickType.PresentationStyle : Swift.CustomStringConvertible {
   }
 }
 extension Array {
-  public var dismissType: FlickTypeKit.FlickType.DismissType {
+  public var completionType: FlickTypeKit.FlickType.CompletionType {
     get
   }
 }
 @available(watchOSApplicationExtension 6.0, *)
-public struct FlickTypeView : SwiftUI.View {
-  public init(title: Swift.String, text: Swift.String = "", flickTypeMode: FlickTypeKit.FlickType.Mode = .ask)
+public struct FlickTypeTextEditor : SwiftUI.View {
+  public init(title: Swift.String = "", text: SwiftUI.Binding<Swift.String>, mode: FlickTypeKit.FlickType.Mode = .ask)
   public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s12FlickTypeKit0aB4ViewV4bodyQrvp", 0) 🦸
+  public typealias Body = @_opaqueReturnTypeOf("$s12FlickTypeKit0aB10TextEditorV4bodyQrvp", 0) 🦸
 }
 extension WKApplicationState : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -437,10 +437,9 @@ extension WKGestureRecognizerState : Swift.CustomStringConvertible {
       get
     }
   }
-  @objc public enum DismissType : Swift.Int {
-    case statusBar
-    case flick
-    case menu
+  @objc public enum CompletionType : Swift.Int {
+    case dismiss
+    case action
     public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
     public var rawValue: Swift.Int {
@@ -462,6 +461,6 @@ extension FlickTypeKit.FlickType.Mode : Swift.RawRepresentable {}
 extension FlickTypeKit.FlickType.PresentationStyle : Swift.Equatable {}
 extension FlickTypeKit.FlickType.PresentationStyle : Swift.Hashable {}
 extension FlickTypeKit.FlickType.PresentationStyle : Swift.RawRepresentable {}
-extension FlickTypeKit.FlickType.DismissType : Swift.Equatable {}
-extension FlickTypeKit.FlickType.DismissType : Swift.Hashable {}
-extension FlickTypeKit.FlickType.DismissType : Swift.RawRepresentable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.Equatable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.Hashable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.RawRepresentable {}
