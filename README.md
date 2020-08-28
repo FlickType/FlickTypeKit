@@ -1,5 +1,5 @@
-[![FlickType screenshot](docs/screenshot-1.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 [![FlickType icon](docs/icon.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
+[![FlickType screenshot](docs/screenshot-1.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 [![FlickType screenshot](docs/screenshot-2.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 
 # FlickTypeKit 🚀
