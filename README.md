@@ -12,17 +12,18 @@
 Add a powerful keyboard to your watchOS apps and dramatically improve the text input experience for users. Leverage full typing and editing capabilities to greatly enhance existing parts of your app, or enable entirely new features like messaging and note-taking directly on Apple Watch.
 
 ### SwiftUI
-Use `FlickTypeView` to display an editable text interface to gather text input from the user:
+Use a `FlickTypeTextEditor` to display an editable text interface and gather text input from the user:
 
 <pre>
 <b>import FlickTypeKit</b>
 
 struct ContentView: View {
+  @State private var text = ""
   var body: some View {
     ScrollView {
       VStack {
         // other views here...
-        <b>FlickTypeView(title: "Message")</b>
+        <b>FlickTypeTextEditor(text: $text)</b>
         // more views here...
       }
     }
@@ -52,7 +53,7 @@ presentTextInputController(
  <br>
  `.off` will present the standard input method selection without the FlickType option.
 
-_**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI, `FlickTypeView` does that automatically for you._
+_**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI, `FlickTypeTextEditor` does that automatically for you._
 
 ## Integration
 
