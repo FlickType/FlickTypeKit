@@ -1,6 +1,6 @@
-![FlickTypeKit screenshot](docs/icon.png)
-![FlickTypeKit screenshot](docs/screenshot-1.png)
-![FlickTypeKit screenshot](docs/screenshot-2.png)
+[![FlickType screenshot](docs/screenshot-1.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
+[![FlickType icon](docs/icon.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
+[![FlickType screenshot](docs/screenshot-2.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 
 # FlickTypeKit 🚀
 [![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcframework)](https://travis-ci.com/FlickType/FlickTypeKit) 
