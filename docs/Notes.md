@@ -1,13 +1,9 @@
 # FlickTypeKit Technical Notes
 
 
-## Unable to deply on a real device via Xcode
+## Unable to deploy to device via Xcode
 
-TODO
-
-## Unable to use on a real device
-
-TODO
+Make sure `RemoveHeadersOnCopy` is enabled for FlickTypeKit.xcframework (you might have to manually edit your project file). See [this commit](https://github.com/FlickType/FlickTypeKit/commit/b1e84d46d4f3d13e35a1941b65ab48f634bc24e3) for more information.
 
 ## Objective-C
 
