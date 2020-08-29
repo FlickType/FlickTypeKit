@@ -32,7 +32,7 @@ struct ContentView: View {
 </pre>
 
 ### WatchKit
-Modify your `presentTextInputController()` calls to include the `flickTypeMode` argument:
+Modify your `presentTextInputController()` calls to include the `flickType` argument:
 
 <pre>
 <b>import FlickTypeKit</b>
@@ -40,7 +40,7 @@ Modify your `presentTextInputController()` calls to include the `flickTypeMode` 
 presentTextInputController(
   withSuggestions: nil,
   allowedInputMode: .allowEmoji,
-  <b>flickTypeMode: .ask</b>) { items in
+  <b>flickType: .ask</b>) { items in
   if let text = items?.first as? String {
     print("User typed text: \(text)")
   }
