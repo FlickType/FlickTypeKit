@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0A71978424F6D8A100758B7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A71978224F6D8A100758B7A /* ContentView.swift */; };
 		0A71978524F6D8A100758B7A /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A71978324F6D8A100758B7A /* HostingController.swift */; };
-		0A830FFB24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A830FFB24F056CC00115FC8 /* FlickTypeKit Sample App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A83100124F056CC00115FC8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A830FFF24F056CC00115FC8 /* Interface.storyboard */; };
 		0A83100324F056CC00115FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83100224F056CC00115FC8 /* Assets.xcassets */; };
-		0A83100A24F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A83100924F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A83100A24F056CD00115FC8 /* FlickTypeKit Sample Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A83100924F056CD00115FC8 /* FlickTypeKit Sample Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0A83100F24F056CD00115FC8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83100E24F056CD00115FC8 /* InterfaceController.swift */; };
 		0A83101124F056CD00115FC8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */; };
 		0A83101324F056CD00115FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A83101224F056CD00115FC8 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0A83100A24F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex in Embed App Extensions */,
+				0A83100A24F056CD00115FC8 /* FlickTypeKit Sample Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				0A830FFB24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app in Embed Watch Content */,
+				0A830FFB24F056CC00115FC8 /* FlickTypeKit Sample App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,18 +78,18 @@
 		0A71978224F6D8A100758B7A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A71978324F6D8A100758B7A /* HostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		0A830FF624F056CC00115FC8 /* FlickTypeKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlickTypeKit Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A83100024F056CC00115FC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0A83100224F056CC00115FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A83100424F056CC00115FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A83100924F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlickTypeKit Sample WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A83100924F056CD00115FC8 /* FlickTypeKit Sample Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlickTypeKit Sample Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A83100E24F056CD00115FC8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0A83101224F056CD00115FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A83101424F056CD00115FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlickTypeKit.xcframework; path = ../FlickTypeKit/FlickTypeKit.xcframework; sourceTree = "<group>"; };
 		0A83102724F0589900115FC8 /* FlickType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FlickType.storyboard; path = ../../FlickTypeKit/FlickType.storyboard; sourceTree = "<group>"; };
-		0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlickTypeKit Sample WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FlickTypeKit Sample Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				0A830FF624F056CC00115FC8 /* FlickTypeKit Sample.app */,
-				0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app */,
-				0A83100924F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex */,
+				0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample App.app */,
+				0A83100924F056CD00115FC8 /* FlickTypeKit Sample Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 		0A83100D24F056CD00115FC8 /* FlickTypeKit Sample Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample WatchKit Extension.entitlements */,
+				0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample Extension.entitlements */,
 				0A83100E24F056CD00115FC8 /* InterfaceController.swift */,
 				0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */,
 				0A71978624F6DB2900758B7A /* SwiftUI */,
@@ -185,9 +185,9 @@
 			productReference = 0A830FF624F056CC00115FC8 /* FlickTypeKit Sample.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		0A830FF924F056CC00115FC8 /* FlickTypeKit Sample WatchKit App */ = {
+		0A830FF924F056CC00115FC8 /* FlickTypeKit Sample App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A83101B24F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit App" */;
+			buildConfigurationList = 0A83101B24F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample App" */;
 			buildPhases = (
 				0A830FF824F056CC00115FC8 /* Resources */,
 				0A83101A24F056CD00115FC8 /* Embed App Extensions */,
@@ -197,14 +197,14 @@
 			dependencies = (
 				0A83100C24F056CD00115FC8 /* PBXTargetDependency */,
 			);
-			name = "FlickTypeKit Sample WatchKit App";
+			name = "FlickTypeKit Sample App";
 			productName = "FlickTypeKit Sample WatchKit App";
-			productReference = 0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample WatchKit App.app */;
+			productReference = 0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		0A83100824F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension */ = {
+		0A83100824F056CD00115FC8 /* FlickTypeKit Sample Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A83101724F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit Extension" */;
+			buildConfigurationList = 0A83101724F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample Extension" */;
 			buildPhases = (
 				0A83100524F056CD00115FC8 /* Sources */,
 				0A83100624F056CD00115FC8 /* Frameworks */,
@@ -215,9 +215,9 @@
 			);
 			dependencies = (
 			);
-			name = "FlickTypeKit Sample WatchKit Extension";
+			name = "FlickTypeKit Sample Extension";
 			productName = "FlickTypeKit Sample WatchKit Extension";
-			productReference = 0A83100924F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension.appex */;
+			productReference = 0A83100924F056CD00115FC8 /* FlickTypeKit Sample Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -254,8 +254,8 @@
 			projectRoot = "";
 			targets = (
 				0A830FF524F056CC00115FC8 /* FlickTypeKit Sample */,
-				0A830FF924F056CC00115FC8 /* FlickTypeKit Sample WatchKit App */,
-				0A83100824F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension */,
+				0A830FF924F056CC00115FC8 /* FlickTypeKit Sample App */,
+				0A83100824F056CD00115FC8 /* FlickTypeKit Sample Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -305,12 +305,12 @@
 /* Begin PBXTargetDependency section */
 		0A830FFD24F056CC00115FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A830FF924F056CC00115FC8 /* FlickTypeKit Sample WatchKit App */;
+			target = 0A830FF924F056CC00115FC8 /* FlickTypeKit Sample App */;
 			targetProxy = 0A830FFC24F056CC00115FC8 /* PBXContainerItemProxy */;
 		};
 		0A83100C24F056CD00115FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A83100824F056CD00115FC8 /* FlickTypeKit Sample WatchKit Extension */;
+			target = 0A83100824F056CD00115FC8 /* FlickTypeKit Sample Extension */;
 			targetProxy = 0A83100B24F056CD00115FC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,7 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample Extension/FlickTypeKit Sample WatchKit Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample Extension/FlickTypeKit Sample Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample Extension/Info.plist";
@@ -468,7 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample Extension/FlickTypeKit Sample WatchKit Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FlickTypeKit Sample Extension/FlickTypeKit Sample Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
 				INFOPLIST_FILE = "FlickTypeKit Sample Extension/Info.plist";
@@ -494,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
-				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
+				IBSC_MODULE = FlickTypeKit_Sample_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4MR8AR9TLA;
-				IBSC_MODULE = FlickTypeKit_Sample_WatchKit_Extension;
+				IBSC_MODULE = FlickTypeKit_Sample_Extension;
 				INFOPLIST_FILE = "FlickTypeKit Sample App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kpaw.FlickTypeKit-Sample2.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A83101724F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit Extension" */ = {
+		0A83101724F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A83101824F056CD00115FC8 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A83101B24F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample WatchKit App" */ = {
+		0A83101B24F056CD00115FC8 /* Build configuration list for PBXNativeTarget "FlickTypeKit Sample App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A83101C24F056CD00115FC8 /* Debug */,

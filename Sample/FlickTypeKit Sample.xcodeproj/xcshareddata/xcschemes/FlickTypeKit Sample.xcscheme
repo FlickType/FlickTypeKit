@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A830FF924F056CC00115FC8"
-               BuildableName = "FlickTypeKit Sample WatchKit App.app"
-               BlueprintName = "FlickTypeKit Sample WatchKit App"
+               BuildableName = "FlickTypeKit Sample App.app"
+               BlueprintName = "FlickTypeKit Sample App"
                ReferencedContainer = "container:FlickTypeKit Sample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A830FF924F056CC00115FC8"
-            BuildableName = "FlickTypeKit Sample WatchKit App.app"
-            BlueprintName = "FlickTypeKit Sample WatchKit App"
+            BuildableName = "FlickTypeKit Sample App.app"
+            BlueprintName = "FlickTypeKit Sample App"
             ReferencedContainer = "container:FlickTypeKit Sample.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A830FF924F056CC00115FC8"
-            BuildableName = "FlickTypeKit Sample WatchKit App.app"
-            BlueprintName = "FlickTypeKit Sample WatchKit App"
+            BuildableName = "FlickTypeKit Sample App.app"
+            BlueprintName = "FlickTypeKit Sample App"
             ReferencedContainer = "container:FlickTypeKit Sample.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -89,8 +89,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A830FF924F056CC00115FC8"
-            BuildableName = "FlickTypeKit Sample WatchKit App.app"
-            BlueprintName = "FlickTypeKit Sample WatchKit App"
+            BuildableName = "FlickTypeKit Sample App.app"
+            BlueprintName = "FlickTypeKit Sample App"
             ReferencedContainer = "container:FlickTypeKit Sample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
