@@ -357,8 +357,8 @@ extension Character : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
 }
 extension WKInterfaceController {
-  @objc dynamic public func presentTextInputController(withSuggestions suggestions: [Swift.String]?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
-  @objc dynamic public func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((Swift.String) -> [Any]?)?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
+  @objc dynamic public func presentTextInputController(withSuggestions suggestions: [Swift.String]?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickType flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
+  @objc dynamic public func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((Swift.String) -> [Any]?)?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickType flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
 }
 extension FlickType {
   @objc public enum Mode : Swift.Int {

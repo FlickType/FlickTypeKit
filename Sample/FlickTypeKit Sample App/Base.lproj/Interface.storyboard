@@ -16,14 +16,14 @@
         <!--FlickTypeKit-->
         <scene sceneID="CEn-ZP-BwQ">
             <objects>
-                <hostingController identifier="Root-SwiftUI" title="FlickTypeKit" id="qIz-We-faG" customClass="HostingController" customModule="FlickTypeKit_Sample_WatchKit_Extension"/>
+                <hostingController identifier="Root-SwiftUI" title="FlickTypeKit" id="qIz-We-faG" customClass="HostingController" customModule="FlickTypeKit_Sample_Extension"/>
             </objects>
             <point key="canvasLocation" x="236" y="10"/>
         </scene>
         <!--FlickTypeKit-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Root-WatchKit" title="FlickTypeKit" spacing="8" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit" customClass="InterfaceController" customModule="FlickTypeKit_Sample_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Root-WatchKit" title="FlickTypeKit" spacing="8" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit" customClass="InterfaceController" customModule="FlickTypeKit_Sample_App" customModuleProvider="target">
                     <items>
                         <button width="100" alignment="center" title="WatchKit" id="PBU-Y9-HW5">
                             <color key="titleColor" red="0.28235294119999998" green="0.57647058819999997" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

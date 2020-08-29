@@ -1,6 +1,6 @@
 //
 //  InterfaceController.swift
-//  FlickTypeKit Sample WatchKit Extension
+//  FlickTypeKit Sample Extension
 //
 //  Created by Kosta Eleftheriou on 12/31/18.
 //  Copyright © 2018 Kpaw. All rights reserved.
@@ -68,7 +68,7 @@ class InterfaceController: WKInterfaceController {
     presentTextInputController(
       withSuggestions: nil,
       allowedInputMode: .allowEmoji,
-      flickTypeMode: .ask,
+      flickType: .ask,
       startingText: startingText) { items in
         if let text = items?.first as? String {
           label.setText(text, storeIn: self.labelTexts)

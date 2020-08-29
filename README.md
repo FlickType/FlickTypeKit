@@ -1,6 +1,6 @@
-![FlickTypeKit screenshot](docs/icon.png)
-![FlickTypeKit screenshot](docs/screenshot-1.png)
-![FlickTypeKit screenshot](docs/screenshot-2.png)
+[![FlickType icon](docs/icon.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
+[![FlickType screenshot](docs/screenshot-1.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
+[![FlickType screenshot](docs/screenshot-2.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 
 # FlickTypeKit 🚀
 [![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcode12)](https://travis-ci.com/FlickType/FlickTypeKit) 
@@ -32,7 +32,7 @@ struct ContentView: View {
 </pre>
 
 ### WatchKit
-Modify your `presentTextInputController()` calls to include the `flickTypeMode` argument:
+Modify your `presentTextInputController()` calls to include the `flickType` argument:
 
 <pre>
 <b>import FlickTypeKit</b>
@@ -40,7 +40,7 @@ Modify your `presentTextInputController()` calls to include the `flickTypeMode` 
 presentTextInputController(
   withSuggestions: nil,
   allowedInputMode: .allowEmoji,
-  <b>flickTypeMode: .ask</b>) { items in
+  <b>flickType: .ask</b>) { items in
   if let text = items?.first as? String {
     print("User typed text: \(text)")
   }

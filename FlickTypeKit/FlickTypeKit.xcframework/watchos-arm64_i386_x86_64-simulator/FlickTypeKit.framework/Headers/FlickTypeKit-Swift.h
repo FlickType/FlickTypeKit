@@ -662,8 +662,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 
 
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
-- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
-- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
 
 
@@ -1342,8 +1342,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 
 
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
-- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
-- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
 
 
@@ -2022,8 +2022,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 
 
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
-- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
-- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickTypeMode:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
+- (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
 
 
