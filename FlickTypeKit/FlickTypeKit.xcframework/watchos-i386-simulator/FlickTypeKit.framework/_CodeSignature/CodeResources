@@ -27,7 +27,7 @@
 		</data>
 		<key>Headers/FlickTypeKit-Swift.h</key>
 		<data>
-		wFIPfYSlTUxaM3HSl6wdz2JSZJo=
+		qetjlWmxqm/irOs4iDt6uaAQ7xQ=
 		</data>
 		<key>Headers/FlickTypeKit.h</key>
 		<data>
@@ -59,7 +59,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		a5xfx+lp+zGj+iGBgfRVTEHyHaQ=
+		Nsxw8S3un38tTp7OEboTdLqJQr4=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -67,11 +67,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		rC7Ns52TCeoNvFkwm/LeqO+K51s=
+		ilAiRkzHfatp9DiE2TE3x0cL4Yg=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		0cISO+nprsar61bVVfnmE0lePig=
+		fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -79,11 +79,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		rC7Ns52TCeoNvFkwm/LeqO+K51s=
+		ilAiRkzHfatp9DiE2TE3x0cL4Yg=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		0cISO+nprsar61bVVfnmE0lePig=
+		fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,11 +150,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wFIPfYSlTUxaM3HSl6wdz2JSZJo=
+			qetjlWmxqm/irOs4iDt6uaAQ7xQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			85y4tHk5Y9nimAq4b0YJgegwtLEjf6iJT/wjtx6pvwc=
+			Rq9Mab7YJq11LjuCLbrVn5j0tAyxGbajg23XpTAFIw4=
 			</data>
 		</dict>
 		<key>Headers/FlickTypeKit.h</key>
@@ -249,22 +249,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rC7Ns52TCeoNvFkwm/LeqO+K51s=
+			ilAiRkzHfatp9DiE2TE3x0cL4Yg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxFVLQcpswSlXFdEJNmbL1Yz+BS+1+xhZ5FmJmRcwh4=
+			+A8P+kSrNwXjfkfTgtxSXuWFPb2MztXsq/nJpTQ54XY=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0cISO+nprsar61bVVfnmE0lePig=
+			fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			rgYFsQTh6L2s7xZkFLsQm33A0gajyPl3UKGijeBXjeE=
+			O0hRMX8EOFL7c9i6SSKonDHB0BsqSKSVOjEoKxBjW2I=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
@@ -282,22 +282,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rC7Ns52TCeoNvFkwm/LeqO+K51s=
+			ilAiRkzHfatp9DiE2TE3x0cL4Yg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cxFVLQcpswSlXFdEJNmbL1Yz+BS+1+xhZ5FmJmRcwh4=
+			+A8P+kSrNwXjfkfTgtxSXuWFPb2MztXsq/nJpTQ54XY=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0cISO+nprsar61bVVfnmE0lePig=
+			fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			rgYFsQTh6L2s7xZkFLsQm33A0gajyPl3UKGijeBXjeE=
+			O0hRMX8EOFL7c9i6SSKonDHB0BsqSKSVOjEoKxBjW2I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
