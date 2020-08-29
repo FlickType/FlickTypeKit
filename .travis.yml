@@ -6,6 +6,6 @@ script:
     set -o pipefail && \
     xcodebuild \
     -project "Sample/FlickTypeKit Sample.xcodeproj" \
-    -scheme "FlickTypeKit Sample WatchKit App" \
+    -scheme "FlickTypeKit Sample" \
     -destination platform="iOS Simulator",name="iPhone 11 Pro" \
     build | xcpretty
