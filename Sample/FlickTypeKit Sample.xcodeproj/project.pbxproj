@@ -27,14 +27,14 @@
 			containerPortal = 0A830FF024F056CC00115FC8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0A830FF924F056CC00115FC8;
-			remoteInfo = "FlickTypeKit Sample WatchKit App";
+			remoteInfo = "FlickTypeKit Sample App";
 		};
 		0A83100B24F056CD00115FC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A830FF024F056CC00115FC8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0A83100824F056CD00115FC8;
-			remoteInfo = "FlickTypeKit Sample WatchKit Extension";
+			remoteInfo = "FlickTypeKit Sample Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -198,7 +198,7 @@
 				0A83100C24F056CD00115FC8 /* PBXTargetDependency */,
 			);
 			name = "FlickTypeKit Sample App";
-			productName = "FlickTypeKit Sample WatchKit App";
+			productName = "FlickTypeKit Sample App";
 			productReference = 0A830FFA24F056CC00115FC8 /* FlickTypeKit Sample App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
@@ -216,7 +216,7 @@
 			dependencies = (
 			);
 			name = "FlickTypeKit Sample Extension";
-			productName = "FlickTypeKit Sample WatchKit Extension";
+			productName = "FlickTypeKit Sample Extension";
 			productReference = 0A83100924F056CD00115FC8 /* FlickTypeKit Sample Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};

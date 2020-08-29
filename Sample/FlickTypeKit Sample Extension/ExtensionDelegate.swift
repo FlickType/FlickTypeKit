@@ -1,6 +1,6 @@
 //
 //  ExtensionDelegate.swift
-//  FlickTypeKit Sample WatchKit Extension
+//  FlickTypeKit Sample Extension
 //
 //  Created by Kosta Eleftheriou on 12/31/18.
 //  Copyright © 2018 Kpaw. All rights reserved.

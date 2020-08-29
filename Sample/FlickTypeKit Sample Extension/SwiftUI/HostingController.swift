@@ -1,6 +1,6 @@
 //
 //  HostingController.swift
-//  FlickTypeKit Sample WatchKit Extension
+//  FlickTypeKit Sample Extension
 //
 //  Created by Kosta Eleftheriou on 8/26/20.
 //  Copyright © 2020 Kpaw. All rights reserved.
