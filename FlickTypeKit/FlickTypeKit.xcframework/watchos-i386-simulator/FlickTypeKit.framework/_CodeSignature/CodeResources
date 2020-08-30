@@ -59,7 +59,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Nsxw8S3un38tTp7OEboTdLqJQr4=
+		m5YxlVoTamZ4wIEAkSbb5DoLhGs=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -71,7 +71,7 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
+		0WilzXnQZXGXpcJnurlqwOVilcQ=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -83,7 +83,7 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
+		0WilzXnQZXGXpcJnurlqwOVilcQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
+			0WilzXnQZXGXpcJnurlqwOVilcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			O0hRMX8EOFL7c9i6SSKonDHB0BsqSKSVOjEoKxBjW2I=
+			jphjyjKLWKrWS5I7uy3qQixSK4Pj1AxkqtGy9VGqxsw=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
@@ -293,11 +293,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fxQ7gg2Ys49mOf3UvLcJmA05C/Y=
+			0WilzXnQZXGXpcJnurlqwOVilcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			O0hRMX8EOFL7c9i6SSKonDHB0BsqSKSVOjEoKxBjW2I=
+			jphjyjKLWKrWS5I7uy3qQixSK4Pj1AxkqtGy9VGqxsw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
