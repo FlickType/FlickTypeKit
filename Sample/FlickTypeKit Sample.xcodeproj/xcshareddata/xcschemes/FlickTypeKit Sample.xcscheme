@@ -57,7 +57,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/FlickTypeKit Sample WatchKit App">
+         RemotePath = "/FlickTypeKit Sample App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A830FF924F056CC00115FC8"
@@ -76,7 +76,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/FlickTypeKit Sample WatchKit App">
+         RemotePath = "/FlickTypeKit Sample App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A830FF924F056CC00115FC8"
