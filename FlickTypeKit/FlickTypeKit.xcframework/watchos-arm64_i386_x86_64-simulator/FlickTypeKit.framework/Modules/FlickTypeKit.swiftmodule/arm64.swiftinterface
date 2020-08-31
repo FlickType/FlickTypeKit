@@ -13,7 +13,6 @@ import SwiftUI
 import UIKit
 import WatchConnectivity
 import WatchKit
-import _WatchKit_SwiftUI
 import os.log
 import os
 extension Statistics {
