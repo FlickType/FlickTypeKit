@@ -47,6 +47,7 @@ class InterfaceController: WKInterfaceController {
     // This is a good place to initialize the `recognizerLabels` dictionary
     _ = initializeRecognizerMappings
   }
+  
   private lazy var initializeRecognizerMappings: Void = {
     recognizerLabels = [
       tapRecognizer1 : label1,
