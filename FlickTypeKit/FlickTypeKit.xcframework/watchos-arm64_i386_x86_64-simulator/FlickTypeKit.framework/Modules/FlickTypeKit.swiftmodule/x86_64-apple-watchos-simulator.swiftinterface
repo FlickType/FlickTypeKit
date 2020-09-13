@@ -208,10 +208,19 @@ extension UIAccessibility {
 @objc extension Bundle {
   @objc public static let isExtension: Swift.Bool
   @objc public static let isAppStoreInstall: Swift.Bool
+  @objc dynamic public var version: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var build: Swift.String {
+    @objc get
+  }
   @objc dynamic public var versionAndBuild: Swift.String {
     @objc get
   }
   @objc dynamic public var bundleID: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var isMainFlickTypeApp: Swift.Bool {
     @objc get
   }
 }
@@ -394,6 +403,18 @@ extension Array {
   public var completionType: FlickTypeKit.FlickType.CompletionType {
     get
   }
+}
+extension WKExtension {
+  public static func presentRootFlickTypeKeyboard(doneButtonLabel: Swift.String, startingText: Swift.String, externalAppRequest: Swift.Bool, animate: Swift.Bool, completion: @escaping ([Any]?) -> Swift.Void)
+}
+extension WKInterfaceController {
+  public func _maybeVisibleDismissed()
+}
+@objc @_inheritsConvenienceInitializers open class WKDismissAwareInterfaceController : WatchKit.WKInterfaceController {
+  @objc override dynamic public func willDisappear()
+  open func handleDismiss()
+  @objc override dynamic public init()
+  @objc deinit
 }
 @available(watchOSApplicationExtension 6.0, *)
 public struct FlickTypeTextEditor : SwiftUI.View {

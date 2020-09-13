@@ -228,14 +228,16 @@ SWIFT_CLASS("_TtC12FlickTypeKit18BasePathRecognizer")
 
 
 
-
 @interface NSBundle (SWIFT_EXTENSION(FlickTypeKit))
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isExtension;)
 + (BOOL)isExtension SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isAppStoreInstall;)
 + (BOOL)isAppStoreInstall SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull version;
+@property (nonatomic, readonly, copy) NSString * _Nonnull build;
 @property (nonatomic, readonly, copy) NSString * _Nonnull versionAndBuild;
 @property (nonatomic, readonly, copy) NSString * _Nonnull bundleID;
+@property (nonatomic, readonly) BOOL isMainFlickTypeApp;
 @end
 
 
@@ -384,25 +386,36 @@ SWIFT_CLASS("_TtC12FlickTypeKit22FlickTypeContainerView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
+@interface WKDismissAwareInterfaceController : WKInterfaceController
+- (void)willDisappear;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class WKInterfaceGroup;
 @class WKInterfaceSKScene;
 @class WKLongPressGestureRecognizer;
 
 SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
-@interface FlickTypeController : WKInterfaceController
+@interface FlickTypeController : WKDismissAwareInterfaceController
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup * _Null_unspecified mainView;
 @property (nonatomic, strong) IBOutlet WKInterfaceSKScene * _Null_unspecified scene;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeWithContext:(id _Nullable)context;
+- (void)setTitle:(NSString * _Nullable)title;
 - (void)handleAppSettingsDidChange;
-- (void)willActivate;
 - (void)didAppear;
-- (void)willDisappear;
-- (void)didDeactivate;
 - (void)cancel;
 - (void)togglePopups;
 - (void)toggleInvisible;
 - (IBAction)handleLongPress:(WKLongPressGestureRecognizer * _Nonnull)sender;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FlickTypeController (SWIFT_EXTENSION(FlickTypeKit))
+- (void)didDeactivate;
+- (void)willActivate;
 @end
 
 @class WKCrownSequencer;
@@ -508,6 +521,11 @@ SWIFT_CLASS("_TtC12FlickTypeKit20NaiveShapeRecognizer")
 @end
 
 
+SWIFT_CLASS("_TtC12FlickTypeKit20PanGestureRecognizer")
+@interface PanGestureRecognizer : GestureRecognizer
+@end
+
+
 SWIFT_CLASS("_TtC12FlickTypeKit19PointBufferProvider")
 @interface PointBufferProvider : PointProvider
 - (null_unspecified instancetype)initWithMapData:(id _Null_unspecified)mapData listData:(id _Null_unspecified)listData OBJC_DESIGNATED_INITIALIZER;
@@ -523,6 +541,13 @@ SWIFT_CLASS("_TtC12FlickTypeKit8SKButton")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC12FlickTypeKit14SKLayoutButton")
+@interface SKLayoutButton : SKLayoutNode
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -581,6 +606,15 @@ SWIFT_CLASS("_TtC12FlickTypeKit18TapRecognizerAsync")
 @interface TapRecognizerAsync : TapRecognizerSync
 @end
 
+
+
+SWIFT_CLASS("_TtC12FlickTypeKit14TipsController")
+@interface TipsController : WKInterfaceController
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * _Null_unspecified swipeDownTip;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * _Null_unspecified versionLabel;
+- (void)awakeWithContext:(id _Nullable)context;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12FlickTypeKit8TitleBar")
@@ -656,6 +690,9 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) CGRect frame;
 @end
+
+
+
 
 
 
@@ -908,14 +945,16 @@ SWIFT_CLASS("_TtC12FlickTypeKit18BasePathRecognizer")
 
 
 
-
 @interface NSBundle (SWIFT_EXTENSION(FlickTypeKit))
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isExtension;)
 + (BOOL)isExtension SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isAppStoreInstall;)
 + (BOOL)isAppStoreInstall SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull version;
+@property (nonatomic, readonly, copy) NSString * _Nonnull build;
 @property (nonatomic, readonly, copy) NSString * _Nonnull versionAndBuild;
 @property (nonatomic, readonly, copy) NSString * _Nonnull bundleID;
+@property (nonatomic, readonly) BOOL isMainFlickTypeApp;
 @end
 
 
@@ -1064,25 +1103,36 @@ SWIFT_CLASS("_TtC12FlickTypeKit22FlickTypeContainerView")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
+@interface WKDismissAwareInterfaceController : WKInterfaceController
+- (void)willDisappear;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class WKInterfaceGroup;
 @class WKInterfaceSKScene;
 @class WKLongPressGestureRecognizer;
 
 SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
-@interface FlickTypeController : WKInterfaceController
+@interface FlickTypeController : WKDismissAwareInterfaceController
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup * _Null_unspecified mainView;
 @property (nonatomic, strong) IBOutlet WKInterfaceSKScene * _Null_unspecified scene;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)awakeWithContext:(id _Nullable)context;
+- (void)setTitle:(NSString * _Nullable)title;
 - (void)handleAppSettingsDidChange;
-- (void)willActivate;
 - (void)didAppear;
-- (void)willDisappear;
-- (void)didDeactivate;
 - (void)cancel;
 - (void)togglePopups;
 - (void)toggleInvisible;
 - (IBAction)handleLongPress:(WKLongPressGestureRecognizer * _Nonnull)sender;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FlickTypeController (SWIFT_EXTENSION(FlickTypeKit))
+- (void)didDeactivate;
+- (void)willActivate;
 @end
 
 @class WKCrownSequencer;
@@ -1188,6 +1238,11 @@ SWIFT_CLASS("_TtC12FlickTypeKit20NaiveShapeRecognizer")
 @end
 
 
+SWIFT_CLASS("_TtC12FlickTypeKit20PanGestureRecognizer")
+@interface PanGestureRecognizer : GestureRecognizer
+@end
+
+
 SWIFT_CLASS("_TtC12FlickTypeKit19PointBufferProvider")
 @interface PointBufferProvider : PointProvider
 - (null_unspecified instancetype)initWithMapData:(id _Null_unspecified)mapData listData:(id _Null_unspecified)listData OBJC_DESIGNATED_INITIALIZER;
@@ -1203,6 +1258,13 @@ SWIFT_CLASS("_TtC12FlickTypeKit8SKButton")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC12FlickTypeKit14SKLayoutButton")
+@interface SKLayoutButton : SKLayoutNode
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -1261,6 +1323,15 @@ SWIFT_CLASS("_TtC12FlickTypeKit18TapRecognizerAsync")
 @interface TapRecognizerAsync : TapRecognizerSync
 @end
 
+
+
+SWIFT_CLASS("_TtC12FlickTypeKit14TipsController")
+@interface TipsController : WKInterfaceController
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * _Null_unspecified swipeDownTip;
+@property (nonatomic, weak) IBOutlet WKInterfaceLabel * _Null_unspecified versionLabel;
+- (void)awakeWithContext:(id _Nullable)context;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12FlickTypeKit8TitleBar")
@@ -1336,6 +1407,9 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) CGRect frame;
 @end
+
+
+
 
 
 
