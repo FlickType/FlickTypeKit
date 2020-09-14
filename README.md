@@ -3,7 +3,7 @@
 [![FlickType screenshot](docs/screenshot-2.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 
 # FlickTypeKit 🚀
-[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=xcode12)](https://travis-ci.com/FlickType/FlickTypeKit) 
+[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=source)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 [_“Apple Watch App of the Year”_](https://appadvice.com/post/appadvices-top-10-apple-watch-apps-2018/764638) - AppAdvice
 <br>
@@ -57,15 +57,15 @@ _**Note:** When using WatchKit, the optional `startingText` argument can be used
 
 ## Integration
 
-### In your watch extension target: 
-  - Under **General** > **Frameworks, Libraries, and Embedded Content**, click the **+** button, `Add Other...` and add the `FlickTypeKit.xcframework` bundle.
+### Swift Package Manager
 
-### In you watch app target:
-  1. Under **Build Phases** > **Copy Bundle Resources**, add the `FlickType.storyboard` file.
-  2. Add a "Storyboard Reference" to your main storyboard file and set its "Referenced ID" to `FlickType`.
+```
+https://github.com/FlickType/FlickTypeKit
+```
+**IMPORTANT**: Make sure you specify the **`source`** branch when adding the package.
 
 ### watchOS 7 and later
-Starting with watchOS 7, FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
+This version of FlickTypeKit will only show FlickType as an input option to users on watchOS 7 or later. FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
 
 1. Add an associated domain entitlement to your watch extension target:
 ![Associated domains screenshot](docs/associated-domains.png)
@@ -99,11 +99,10 @@ if FlickType.handle(userActivity) { return }
 ```
 
 ### Earlier watchOS versions
-If you wish to support users on watchOS 6 and earlier, please email [sdk@flicktype.com](mailto:sdk@flicktype.com) with the bundle ID of your watch _extension_ target to get whitelisted for use on real devices. This is not required for users on watchOS 7 and later.
+If you wish to support users on watchOS 6 and earlier, please see the other branches of this repository.
 
 ### Help & support
  - The sample app contains implementations for both SwiftUI & WatchKit. 
- - Additional [technical notes & FAQ](docs/Notes.md).
  - Join our [Discord](https://discord.gg/MFyvmhe)
  - [Email](mailto:sdk@flicktype.com) us!
 
