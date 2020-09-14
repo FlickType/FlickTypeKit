@@ -585,7 +585,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		0A787808250F011700FBEB30 /* XCRemoteSwiftPackageReference "FlickTypeKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:FlickType/FlickTypeKit.git";
+			repositoryURL = "https://github.com/FlickType/FlickTypeKit.git";
 			requirement = {
 				branch = source;
 				kind = branch;
