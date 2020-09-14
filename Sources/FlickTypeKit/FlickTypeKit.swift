@@ -248,31 +248,6 @@ internal struct TextInputInvocation {
   var completionHandler: InvocationCompletionHandler { return { self.completion([$0, $1]) } } // append `CompletionType` at the end of the returned array
 }
 
-extension TextInputInvocation {
-  func withCompletion(_ newCompletion: @escaping ([Any]?) -> Void) -> TextInputInvocation {
-    return .init(
-      suggestions:           suggestions,
-      suggestionsHandler:    suggestionsHandler,
-      inputMode:             inputMode,
-      flickTypeMode:         flickTypeMode,
-      flickTypeProperties:   flickTypeProperties,
-      startingText:          startingText,
-      completion:            newCompletion
-    )
-  }
-}
-
-// TODO: change raw type to be string so we avoid all this
-extension FlickType.Mode : CustomStringConvertible {
-  public var description: String {
-    switch self {
-    case .ask:      return "ask"
-    case .always:   return "always"
-    case .off: return "off"
-    }
-  }
-}
-
 // TODO: don't add anything to `Array`, redefine as `FlickType.something()`
 public extension Array {
   var completionType: FlickType.CompletionType {
