@@ -64,7 +64,6 @@ https://github.com/FlickType/FlickTypeKit
 ```
 **IMPORTANT**: Make sure you specify the **`source`** branch when adding the package.
 
-### watchOS 7 and later
 This version of FlickTypeKit will only show FlickType as an input option to users on watchOS 7 or later. FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
 
 1. Add an associated domain entitlement to your watch extension target:
