@@ -37,7 +37,7 @@ class InterfaceController: WKInterfaceController {
     [label1, label2, label3].forEach { label in
       label.setText("", storeIn: labelTexts)
     }
-    versionLabel.setText("FlickTypeKit v\(Bundle.flickTypeKitBundle.versionAndBuild)")
+    versionLabel.setText("FlickTypeKit v\(FlickType.sdkVersion)")
   }
   
   // We need a place to initialize `recognizerLabels`, but we can't yet access the fully

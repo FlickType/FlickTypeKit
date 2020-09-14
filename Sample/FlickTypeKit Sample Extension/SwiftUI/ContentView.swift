@@ -24,7 +24,7 @@ struct ContentView: View {
         FlickTypeTextEditor(title: "Tap to edit…", text: $text1)
         FlickTypeTextEditor(title: "Tap to edit…", text: $text2)
         FlickTypeTextEditor(title: "Tap to edit…", text: $text3)
-        Text("FlickTypeKit v\(Bundle.flickTypeKitBundle.versionAndBuild)").font(.footnote).foregroundColor(.gray)
+        Text("FlickTypeKit v\(FlickType.sdkVersion)").font(.footnote).foregroundColor(.gray)
       }
     }
   }
