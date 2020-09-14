@@ -23,6 +23,11 @@ public extension WKInterfaceController {
     startingText: String = "",
     completion: @escaping ([Any]?) -> Void) {
     
+    // This source version of FlickTypeKit only supports watchOS 7 or later
+    guard ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 7 else {
+      return presentTextInputController(withSuggestions: suggestions, allowedInputMode: inputMode, completion: completion)
+    }
+    
     precondition(Thread.isMainThread)
     handlePresentTextInput(TextInputInvocation(
       suggestions: suggestions,
@@ -43,6 +48,11 @@ public extension WKInterfaceController {
     flickTypeProperties: [String: String] = [:],
     startingText: String = "",
     completion: @escaping ([Any]?) -> Void) {
+    
+    // This source version of FlickTypeKit only supports watchOS 7 or later
+    guard ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 7 else {
+      return presentTextInputControllerWithSuggestions(forLanguage: suggestionsHandler, allowedInputMode: inputMode, completion: completion)
+    }
     
     precondition(Thread.isMainThread)
     handlePresentTextInput(TextInputInvocation(
