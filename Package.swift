@@ -8,15 +8,14 @@ let package = Package(
         .watchOS(.v4),
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FlickTypeKit",
-            targets: ["FlickTypeKit"])
+            targets: ["FlickTypeKit"]
+        )
     ],
     targets: [
-        .binaryTarget(
-            name: "FlickTypeKit",
-            path: "FlickTypeKit/FlickTypeKit.xcframework"
+        .target(
+            name: "FlickTypeKit"
         )
     ]
 )
