@@ -64,12 +64,13 @@ https://github.com/FlickType/FlickTypeKit
 ```
 **IMPORTANT**: Make sure you specify the **`source`** branch when adding the package.
 
-This version of FlickTypeKit will only show FlickType as an input option to users on watchOS 7 or later. FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app and return the result back to your app. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
+This version of FlickTypeKit will only show FlickType as an input option to users on watchOS 7 or later. FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app, and then return the input text back to you. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
 
-1. Add an associated domain entitlement to your watch extension target:
+1. Add an [applinks](https://developer.apple.com/documentation/safariservices/supporting_associated_domains) associated domain entitlement to your watch extension target:
 ![Associated domains screenshot](docs/associated-domains.png)
 
-2. Host a `https://your.app.domain/.well-known/apple-app-site-association` file with the following contents:
+2. Create a file named [`apple-app-site-association`](https://developer.apple.com/documentation/safariservices/supporting_associated_domains) (without an extension) with the following contents, and place it in your site’s `.well-known` directory:
+
 ```
 {
   "applinks": {
@@ -87,6 +88,8 @@ This version of FlickTypeKit will only show FlickType as an input option to user
    }
 }
 ```
+
+The file’s URL should match the format `https://your.app.domain/.well-known/apple-app-site-association` and must be hosted with a valid certificate and with no redirects.
 
 3. Add the following inside your `WKExtensionDelegate.applicationDidFinishLaunching()`:
 ```
