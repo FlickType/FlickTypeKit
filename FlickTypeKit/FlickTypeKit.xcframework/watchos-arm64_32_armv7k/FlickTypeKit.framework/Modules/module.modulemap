@@ -1,0 +1,11 @@
+framework module FlickTypeKit {
+  umbrella header "FlickTypeKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FlickTypeKit.Swift {
+    header "FlickTypeKit-Swift.h"
+    requires objc
+}

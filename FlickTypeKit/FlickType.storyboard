@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
     <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
@@ -65,22 +65,12 @@ some work</string>
                             <items>
                                 <spriteKitScene width="1" height="1" alignment="left" id="Ioh-2u-rbm">
                                     <gestureRecognizers>
-                                        <panGestureRecognizer id="IpH-5L-rig">
-                                            <connections>
-                                                <action selector="handlePan:" destination="vBs-K4-eVG" id="o88-IQ-bOZ"/>
-                                            </connections>
-                                        </panGestureRecognizer>
                                         <longPressGestureRecognizer allowableMovement="999" minimumPressDuration="0.0" id="pSV-t1-oqI">
                                             <connections>
                                                 <action selector="handleLongPress:" destination="vBs-K4-eVG" id="U3a-Jx-qmh"/>
                                             </connections>
                                         </longPressGestureRecognizer>
                                     </gestureRecognizers>
-                                    <variation key="default">
-                                        <mask key="gestureRecognizers">
-                                            <exclude reference="IpH-5L-rig"/>
-                                        </mask>
-                                    </variation>
                                 </spriteKitScene>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
@@ -95,28 +85,46 @@ some work</string>
             </objects>
             <point key="canvasLocation" x="41" y="1235"/>
         </scene>
-        <!--TipController-->
+        <!--TipsController-->
         <scene sceneID="FJl-eW-gB5">
             <objects>
-                <controller identifier="TipController" hidesWhenLoading="NO" id="lMv-gs-llQ">
+                <controller identifier="TipsController" spacing="0.0" hidesWhenLoading="NO" id="lMv-gs-llQ" customClass="TipsController" customModule="FlickTypeKit">
                     <items>
                         <label width="1" alignment="left" numberOfLines="0" id="DG4-XC-jdX">
-                            <string key="text">• Double tap the space bar for punctuation.
+                            <string key="text">
+• Double tap the space bar for punctuation.
 
 • Scroll the Digital Crown for alternatives.
 
 • Tap ⊕ for numbers, symbols, and emoji.
-
-• Force touch to review your text.
 </string>
+                            <color key="textColor" white="1" alpha="0.75327839803312879" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
-                        <separator alignment="center" alpha="0.20000000000000001" id="WhD-An-eZI"/>
-                        <label width="1" alignment="left" textAlignment="center" numberOfLines="0" id="g3y-Ys-K2R">
-                            <string key="text">
-Made with ❤️ in 🇺🇸
+                        <label width="1" alignment="left" numberOfLines="0" id="Zni-M3-0qs" userLabel="swipeDownTip">
+                            <string key="text">• Swipe down from the top of the screen to review your text.
 </string>
+                            <color key="textColor" white="1" alpha="0.75327839803312879" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="center" textAlignment="center" numberOfLines="0" id="g3y-Ys-K2R">
+                            <string key="text">Made by
+Kosta Eleftheriou
+in California ☀️</string>
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="center" textAlignment="center" numberOfLines="0" id="97Y-C0-FOc">
+                            <string key="text">
+FlickTypeKit v1234.56</string>
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                     </items>
+                    <connections>
+                        <outlet property="swipeDownTip" destination="Zni-M3-0qs" id="QZG-P1-nwL"/>
+                        <outlet property="versionLabel" destination="97Y-C0-FOc" id="vSK-UG-QbE"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="41" y="1461"/>

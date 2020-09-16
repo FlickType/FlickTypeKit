@@ -1,0 +1,477 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target i386-apple-watchos4.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=unchecked -O -module-name FlickTypeKit
+import AVFoundation
+import CoreGraphics.CGBase
+import CommonCrypto
+import CoreGraphics
+@_exported import FlickTypeKit
+import Foundation
+import SpriteKit
+import Swift
+import SwiftUI
+import UIKit
+import WatchConnectivity
+import WatchKit
+import os.log
+import os
+extension Statistics {
+  public static func normalDistribution(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.FLFloat
+  public static func normalDensity(x: CoreGraphics.CGFloat, μ: CoreGraphics.CGFloat = 0, σ: CoreGraphics.CGFloat = 1) -> FlickTypeKit.FLFloat
+  public static func normalDensity(x: FlickTypeKit.FLFloat, μ: FlickTypeKit.FLFloat = 0, σ: FlickTypeKit.FLFloat = 1) -> FlickTypeKit.FLFloat
+}
+@_hasMissingDesignatedInitializers public class Statistics {
+  public static func normalDistribution(x: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double
+  public static func normalDensity(x: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double
+  public static func normalQuantile(p: Swift.Double, μ: Swift.Double = 0, σ: Swift.Double = 1) -> Swift.Double?
+  @objc deinit
+}
+public enum Device {
+  case appleWatchSeries0_38mm
+  case appleWatchSeries0_42mm
+  case appleWatchSeries1_38mm
+  case appleWatchSeries1_42mm
+  case appleWatchSeries2_38mm
+  case appleWatchSeries2_42mm
+  case appleWatchSeries3_38mm
+  case appleWatchSeries3_42mm
+  case appleWatchSeries4_40mm
+  case appleWatchSeries4_44mm
+  indirect case simulator(FlickTypeKit.Device)
+  case unknown(Swift.String)
+  public init()
+  public static var identifier: Swift.String
+  public static func mapToDevice(identifier: Swift.String) -> FlickTypeKit.Device
+  public static func realDevice(from device: FlickTypeKit.Device) -> FlickTypeKit.Device
+  public var diagonal: Swift.Double {
+    get
+  }
+  public var screenRatio: (width: Swift.Double, height: Swift.Double) {
+    get
+  }
+  public static var allWatches: [FlickTypeKit.Device] {
+    get
+  }
+  public static var allSimulatorWatches: [FlickTypeKit.Device] {
+    get
+  }
+  public static var allRealDevices: [FlickTypeKit.Device] {
+    get
+  }
+  public static var allSimulators: [FlickTypeKit.Device] {
+    get
+  }
+  public func isOneOf(_ devices: [FlickTypeKit.Device]) -> Swift.Bool
+  public var name: Swift.String {
+    get
+  }
+  public var systemName: Swift.String {
+    get
+  }
+  public var systemVersion: Swift.String {
+    get
+  }
+  public var model: Swift.String {
+    get
+  }
+  public var localizedModel: Swift.String {
+    get
+  }
+  public var ppi: Swift.Int? {
+    get
+  }
+  public var isGuidedAccessSessionActive: Swift.Bool {
+    get
+  }
+  public var screenBrightness: Swift.Int {
+    get
+  }
+}
+extension Device : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Device : Swift.Equatable {
+  public static func == (lhs: FlickTypeKit.Device, rhs: FlickTypeKit.Device) -> Swift.Bool
+}
+@available(iOS 8.0, watchOS 4.0, *)
+extension Device {
+  public enum BatteryState : Swift.CustomStringConvertible, Swift.Equatable {
+    case full
+    case charging(Swift.Int)
+    case unplugged(Swift.Int)
+    public var lowPowerMode: Swift.Bool {
+      get
+    }
+    public var description: Swift.String {
+      get
+    }
+  }
+  public var batteryState: FlickTypeKit.Device.BatteryState {
+    get
+  }
+  public var batteryLevel: Swift.Int {
+    get
+  }
+}
+@available(iOS 8.0, watchOS 4.0, *)
+extension Device.BatteryState : Swift.Comparable {
+  public static func == (lhs: FlickTypeKit.Device.BatteryState, rhs: FlickTypeKit.Device.BatteryState) -> Swift.Bool
+  public static func < (lhs: FlickTypeKit.Device.BatteryState, rhs: FlickTypeKit.Device.BatteryState) -> Swift.Bool
+}
+extension UIAccessibility {
+  public static func post(notification: UIKit.UIAccessibility.Notification, argument: Any?)
+}
+public var isVoiceOverEnabled: Swift.Bool {
+  get
+}
+public func VoiceOverifyText(_ text: Swift.String) -> Swift.String
+extension UIAccessibility {
+  public static func post(notification: UIKit.UIAccessibility.Notification, argument: Any?, afterDelay: Foundation.TimeInterval)
+}
+@objc extension FileManager {
+  @objc dynamic public var sharedContainerURL: Foundation.URL {
+    @objc get
+  }
+}
+@objc extension UserDefaults {
+  @objc public static let shared: Foundation.UserDefaults
+  @objc dynamic public var flickTypeDictionary: [Swift.String : Any] {
+    @objc get
+  }
+  @objc dynamic public var emojiShortcuts: [Swift.String] {
+    @objc get
+  }
+  @objc dynamic public var userWords: Swift.Set<Swift.String> {
+    @objc get
+  }
+  @objc dynamic public func addUserWord(_ word: Swift.String)
+  @objc dynamic public func removeUserWord(_ word: Swift.String)
+  @objc dynamic public var themeColor: UIKit.UIColor {
+    @objc get
+  }
+  @objc dynamic public var hasPerformedStatusBarFlick: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var keyboardType: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var watchPresentationStyle: Swift.Int {
+    @objc get
+  }
+  @objc dynamic public var isAutocorrectEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isCharacterPreviewEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isSwipeEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var areFlicksEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var voiceFeedback: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var favoriteContact1Nickname: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var favoriteContact1Address: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var launches: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var lastFeedbackPromptTime: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hasChosenToWriteReview: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var hasGivenBadFeedback: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public var currentSettingsSummary: [Swift.String : Any] {
+    @objc get
+  }
+}
+@objc extension Bundle {
+  @objc public static let isExtension: Swift.Bool
+  @objc public static let isAppStoreInstall: Swift.Bool
+  @objc dynamic public var version: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var build: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var versionAndBuild: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var bundleID: Swift.String {
+    @objc get
+  }
+  @objc dynamic public var isMainFlickTypeApp: Swift.Bool {
+    @objc get
+  }
+}
+extension String {
+  public var replacingNewLinesAndReplacementChars: Swift.String {
+    get
+  }
+  public var trimmingWhitespace: Swift.String {
+    get
+  }
+  public var isOnlyWhitespace: Swift.Bool {
+    get
+  }
+  public var needsSpaceBefore: Swift.Bool {
+    get
+  }
+  public var tokens: [Swift.String] {
+    get
+  }
+  public var capitalizedFirstLetter: Swift.String {
+    get
+  }
+}
+extension UIColor {
+  public static let darkRed: UIKit.UIColor
+  public static let darkGreen: UIKit.UIColor
+  public static let veryLightGray: UIKit.UIColor
+  public static let systemGreen: UIKit.UIColor
+  public static let systemYellow: UIKit.UIColor
+  public static let lightRed: UIKit.UIColor
+  public static let lightGreen: UIKit.UIColor
+  public static let lightBlue: UIKit.UIColor
+  public var redComponent: CoreGraphics.CGFloat {
+    get
+  }
+  public var greenComponent: CoreGraphics.CGFloat {
+    get
+  }
+  public var blueComponent: CoreGraphics.CGFloat {
+    get
+  }
+  public var alphaComponent: CoreGraphics.CGFloat {
+    get
+  }
+  public var withAppliedAlpha: UIKit.UIColor {
+    get
+  }
+}
+extension FLPoint {
+  public static func - (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func + (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func * (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLPoint) -> FlickTypeKit.FLPoint
+  public static func * (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLFloat) -> FlickTypeKit.FLPoint
+  public static func / (left: FlickTypeKit.FLPoint, right: FlickTypeKit.FLFloat) -> FlickTypeKit.FLPoint
+  public static func nextUniformPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> FlickTypeKit.FLPoint
+  public static func nextGaussianPoint(using randomGenerator: inout FlickTypeKit.RandomNumberGeneratorObjC) -> FlickTypeKit.FLPoint
+  public init(_ point: CoreGraphics.CGPoint)
+  public init(x: Swift.Double, y: Swift.Double)
+}
+extension FLPoint : Swift.Equatable {
+  public static func == (lhs: FlickTypeKit.FLPoint, rhs: FlickTypeKit.FLPoint) -> Swift.Bool
+}
+public protocol SoundEffectManager {
+  static var shared: FlickTypeKit.SoundEffectManager { get }
+  func playTap(withPan pan: Swift.Float)
+  func playFocus()
+  func playCursor()
+  func vibrateSelection()
+  func playBoundary()
+  func playDirectionUp()
+  func playDirectionDown()
+}
+extension UnsafeBufferPointer : Swift.Equatable where Element == Swift.UInt8 {
+  public static func == (lhs: Swift.UnsafeBufferPointer<Element>, rhs: Swift.UnsafeBufferPointer<Element>) -> Swift.Bool
+}
+extension UnsafeBufferPointer : Swift.Hashable where Element == Swift.UInt8 {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UnsafeBufferPointer : Swift.CustomStringConvertible where Element == Swift.UInt8 {
+  public var description: Swift.String {
+    get
+  }
+}
+extension RandomNumberGeneratorObjC : Swift.RandomNumberGenerator {
+}
+public class LowPassFilter1D {
+  public var out: CoreGraphics.CGFloat?
+  public var lastInput: CoreGraphics.CGFloat?
+  public init(_ a: CoreGraphics.CGFloat = 1)
+  public func reset()
+  public func update(_ input: CoreGraphics.CGFloat, alpha: CoreGraphics.CGFloat? = nil) -> CoreGraphics.CGFloat
+  public func update(_ input: Swift.Double) -> Swift.Double
+  @objc deinit
+}
+@discardableResult
+public func measureBlock<R>(_ label: Swift.String, show: Swift.Bool = true, times: Swift.Int = 1, file: Swift.String = #file, _ block: () -> R?) -> R?
+extension String {
+  public var canBeAddedToDictionary: Swift.Bool {
+    get
+  }
+}
+extension CGRect {
+}
+public protocol EventTrackerImplementationProtocol {
+  func logger(_ message: Swift.String)
+  func timeEvent(_ eventName: Swift.String)
+  func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any])
+  func incrementProfileProperty(_ property: Swift.String, by amount: Swift.Int)
+}
+public class EventTracker {
+  public static var shared: FlickTypeKit.EventTracker!
+  public init(implementation: FlickTypeKit.EventTrackerImplementationProtocol? = nil)
+  public func log(_ message: Swift.String)
+  public func timeEvent(_ eventName: Swift.String)
+  public func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any] = [:], file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public func trackError(_ properties: [Swift.String : Any] = [:], file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function) -> Swift.Never
+  public func trackWarning(_ properties: [Swift.String : Any] = [:], file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public func incrementProfileProperty(_ property: Swift.String, by amount: Swift.Int = 1)
+  @objc deinit
+}
+extension NSObject {
+  public static func logger(_ text: Swift.String = "", function: Swift.String = #function, object: Swift.AnyObject? = nil)
+  open func logger(_ text: Swift.String = "", function: Swift.String = #function)
+}
+public class EventTrackerDebugImplementation : FlickTypeKit.EventTrackerImplementationProtocol {
+  public init()
+  public func logger(_ message: Swift.String)
+  public func timeEvent(_ eventName: Swift.String)
+  public func trackEvent(_ eventName: Swift.String, properties: [Swift.String : Any] = [:])
+  public func incrementProfileProperty(_ property: Swift.String, by amount: Swift.Int)
+  @objc deinit
+}
+public struct FLSize {
+  public var width: FlickTypeKit.FLFloat
+  public var height: FlickTypeKit.FLFloat
+}
+extension Character : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension WKInterfaceController {
+  @objc dynamic public func presentTextInputController(withSuggestions suggestions: [Swift.String]?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickType flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
+  @objc dynamic public func presentTextInputControllerWithSuggestions(forLanguage suggestionsHandler: ((Swift.String) -> [Any]?)?, allowedInputMode inputMode: WatchKit.WKTextInputMode, flickType flickTypeMode: FlickTypeKit.FlickType.Mode, flickTypeProperties: [Swift.String : Swift.String] = [:], startingText: Swift.String = "", completion: @escaping ([Any]?) -> Swift.Void)
+}
+extension FlickType {
+  @objc public enum Mode : Swift.Int {
+    case ask
+    case always
+    case off
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static func resourceHash(_ input: Swift.String) -> Swift.String?
+  public static func deleteLocalResourceFiles()
+  public static var localResourceExists: Swift.Bool {
+    get
+  }
+  public static func setLocalResourceFile(_ fileUrl: Foundation.URL) throws
+  @objc public static func startDownloadingInBackground()
+  public static var returnURL: Foundation.URL!
+  public static func handle(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
+}
+extension FlickType.Mode : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension FlickType.PresentationStyle : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Array {
+  public var completionType: FlickTypeKit.FlickType.CompletionType {
+    get
+  }
+}
+extension WKExtension {
+  public static func presentRootFlickTypeKeyboard(doneButtonLabel: Swift.String, startingText: Swift.String, externalAppRequest: Swift.Bool, animate: Swift.Bool, completion: @escaping ([Any]?) -> Swift.Void)
+}
+extension WKInterfaceController {
+  public func _maybeVisibleDismissed()
+}
+@objc @_inheritsConvenienceInitializers open class WKDismissAwareInterfaceController : WatchKit.WKInterfaceController {
+  @objc override dynamic public func willDisappear()
+  open func handleDismiss()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(watchOSApplicationExtension 6.0, *)
+public struct FlickTypeTextEditor : SwiftUI.View {
+  public init(title: Swift.String = "", text: SwiftUI.Binding<Swift.String>, mode: FlickTypeKit.FlickType.Mode = .ask)
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12FlickTypeKit0aB10TextEditorV4bodyQrvp", 0) 🦸
+}
+extension WKApplicationState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension WCSessionActivationState : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Bundle {
+  public static var flickTypeKitBundle: Foundation.Bundle
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FlickType : ObjectiveC.NSObject {
+  @objc public enum PresentationStyle : Swift.Int {
+    case modal
+    case push
+    case root
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum CompletionType : Swift.Int {
+    case dismiss
+    case action
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+extension CGSize {
+  public static let greatestFiniteSize: CoreGraphics.CGSize
+  public func contains(_ size: CoreGraphics.CGSize) -> Swift.Bool
+  public var floored: CoreGraphics.CGSize {
+    get
+  }
+}
+extension FlickTypeKit.FlickType.Mode : Swift.Equatable {}
+extension FlickTypeKit.FlickType.Mode : Swift.Hashable {}
+extension FlickTypeKit.FlickType.Mode : Swift.RawRepresentable {}
+extension FlickTypeKit.FlickType.PresentationStyle : Swift.Equatable {}
+extension FlickTypeKit.FlickType.PresentationStyle : Swift.Hashable {}
+extension FlickTypeKit.FlickType.PresentationStyle : Swift.RawRepresentable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.Equatable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.Hashable {}
+extension FlickTypeKit.FlickType.CompletionType : Swift.RawRepresentable {}
