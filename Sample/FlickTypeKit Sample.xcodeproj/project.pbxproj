@@ -148,8 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				0ABA7E5D24F08F6200D8F732 /* FlickTypeKit Sample Extension.entitlements */,
-				0A83100E24F056CD00115FC8 /* InterfaceController.swift */,
 				0A83101024F056CD00115FC8 /* ExtensionDelegate.swift */,
+				0A9F21B225120CE90047483E /* WatchKit */,
 				0A71978624F6DB2900758B7A /* SwiftUI */,
 				0A83101224F056CD00115FC8 /* Assets.xcassets */,
 				0A83101424F056CD00115FC8 /* Info.plist */,
@@ -163,6 +163,14 @@
 				0A83102324F0581900115FC8 /* FlickTypeKit.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A9F21B225120CE90047483E /* WatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A83100E24F056CD00115FC8 /* InterfaceController.swift */,
+			);
+			path = WatchKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
