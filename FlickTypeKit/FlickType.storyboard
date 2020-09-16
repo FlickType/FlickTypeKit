@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" pageOrientation="vertical">
     <device id="watch44"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
         <!--Gatekeeper-->
@@ -38,7 +38,7 @@ some work</string>
                                     </connections>
                                 </button>
                                 <label width="0.90000000000000002" alignment="center" verticalAlignment="center" text="Transfer can continue in the background. Ensure your device is at least 30% charged." textAlignment="center" numberOfLines="0" id="QBd-pB-wNL">
-                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="textColor" systemColor="lightTextColor"/>
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
                             </items>
@@ -111,13 +111,13 @@ some work</string>
                             <string key="text">Made by
 Kosta Eleftheriou
 in California ☀️</string>
-                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <color key="textColor" systemColor="lightTextColor"/>
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                         <label alignment="center" textAlignment="center" numberOfLines="0" id="97Y-C0-FOc">
                             <string key="text">
 FlickTypeKit v1234.56</string>
-                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <color key="textColor" systemColor="lightTextColor"/>
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                     </items>
@@ -130,4 +130,9 @@ FlickTypeKit v1234.56</string>
             <point key="canvasLocation" x="41" y="1461"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
