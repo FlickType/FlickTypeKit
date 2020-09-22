@@ -346,9 +346,14 @@ typedef SWIFT_ENUM(NSInteger, CompletionType, open) {
   CompletionTypeAction = 1,
 };
 
+@class NSUserActivity;
 
 @interface FlickType (SWIFT_EXTENSION(FlickTypeKit))
 + (void)startDownloadingInBackground;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSURL * _Null_unspecified returnURL;)
++ (NSURL * _Null_unspecified)returnURL SWIFT_WARN_UNUSED_RESULT;
++ (void)setReturnURL:(NSURL * _Null_unspecified)value;
++ (BOOL)handle:(NSUserActivity * _Nonnull)userActivity SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, Mode, open) {
@@ -387,8 +392,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit22FlickTypeContainerView")
 @end
 
 
-SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
-@interface WKDismissAwareInterfaceController : WKInterfaceController
+SWIFT_CLASS("_TtC12FlickTypeKit31WKTracksLastDisappearController")
+@interface WKTracksLastDisappearController : WKInterfaceController
 - (void)willDisappear;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -398,7 +403,7 @@ SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
 @class WKLongPressGestureRecognizer;
 
 SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
-@interface FlickTypeController : WKDismissAwareInterfaceController
+@interface FlickTypeController : WKTracksLastDisappearController
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup * _Null_unspecified mainView;
 @property (nonatomic, strong) IBOutlet WKInterfaceSKScene * _Null_unspecified scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -411,6 +416,7 @@ SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
 - (void)toggleInvisible;
 - (IBAction)handleLongPress:(WKLongPressGestureRecognizer * _Nonnull)sender;
 @end
+
 
 
 @interface FlickTypeController (SWIFT_EXTENSION(FlickTypeKit))
@@ -680,6 +686,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSUserDefaul
 @property (nonatomic, readonly) BOOL voiceFeedback;
 @property (nonatomic, copy) NSString * _Nullable favoriteContact1Nickname;
 @property (nonatomic, copy) NSString * _Nullable favoriteContact1Address;
+@property (nonatomic, readonly) BOOL sendUsesFavorite;
 @property (nonatomic) NSInteger launches;
 @property (nonatomic) NSTimeInterval lastFeedbackPromptTime;
 @property (nonatomic) BOOL hasChosenToWriteReview;
@@ -701,11 +708,11 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 
 
 
-
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
 - (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 - (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
+
 
 
 
@@ -1067,9 +1074,14 @@ typedef SWIFT_ENUM(NSInteger, CompletionType, open) {
   CompletionTypeAction = 1,
 };
 
+@class NSUserActivity;
 
 @interface FlickType (SWIFT_EXTENSION(FlickTypeKit))
 + (void)startDownloadingInBackground;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSURL * _Null_unspecified returnURL;)
++ (NSURL * _Null_unspecified)returnURL SWIFT_WARN_UNUSED_RESULT;
++ (void)setReturnURL:(NSURL * _Null_unspecified)value;
++ (BOOL)handle:(NSUserActivity * _Nonnull)userActivity SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, Mode, open) {
@@ -1108,8 +1120,8 @@ SWIFT_CLASS("_TtC12FlickTypeKit22FlickTypeContainerView")
 @end
 
 
-SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
-@interface WKDismissAwareInterfaceController : WKInterfaceController
+SWIFT_CLASS("_TtC12FlickTypeKit31WKTracksLastDisappearController")
+@interface WKTracksLastDisappearController : WKInterfaceController
 - (void)willDisappear;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1119,7 +1131,7 @@ SWIFT_CLASS("_TtC12FlickTypeKit33WKDismissAwareInterfaceController")
 @class WKLongPressGestureRecognizer;
 
 SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
-@interface FlickTypeController : WKDismissAwareInterfaceController
+@interface FlickTypeController : WKTracksLastDisappearController
 @property (nonatomic, weak) IBOutlet WKInterfaceGroup * _Null_unspecified mainView;
 @property (nonatomic, strong) IBOutlet WKInterfaceSKScene * _Null_unspecified scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1132,6 +1144,7 @@ SWIFT_CLASS("_TtC12FlickTypeKit19FlickTypeController")
 - (void)toggleInvisible;
 - (IBAction)handleLongPress:(WKLongPressGestureRecognizer * _Nonnull)sender;
 @end
+
 
 
 @interface FlickTypeController (SWIFT_EXTENSION(FlickTypeKit))
@@ -1401,6 +1414,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NSUserDefaul
 @property (nonatomic, readonly) BOOL voiceFeedback;
 @property (nonatomic, copy) NSString * _Nullable favoriteContact1Nickname;
 @property (nonatomic, copy) NSString * _Nullable favoriteContact1Address;
+@property (nonatomic, readonly) BOOL sendUsesFavorite;
 @property (nonatomic) NSInteger launches;
 @property (nonatomic) NSTimeInterval lastFeedbackPromptTime;
 @property (nonatomic) BOOL hasChosenToWriteReview;
@@ -1422,11 +1436,11 @@ SWIFT_CLASS("_TtC12FlickTypeKit23VerticallyCenteredLabel")
 
 
 
-
 @interface WKInterfaceController (SWIFT_EXTENSION(FlickTypeKit))
 - (void)presentTextInputControllerWithSuggestions:(NSArray<NSString *> * _Nullable)suggestions allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 - (void)presentTextInputControllerWithSuggestionsForLanguage:(NSArray * _Nullable (^ _Nullable)(NSString * _Nonnull))suggestionsHandler allowedInputMode:(WKTextInputMode)inputMode flickType:(enum Mode)flickTypeMode flickTypeProperties:(NSDictionary<NSString *, NSString *> * _Nonnull)flickTypeProperties startingText:(NSString * _Nonnull)startingText completion:(void (^ _Nonnull)(NSArray * _Nullable))completion;
 @end
+
 
 
 

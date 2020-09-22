@@ -27,7 +27,7 @@
 		</data>
 		<key>Headers/FlickTypeKit-Swift.h</key>
 		<data>
-		3n/SUFb7LkGYnnNmA5/7nkV025g=
+		Vw0P0h9INH8sSMjGM5zT7IDtBiU=
 		</data>
 		<key>Headers/FlickTypeKit.h</key>
 		<data>
@@ -59,7 +59,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EwtbJmndmSKx+ohDj3ZYZI2hzUY=
+		rQf14mF7n4/8B3dzF5SRcSblUuk=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -67,11 +67,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		9shAmpcO+pCpmxzGQlPVrIGnCFE=
+		/kcrQqxD8B5Pwhif/NsAGYVq1O8=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		E633lbre+U7IZzHfStHe3swS76M=
+		zqqzL/YaVzxW/sK+BtaxOPjwINY=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -79,11 +79,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		9shAmpcO+pCpmxzGQlPVrIGnCFE=
+		/kcrQqxD8B5Pwhif/NsAGYVq1O8=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		E633lbre+U7IZzHfStHe3swS76M=
+		zqqzL/YaVzxW/sK+BtaxOPjwINY=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -91,11 +91,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		QXwDaMwRq05zwGxPWn5JzUwIrTI=
+		uU4/Ef7lCOJHhOXQOY0ddLYVAR0=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		Cab6OXlqpBGk7pRtYsUEaqBvn1M=
+		DH2EHk5Gf1mGSbKKv9HqRKjZMeQ=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -103,11 +103,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftinterface</key>
 		<data>
-		QXwDaMwRq05zwGxPWn5JzUwIrTI=
+		uU4/Ef7lCOJHhOXQOY0ddLYVAR0=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<data>
-		Cab6OXlqpBGk7pRtYsUEaqBvn1M=
+		DH2EHk5Gf1mGSbKKv9HqRKjZMeQ=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
@@ -115,11 +115,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		eYHc1XwG00pvhogT+sMGimmOu/Q=
+		uWy8Lf6n7KnMM4WImz1DTTy7qjM=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		4+dk2G3ASnN4pVYMkozsYl12Cr0=
+		hkQ1hkOCsil9pblU35ld0/PHJUs=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -127,11 +127,11 @@
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		eYHc1XwG00pvhogT+sMGimmOu/Q=
+		uWy8Lf6n7KnMM4WImz1DTTy7qjM=
 		</data>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		4+dk2G3ASnN4pVYMkozsYl12Cr0=
+		hkQ1hkOCsil9pblU35ld0/PHJUs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3n/SUFb7LkGYnnNmA5/7nkV025g=
+			Vw0P0h9INH8sSMjGM5zT7IDtBiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fg58n7WU19ngSbqEQyo5X6uFcVClKiQS7wyLj/ud638=
+			t9nu1XtXSrRcba6ZhAsI+uo02ph/+JEbhgElNZU8+hA=
 			</data>
 		</dict>
 		<key>Headers/FlickTypeKit.h</key>
@@ -297,22 +297,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9shAmpcO+pCpmxzGQlPVrIGnCFE=
+			/kcrQqxD8B5Pwhif/NsAGYVq1O8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PSd7j9/Cpr2FCEz3CqNV83AfGmEzzi7MztDnYiG7FNM=
+			JrOnK5UrgI7GphyW00FAZVyEP6wapNK03nqO/6WepRw=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E633lbre+U7IZzHfStHe3swS76M=
+			zqqzL/YaVzxW/sK+BtaxOPjwINY=
 			</data>
 			<key>hash2</key>
 			<data>
-			z0iD0dbcstvykFeO3OMZct/mCq6dlN4idBugfoxF4Tw=
+			bzX298OkFrJZ80BUNxCKQG4UBf7L9OTQ2cyh2wrE1HA=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64.swiftdoc</key>
@@ -330,22 +330,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9shAmpcO+pCpmxzGQlPVrIGnCFE=
+			/kcrQqxD8B5Pwhif/NsAGYVq1O8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PSd7j9/Cpr2FCEz3CqNV83AfGmEzzi7MztDnYiG7FNM=
+			JrOnK5UrgI7GphyW00FAZVyEP6wapNK03nqO/6WepRw=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E633lbre+U7IZzHfStHe3swS76M=
+			zqqzL/YaVzxW/sK+BtaxOPjwINY=
 			</data>
 			<key>hash2</key>
 			<data>
-			z0iD0dbcstvykFeO3OMZct/mCq6dlN4idBugfoxF4Tw=
+			bzX298OkFrJZ80BUNxCKQG4UBf7L9OTQ2cyh2wrE1HA=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftdoc</key>
@@ -363,22 +363,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QXwDaMwRq05zwGxPWn5JzUwIrTI=
+			uU4/Ef7lCOJHhOXQOY0ddLYVAR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qIT2T1dUReJuqMsxriBTsFa41WtGbHHeJjni7BdVTJI=
+			vJtN1wKCHXacRZa2zK0+SMNR9pAopfX6Y9XBeMpP7/A=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cab6OXlqpBGk7pRtYsUEaqBvn1M=
+			DH2EHk5Gf1mGSbKKv9HqRKjZMeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSIhSvzmc0+iSciqkyn6BfjIS94XEpbZUXu4arlEvI8=
+			pSrA9ubjqTE4J4dLc2kUgjKczofCQQT1RllyNhAv2p0=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftdoc</key>
@@ -396,22 +396,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QXwDaMwRq05zwGxPWn5JzUwIrTI=
+			uU4/Ef7lCOJHhOXQOY0ddLYVAR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qIT2T1dUReJuqMsxriBTsFa41WtGbHHeJjni7BdVTJI=
+			vJtN1wKCHXacRZa2zK0+SMNR9pAopfX6Y9XBeMpP7/A=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cab6OXlqpBGk7pRtYsUEaqBvn1M=
+			DH2EHk5Gf1mGSbKKv9HqRKjZMeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			fSIhSvzmc0+iSciqkyn6BfjIS94XEpbZUXu4arlEvI8=
+			pSrA9ubjqTE4J4dLc2kUgjKczofCQQT1RllyNhAv2p0=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
@@ -429,22 +429,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eYHc1XwG00pvhogT+sMGimmOu/Q=
+			uWy8Lf6n7KnMM4WImz1DTTy7qjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			r3QVaRWLpNCDx1uT9uAGjQwkawBr6UdDcymLliUvnZE=
+			dglQJq1lCYcUNHprYP5SddxNJLBTl9qlxpyn9Rwb2JY=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4+dk2G3ASnN4pVYMkozsYl12Cr0=
+			hkQ1hkOCsil9pblU35ld0/PHJUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yg95r5r1AmDXQ/w0iwkqo25gX4C33QcdW+BEjZj7C2k=
+			vQoBLcjkRYcwQXBHuy7oUR3HoL4VTnfEGqYcBSytJso=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64.swiftdoc</key>
@@ -462,22 +462,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eYHc1XwG00pvhogT+sMGimmOu/Q=
+			uWy8Lf6n7KnMM4WImz1DTTy7qjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			r3QVaRWLpNCDx1uT9uAGjQwkawBr6UdDcymLliUvnZE=
+			dglQJq1lCYcUNHprYP5SddxNJLBTl9qlxpyn9Rwb2JY=
 			</data>
 		</dict>
 		<key>Modules/FlickTypeKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4+dk2G3ASnN4pVYMkozsYl12Cr0=
+			hkQ1hkOCsil9pblU35ld0/PHJUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yg95r5r1AmDXQ/w0iwkqo25gX4C33QcdW+BEjZj7C2k=
+			vQoBLcjkRYcwQXBHuy7oUR3HoL4VTnfEGqYcBSytJso=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

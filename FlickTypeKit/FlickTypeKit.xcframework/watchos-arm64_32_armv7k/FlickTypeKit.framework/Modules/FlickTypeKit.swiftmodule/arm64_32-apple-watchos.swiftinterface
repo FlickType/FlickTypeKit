@@ -185,6 +185,9 @@ extension UIAccessibility {
     @objc get
     @objc set
   }
+  @objc dynamic public var sendUsesFavorite: Swift.Bool {
+    @objc get
+  }
   @objc dynamic public var launches: Swift.Int {
     @objc get
     @objc set
@@ -243,6 +246,9 @@ extension String {
   public var capitalizedFirstLetter: Swift.String {
     get
   }
+}
+extension Dictionary {
+  public func delta(from other: Swift.Dictionary<Key, Value>) -> (added: Swift.Dictionary<Key, Value>, removed: Swift.Dictionary<Key, Value>)
 }
 extension UIColor {
   public static let darkRed: UIKit.UIColor
@@ -319,7 +325,7 @@ public class LowPassFilter1D {
   @objc deinit
 }
 @discardableResult
-public func measureBlock<R>(_ label: Swift.String, show: Swift.Bool = true, times: Swift.Int = 1, file: Swift.String = #file, _ block: () -> R?) -> R?
+public func measureBlock<R>(_ label: Swift.String, show: Swift.Bool = true, times: Swift.Int = 1, file: Swift.String = #file, _ block: () -> R) -> R
 extension String {
   public var canBeAddedToDictionary: Swift.Bool {
     get
@@ -386,8 +392,8 @@ extension FlickType {
   }
   public static func setLocalResourceFile(_ fileUrl: Foundation.URL) throws
   @objc public static func startDownloadingInBackground()
-  public static var returnURL: Foundation.URL!
-  public static func handle(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
+  @objc public static var returnURL: Foundation.URL!
+  @objc public static func handle(_ userActivity: Foundation.NSUserActivity) -> Swift.Bool
 }
 extension FlickType.Mode : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -410,11 +416,11 @@ extension WKExtension {
 extension WKInterfaceController {
   public func _maybeVisibleDismissed()
 }
-@objc @_inheritsConvenienceInitializers open class WKDismissAwareInterfaceController : WatchKit.WKInterfaceController {
-  @objc override dynamic public func willDisappear()
-  open func handleDismiss()
-  @objc override dynamic public init()
-  @objc deinit
+public protocol WKTracksLastDisappear : WatchKit.WKInterfaceController {
+  var lastWillDisappear: Foundation.TimeInterval { get }
+}
+public protocol WKSelfDismissAware : FlickTypeKit.WKTracksLastDisappear {
+  func handleDismiss()
 }
 @available(watchOSApplicationExtension 6.0, *)
 public struct FlickTypeTextEditor : SwiftUI.View {
