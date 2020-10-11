@@ -24,7 +24,14 @@ public struct FlickTypeTextEditor: View {
   
   public var body: some View {
     Button(action: {
-      WKExtension.shared().visibleInterfaceController?.presentTextInputController(
+      // There are cases where `visibleInterfaceController` might be nil, for example the destination of a `NavigationLink`.
+      // In those instances we'll try to use the root controller, even though we get the warning:
+      // "Presenting view controller XYZ from detached view controller XYZ is discouraged."
+      guard let controller = WKExtension.shared().visibleInterfaceController ?? WKExtension.shared().rootInterfaceController else {
+        print("FlickTypeTextEditor: Error: could not get required current controller")
+        return
+      }
+      controller.presentTextInputController(
         withSuggestions: nil,
         allowedInputMode: .allowEmoji,
         flickType: self.mode,
