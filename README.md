@@ -62,8 +62,6 @@ _**Note:** When using WatchKit, the optional `startingText` argument can be used
 ```
 https://github.com/FlickType/FlickTypeKit
 ```
-**IMPORTANT**: Make sure you specify the **`source`** branch when adding the package.
-
 This version of FlickTypeKit will only show FlickType as an input option to users on watchOS 7 or later. FlickTypeKit uses [universal links](https://developer.apple.com/documentation/xcode/allowing_apps_and_websites_to_link_to_your_content) to switch from your app to the [FlickType Keyboard](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719) app, and then return the input text back to you. Thus the keyboard stays up-to-date without you having to update your app, and leverages the user's custom settings and dictionary. To support universal links in your app: 
 
 1. Add an [applinks](https://developer.apple.com/documentation/safariservices/supporting_associated_domains) associated domain entitlement to your watch extension target:
