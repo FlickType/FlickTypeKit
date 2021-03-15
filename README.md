@@ -105,5 +105,3 @@ If you wish to support users on watchOS 6 and earlier, please see the other bran
  - The sample app contains implementations for both SwiftUI & WatchKit. 
  - Join our [Discord](https://discord.gg/MFyvmhe)
  - [Email](mailto:sdk@flicktype.com) us!
-
-# ⌚️
