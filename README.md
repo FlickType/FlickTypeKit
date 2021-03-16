@@ -5,6 +5,8 @@
 # FlickTypeKit 🚀
 [![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=main)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
+[_“Best of 2020”_](https://apps.apple.com/us/story/id1535572713) - Apple
+<br>
 [_“Apple Watch App of the Year”_](https://appadvice.com/post/appadvices-top-10-apple-watch-apps-2018/764638) - AppAdvice
 <br>
 [_“Makes Typing a Breeze”_](https://www.forbes.com/sites/davidphelan/2019/03/02/apple-watch-flicktype-gesture-keyboard-app-makes-typing-a-breeze-is-it-any-good/) - Forbes
