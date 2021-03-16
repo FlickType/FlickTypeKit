@@ -595,7 +595,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FlickType/FlickTypeKit.git";
 			requirement = {
-				branch = source;
+				branch = main;
 				kind = branch;
 			};
 		};
