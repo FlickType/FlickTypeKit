@@ -3,7 +3,7 @@
 [![FlickType screenshot](docs/screenshot-2.png)](https://apps.apple.com/us/app/flicktype-keyboard/id1359485719)
 
 # FlickTypeKit 🚀
-[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=source)](https://travis-ci.com/FlickType/FlickTypeKit) 
+[![Build Status](https://travis-ci.com/FlickType/FlickTypeKit.svg?branch=main)](https://travis-ci.com/FlickType/FlickTypeKit) 
 
 [_“Apple Watch App of the Year”_](https://appadvice.com/post/appadvices-top-10-apple-watch-apps-2018/764638) - AppAdvice
 <br>
