@@ -100,9 +100,6 @@ FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
 if FlickType.handle(userActivity) { return }
 ```
 
-### Earlier watchOS versions
-If you wish to support users on watchOS 6 and earlier, please see the other branches of this repository.
-
 ### Help & support
  - The sample app contains implementations for both SwiftUI & WatchKit. 
  - Join our [Discord](https://discord.gg/MFyvmhe)
