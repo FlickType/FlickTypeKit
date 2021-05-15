@@ -13,49 +13,29 @@
 
 Add a powerful keyboard to your watchOS apps and dramatically improve the text input experience for users. Leverage full typing and editing capabilities to greatly enhance existing parts of your app, or enable entirely new features like messaging and note-taking directly on Apple Watch.
 
-### SwiftUI
-Use a `FlickTypeTextEditor` to display an editable text interface and gather text input from the user:
+### Usage
+Modify your `[self presentTextInputController ...]` calls to include the `flickType` argument:
 
 <pre>
-<b>import FlickTypeKit</b>
+<b>#import "FlickTypeKit/FlickTypeKit.h"</b>
 
-struct ContentView: View {
-  @State private var text = ""
-  var body: some View {
-    ScrollView {
-      VStack {
-        // other views here...
-        <b>FlickTypeTextEditor(text: $text)</b>
-        // more views here...
-      }
+[self presentTextInputControllerWithSuggestions:nil
+  allowedInputMode:WKTextInputModeAllowEmoji
+  <b>flickType:FlickTypeModeAsk</b>
+  completion:^(NSArray *results) {
+    if ([results.firstObject isKindOfClass:[NSString class]]) {
+        NSLog(@"User typed text: %@", text);
     }
-  }
-}
+}];
 </pre>
 
-### WatchKit
-Modify your `presentTextInputController()` calls to include the `flickType` argument:
-
-<pre>
-<b>import FlickTypeKit</b>
-
-presentTextInputController(
-  withSuggestions: nil,
-  allowedInputMode: .allowEmoji,
-  <b>flickType: .ask</b>) { items in
-  if let text = items?.first as? String {
-    print("User typed text: \(text)")
-  }
-}
-</pre>
-
- `.ask` will offer a choice between FlickType and the standard input methods _(recommended)_.
+ `FlickTypeModeAsk` will offer a choice between FlickType and the standard input methods _(recommended)_.
  <br>
- `.always` will always open FlickType, skipping the input method selection.
+ `FlickTypeModeAlways` will always open FlickType, skipping the input method selection.
  <br>
- `.off` will present the standard input method selection without the FlickType option.
+ `FlickTypeModeOff` will present the standard input method selection without the FlickType option.
 
-_**Note:** When using WatchKit, the optional `startingText` argument can be used to support editing of existing text with FlickType. In SwiftUI, `FlickTypeTextEditor` does that automatically for you._
+_**Note:** The optional `startingText` argument can be used to support editing of existing text with FlickType._
 
 ## Integration
 
@@ -91,16 +71,15 @@ This version of FlickTypeKit will only show FlickType as an input option to user
 
 The file’s URL should match the format `https://your.app.domain/.well-known/apple-app-site-association` and must be hosted with a valid certificate and with no redirects.
 
-3. Add the following inside your `WKExtensionDelegate.applicationDidFinishLaunching()`:
+3. Add the following inside your `[WKExtensionDelegate applicationDidFinishLaunching]`:
 ```
-FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
+FlickType.returnURL = [NSURL URLWithString:@"https://your.app.domain/flicktype/"];
 ```
-4. Add the following inside your `WKExtensionDelegate.handle(_ userActivity: NSUserActivity)`:
+4. Add the following inside your `[WKExtensionDelegate handleActivity:(NSUserActivity *)userActivity]`:
 ```
-if FlickType.handle(userActivity) { return }
+if ([FlickType handle:userActivity]) { return; }
 ```
 
 ### Help & support
- - The sample app contains implementations for both SwiftUI & WatchKit. 
- - Join our [Discord](https://discord.gg/MFyvmhe)
- - [Email](mailto:sdk@flicktype.com) us!
+ - Check out the provided sample app. 
+ - [Email](mailto:sdk@flicktype.com) me or find me on [Twitter](https://twitter.com/keleftheriou)!
