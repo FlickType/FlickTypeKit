@@ -151,7 +151,7 @@ public extension WKInterfaceController {
 
 public class FlickType : NSObject {
   
-  public static let sdkVersion = "1.0.0 (source)"
+  public static let sdkVersion = "2.0.0/swift"
   
   @objc
   public enum CompletionType : Int {
@@ -169,7 +169,7 @@ public class FlickType : NSObject {
   private override init() {
   }
   
-  // eg "https://www.my-app.com/flicktype"
+  // eg "https://your.app.domain/flicktype"
   public static var returnURL: URL!
   
   fileprivate static let typeURL = "https://flicktype.com/type/"
@@ -181,7 +181,7 @@ public class FlickType : NSObject {
   
   // Returns true if it was a FlickType response activity
   public static func handle(_ userActivity: NSUserActivity) -> Bool {
-    print("handle userActivity", userActivity)
+    print("FlickTypeKit: handle userActivity", userActivity)
     // TODO: main thread check?
     
     func alert(_ message: String) {
