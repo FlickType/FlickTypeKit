@@ -13,7 +13,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
   
   func applicationDidFinishLaunching() {
     // This should be your own app url. The recommended format is "https://your.app.domain/flicktype/"
-    FlickType.returnURL = URL(string: "https://www.flicktype.com/flicktype/")
+    FlickType.returnURL = URL(string: "https://www.flicktype.com/flicktype/")!
   }
   
   func handle(_ userActivity: NSUserActivity) {
