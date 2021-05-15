@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qIz-We-faG">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
         <!--FlickType-->
@@ -14,23 +15,10 @@
             <point key="canvasLocation" x="34" y="-179"/>
         </scene>
         <!--FlickTypeKit-->
-        <scene sceneID="CEn-ZP-BwQ">
-            <objects>
-                <hostingController identifier="Root-SwiftUI" title="FlickTypeKit" id="qIz-We-faG" customClass="HostingController" customModule="FlickTypeKit_Sample_Extension"/>
-            </objects>
-            <point key="canvasLocation" x="236" y="10"/>
-        </scene>
-        <!--FlickTypeKit-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller identifier="Root-WatchKit" title="FlickTypeKit" spacing="8" alwaysBounce="YES" id="AgC-eL-Hgc" userLabel="FlickTypeKit" customClass="InterfaceController" customModule="FlickTypeKit_Sample_App" customModuleProvider="target">
                     <items>
-                        <button width="100" alignment="center" title="WatchKit" id="PBU-Y9-HW5">
-                            <color key="titleColor" red="0.28235294119999998" green="0.57647058819999997" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="switchToSwiftUISample" destination="AgC-eL-Hgc" id="pVs-kc-ffO"/>
-                            </connections>
-                        </button>
                         <group width="1" alignment="left" id="akQ-Qf-B2D">
                             <items>
                                 <label width="1" alignment="left" text="Some text" numberOfLines="0" id="WrB-Nb-ae4"/>

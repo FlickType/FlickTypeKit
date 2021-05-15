@@ -92,9 +92,3 @@ extension WKInterfaceLabel {
     labelTexts[self.interfaceProperty] = text
   }
 }
-
-extension InterfaceController {
-  @IBAction func switchToSwiftUISample() {
-    WKInterfaceController.reloadRootControllers(withNamesAndContexts: [("Root-SwiftUI", NSObject())])
-  }
-}
