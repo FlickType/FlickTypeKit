@@ -151,7 +151,7 @@ public extension WKInterfaceController {
 
 public class FlickType : NSObject {
   
-  public static let sdkVersion = "1.0.0 (source)"
+  public static let sdkVersion = "2.0.0 (source)"
   
   @objc
   public enum CompletionType : Int {
