@@ -38,11 +38,10 @@ public struct FlickTypeTextEditor: View {
         allowedInputMode: .allowEmoji,
         flickType: self.mode,
         startingText: self.text) { items in
-          if let newText = items?.first as? String {
-            self.text = newText
-            if items?.completionType == .action {
-              onCommit()
-            }
+          guard let newText = items?.first as? String else { return }
+          self.text = newText
+          if items?.completionType == .action {
+            onCommit()
           }
       }
     }) {
