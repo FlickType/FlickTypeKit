@@ -40,7 +40,9 @@ public struct FlickTypeTextEditor: View {
         startingText: self.text) { items in
           if let newText = items?.first as? String {
             self.text = newText
-            onCommit()
+            if items?.completionType == .action {
+              onCommit()
+            }
           }
       }
     }) {
