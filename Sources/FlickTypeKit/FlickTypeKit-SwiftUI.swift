@@ -15,11 +15,13 @@ public struct FlickTypeTextEditor: View {
   private var text: String
   private let title: String
   private let mode: FlickType.Mode
+  private let onCommit: () -> Void
   
-  public init(title: String = "", text: Binding<String>, mode: FlickType.Mode = .ask) {
+  public init(title: String = "", text: Binding<String>, mode: FlickType.Mode = .ask, onCommit: @escaping () -> Void = {}) {
     self.title = title
     self._text = text
     self.mode = mode
+    self.onCommit = onCommit
   }
   
   public var body: some View {
@@ -36,8 +38,10 @@ public struct FlickTypeTextEditor: View {
         allowedInputMode: .allowEmoji,
         flickType: self.mode,
         startingText: self.text) { items in
-          if let newText = items?.first as? String {
-            self.text = newText
+          guard let newText = items?.first as? String else { return }
+          self.text = newText
+          if items?.completionType == .action {
+            onCommit()
           }
       }
     }) {
