@@ -260,7 +260,7 @@ internal struct TextInputInvocation {
 
 // TODO: don't add anything to `Array`, redefine as `FlickType.something()`
 public extension Array {
-  var completionType: FlickType.CompletionType {
-    return compactMap { $0 as? FlickType.CompletionType }.first!
+  var completionType: FlickType.CompletionType? {
+    return compactMap { $0 as? FlickType.CompletionType }.first
   }
 }

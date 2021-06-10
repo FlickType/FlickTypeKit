@@ -41,8 +41,9 @@ public struct FlickTypeTextEditor: View {
           guard let items = items else { return }
           guard let newText = items.first as? String else { return }
           self.text = newText
-          if items.completionType == .action {
-            onCommit()
+          switch items.completionType {
+            case nil, .action: onCommit() // FlickType wasn't used, or the FlickType "Done" button was used
+            case .dismiss: break // FlickType was dismissed
           }
       }
     }) {
