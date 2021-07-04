@@ -21,9 +21,9 @@ struct ContentView: View {
         }) {
           Text("SwiftUI").foregroundColor(.orange)
         }.frame(maxWidth: 100)
-        FlickTypeTextEditor(title: "Tap to edit…", text: $text1)
-        FlickTypeTextEditor(title: "Tap to edit…", text: $text2)
-        FlickTypeTextEditor(title: "Tap to edit…", text: $text3)
+        FlickTypeTextEditor("Tap to edit…", text: $text1)
+        FlickTypeTextEditor("Tap to edit…", text: $text2)
+        FlickTypeTextEditor("Tap to edit…", text: $text3)
         Text("FlickTypeKit v\(FlickType.sdkVersion)").font(.footnote).foregroundColor(.gray)
       }
     }

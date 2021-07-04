@@ -17,7 +17,7 @@ public struct FlickTypeTextEditor: View {
   private let mode: FlickType.Mode
   private let onCommit: () -> Void
   
-  public init(title: LocalizedStringKey = "", text: Binding<String>, mode: FlickType.Mode = .ask, onCommit: @escaping () -> Void = {}) {
+  public init(_ title: LocalizedStringKey = "", text: Binding<String>, mode: FlickType.Mode = .ask, onCommit: @escaping () -> Void = {}) {
     self.title = title
     self._text = text
     self.mode = mode

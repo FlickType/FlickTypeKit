@@ -25,7 +25,7 @@ struct ContentView: View {
     ScrollView {
       VStack {
         // other views here...
-        <b>FlickTypeTextEditor(text: $text)</b>
+        <b>FlickTypeTextEditor("Message", text: $text)</b>
         // more views here...
       }
     }
