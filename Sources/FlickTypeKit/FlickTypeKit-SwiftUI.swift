@@ -15,12 +15,14 @@ public struct FlickTypeTextEditor: View {
   private var text: String
   private let title: LocalizedStringKey
   private let mode: FlickType.Mode
+  private let flickTypeProperties: [String : String]
   private let onCommit: () -> Void
   
-  public init(_ title: LocalizedStringKey = "", text: Binding<String>, mode: FlickType.Mode = .ask, onCommit: @escaping () -> Void = {}) {
+  public init(_ title: LocalizedStringKey = "", text: Binding<String>, mode: FlickType.Mode = .ask, flickTypeProperties: [String : String] = [:], onCommit: @escaping () -> Void = {}) {
     self.title = title
     self._text = text
     self.mode = mode
+    self.flickTypeProperties = flickTypeProperties
     self.onCommit = onCommit
   }
   
@@ -37,6 +39,7 @@ public struct FlickTypeTextEditor: View {
         withSuggestions: nil,
         allowedInputMode: .allowEmoji,
         flickType: self.mode,
+        flickTypeProperties: flickTypeProperties,
         startingText: self.text) { items in
           guard let items = items else { return }
           guard let newText = items.first as? String else { return }
