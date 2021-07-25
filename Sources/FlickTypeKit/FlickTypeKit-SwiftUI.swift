@@ -26,8 +26,8 @@ public struct FlickTypeTextEditor: View {
     self.onCommit = onCommit
   }
   
-  public var body: some View {
-    Button(action: {
+  private func action() {
+    print("text input")
       // There are cases where `visibleInterfaceController` might be nil, for example the destination of a `NavigationLink`.
       // In those instances we'll try to use the root controller, even though we get the warning:
       // "Presenting view controller XYZ from detached view controller XYZ is discouraged."
@@ -49,7 +49,10 @@ public struct FlickTypeTextEditor: View {
             case .dismiss: break // FlickType was dismissed
           }
       }
-    }) {
+  }
+  
+  public var body: some View {
+    Button(action: action) {
       Group {
         if text.isEmpty {
           Text(title).foregroundColor(.init(UIColor.gray))
