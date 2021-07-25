@@ -53,13 +53,15 @@ public struct FlickTypeTextEditor: View {
   
   public var body: some View {
     Button(action: action) {
-      Group {
+      HStack {
         if text.isEmpty {
           Text(title).foregroundColor(.init(UIColor.gray))
         } else {
           Text(text)
         }
-      }.frame(maxWidth: .infinity, alignment: .leading)
+        Spacer()
+      }
+      .contentShape(Rectangle())
     }
   }
 }
