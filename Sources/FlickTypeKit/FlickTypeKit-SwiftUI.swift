@@ -27,7 +27,6 @@ public struct FlickTypeTextEditor: View {
   }
   
   private func action() {
-    print("text input")
       // There are cases where `visibleInterfaceController` might be nil, for example the destination of a `NavigationLink`.
       // In those instances we'll try to use the root controller, even though we get the warning:
       // "Presenting view controller XYZ from detached view controller XYZ is discouraged."
