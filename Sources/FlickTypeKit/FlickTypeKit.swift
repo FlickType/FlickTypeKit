@@ -6,6 +6,8 @@
 //  Copyright © 2018-2020 Kpaw. All rights reserved.
 //
 
+// This conditional is here because Xcode SwiftUI previews try to compile FlickTypeKit for non-watchOS platforms, despite it being a watchOS-only package.
+#if os(watchOS)
 import WatchKit
 
 
@@ -264,3 +266,5 @@ public extension Array {
     return compactMap { $0 as? FlickType.CompletionType }.first
   }
 }
+
+#endif // os(watchOS)

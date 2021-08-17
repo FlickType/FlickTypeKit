@@ -6,6 +6,8 @@
 //  Copyright © 2020 Kpaw. All rights reserved.
 //
 
+// This conditional is here because Xcode SwiftUI previews try to compile FlickTypeKit for non-watchOS platforms, despite it being a watchOS-only package.
+#if os(watchOS)
 import SwiftUI
 
 @available(watchOSApplicationExtension 6.0, *)
@@ -64,3 +66,5 @@ public struct FlickTypeTextEditor: View {
     }
   }
 }
+
+#endif // os(watchOS)
