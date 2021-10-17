@@ -99,6 +99,7 @@ FlickType.returnURL = URL(string: "https://your.app.domain/flicktype/")
 ```
 if FlickType.handle(userActivity) { return }
 ```
+_**Note:** Always test on a real device, since the Simulator does not support app switching via universal links yet._
 
 ### Help & support
  - The sample app contains implementations for both SwiftUI & WatchKit. 
