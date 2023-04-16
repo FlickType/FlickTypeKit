@@ -10,7 +10,7 @@
 #if os(watchOS)
 import SwiftUI
 
-@available(watchOSApplicationExtension 6.0, *)
+@available(watchOS 6.0, watchOSApplicationExtension 6.0, *)
 public struct FlickTypeTextEditor: View {
   
   @Binding
