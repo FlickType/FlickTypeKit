@@ -88,8 +88,9 @@ public extension WKInterfaceController {
   internal func presentSystemInputController(_ invocation: TextInputInvocation) {
     
     let flickTypeText = "⌨︎\tFlickType\n\tKeyboard"
-    func completionWrapper(textInputControllerReturnedItems: [Any]?) {
-      if let inputText = textInputControllerReturnedItems?.first as? String {
+    // Ensure we only hold a weak reference to self here
+    let completionWrapper: ([Any]?) -> Void = { [weak self] textInputControllerReturnedItems in
+      if let self, let inputText = textInputControllerReturnedItems?.first as? String {
         if inputText == flickTypeText {
           return presentFlickTypeOrIntermediateController(invocation)
         }
